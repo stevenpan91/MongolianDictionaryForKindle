@@ -1,0 +1,7 @@
+noun n.
+pronoun pron.
+verb v.
+adjective adj.
+preposition prep.
+adverb adv.
+article art.
