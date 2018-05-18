@@ -1,3 +1,3 @@
 #!/bin/bash
-./tab2opf-win/tab2opf.py ./MoToEng.txt
+./tab2opfwin.py ./MoToEng.txt
 ./kindlegen-win/kindlegen.exe ./MoToEng.opf

@@ -1,51 +1,37 @@
-﻿гэж	as
-би	I
-өөрийн	his
-гэж	that
-тэр	he
-байсан	was
-нь	for
-дээр	on
-байна	are
-нь	with
+﻿гэж	as,that
+би	i
+өөрийн	his,own
+тэр	he,she,would
+байсан	was,had,were,did,been
+нь	for, with, from, is, to, a/an, in, which, will, fact, whose
+дээр	on,up,over
+байна	are,have,has,am
 тэд	they
-байх	be
-үед	at
-нэг	one
-байна	have
-энэ нь	this
-нь	from
-өөр	by
+байх	be,stay
+үед	at,when,during
+нэг	one,same,single
+энэ	this,it,pron. this
+өөр	by,else,another
 халуун	hot
 үг	word
-харин	but
+харин	but,while,rather
 ямар	what
-зарим нь	some
-нь	is
-энэ нь	it
-Хэрэв та	you
+зарим	some
+хэрэв та	you
 буюу	or
-байсан	had
 олон тоо	the
  -ийн	of
-нь	to
 болон	and
-нь	a
-нь	in
 бид	we
-болох	can
-гарах	out
-бусад	other
-байсан	were
-нь	which
-хийх	do
+болох	can,could,may,happen
+гарах	out,to leave/exit
+бусад	other,rest,except
+хийх	do,make,to do
 тэдний	their
-цаг	time
-Хэрэв	if
-нь	will
+цаг	time,hour,clock,term
+хэрэв	if
 хэрхэн	how
-гэж хэлсэн	said
-нь	an
+гэж хэлсэн	said,told
 тус бүр	each
 хэлэх	tell
 вэ	does
@@ -53,164 +39,137 @@
 гурван	three
 хүсэж байна	want
 агаар	air
-сайн	well
-мөн	also
-тоглох	play
+сайн	well,good,better,good
+мөн	also,too
+тоглох	play,to play
 жижиг	small
-эцсийн	end
-тавих	put
-Нүүр хуудас	home
+эцсийн	end,final
+тавих	put,lay,to put
+нүүр хуудас	home
 уншсан	read
-гар	hand
+гар	hand,arm,arm
 порт	port
 их хэмжээний	large
 ид шид	spell
 нэмэх	add
 тэр ч байтугай	even
-газар	land
-энд	here
-байх ёстой	must
+газар	n. land, place, area, station, earth
+энд	here,there
+байх ёстой	must,should
 том	big
-өндөр	high
-зэрэг	such
+өндөр	high,tall,tall
+зэрэг	adj. such, order, degree
 дагах	follow
 акт	act
 яагаад	why
-асуух	ask
+асуух	ask,to ask
 эрэгтэй	men
 өөрчлөлт	change
 явав	went
-гэрэл	light
-төрөл	kind
+гэрэл	light,shine
+төрөл	kind,type
 унтраах	off
 хэрэгтэй	need
 байшин	house
-зураг	picture
-оролдох	try
-АНУ-ын	us
+зураг	picture,figure,chart
+оролдох	try,to try
+ану-ын	us
 дахин	again
 мал, амьтны	animal
 цэг	point
-ээж нь	mother
+ээж	mother
 дэлхийн	world
 ойролцоо	near
-барих	build
+барих	build,take,hold,catch,touch
 өөрөө	self
 дэлхий	earth
-аав нь	father
-ямар ч	any
-шинэ	new
-ажил	work
-хэсэг	part
-барих	take
-авах	get
-газар	place
+аав	father,dad
+ямар ч	any,no
+шинэ	new,fresh
+ажил	work,job
+хэсэг	n. part, piece, fraction, section, bit, segment
+авах	get,to take
 хийсэн	made
 амьдарч байна	live
 хаана	where
-дараа	after
+дараа	after,then
 буцааж	back
-бага	little
+бага	little,low,less
 нь зөвхөн	only
-дугуй	round
-хүн	man
+дугуй	round,wheel,tire,circle
+хүн	man,people,who,person
 жил	year
 ирсэн	came
 шоу	show
-бүх	every
-сайн	good
+бүх	every,all
 намайг	me
-өгөх	give
+өгөх	give,provide,to give
 манай	our
 дагуу	under
 нэр	name
-маш их	very
+маш их	very,much,lot
 дамжуулан	through
 зүгээр л	just
-хэлбэр	form
-өгүүлбэр	sentence
+хэлбэр	form,shape
+өгүүлбэр	sentence,phrase
 агуу их	great
 гэж боддог	think
 гэж хэлэх	say
-туслах	help
-бага	low
-мөр нь	line
-өөр өөр	differ
+туслах	help,to help
+мөр	line,string,shoulder
+өөр өөр	differ,vary
 ээлж	turn
-шалтгаан нь	cause
-маш их	much
-гэсэн үг	mean
-өмнө нь	prep. before
-алхам	move
+шалтгаан	cause,reason
+гэсэн үг	mean,meant
+өмнө	prep. before, ago
+алхам	move,step
 эрх	right
-хүү	boy
+хүү	boy,interest,son,son
 хуучин	old
-мөн	too
-нэг	same
-тэр	she
-бүх	all
-энд	there
-үед	when
-дээр	up
 ашиглах	use
 таны	your
 арга зам	way
 тухай	about
 олон	many
-дараа нь	then
 тэднийг	them
-бичих	write
-тэр нь	would
+бичих	write,to write
 шиг	like
 тийм	so
 эдгээр	these
-түүнийг	her
+түүнийг	her,him
 урт	long
-хийх	make
 зүйл	thing
  -г үзнэ үү	see
-Түүнийг	him
 хоёр	two
-байна	has
-харах	look
+харах	look,watch,view,to see/look at
 дэлгэрэнгүй	more
 өдөр	day
-болох	could
-явах	go
-ирэх	come
-байсан	did
-тоо	number
+явах	go,ride,to go/leave for
+ирэх	come,arrive,to come
+тоо	number,count
 сонсогдож	sound
-ямар ч	no
 хамгийн их	most
-хүн	people
-Миний	my
-дээр	over
-мэдэх	know
+миний	my
+мэдэх	know,to know
 ус	water
 илүү	than
 дуудлага	call
 эхний	first
-хүн	who
-болох	may
-доош нь	down
+доош	down
 тал	side
-байсан	been
 яг одоо	now
-олох	find
-дарга	head
+олох	find,locate
+дарга	head,chair
 зогсож	stand
-өөрийн	own
-хуудас	page
-байх ёстой	should
-улс орон	country
+хуудас	page,sheet,slip
+улс орон	country,nation
 олдлоо	found
-хариулт нь	answer
+хариулт	answer
 сургууль	school
 ургадаг	grow
 судалгаа	study
 хэвээр	still
-сурах	learn
+сурах	learn,to study
 ургамал	plant
 хамгаалах	cover
 хоол хүнс	food
@@ -221,32 +180,30 @@
 байлгах	keep
 нүдний	eye
 хэзээ ч	never
-өнгөрсөн	last
+өнгөрсөн	last,past
 зөвшөөрөх	let
 гэж бодсон	thought
-хот	city
-мод	tree
+мод	tree,wood,stick,wood/tree
 гаталж	cross
 аж ахуй	farm
-хатуу	hard
+хатуу	hard,solid
 эхлэл	start
 байж болох юм	might
-түүх	story
+түүх	story,pick,history
 харсан	saw
 хол	far
 далайн	sea
 зурж	draw
-зүүн	left
+зүүн	adj. left,east
 сүүлээр	late
-урсгал	run
+урсгал	run,flow
 хийж чадахгүй	don’t
-харин	while
-гэж сонгоод	press
+гэж сонгоод	press,select
 ойр	close
 шөнө	night
 бодит	real
 амьдрал	life
-хэдэн	few
+хэдэн	few, how many
 хойд	north
 ном	book
 авч явах	carry
@@ -254,33 +211,30 @@
 шинжлэх ухаан	science
 идэж	eat
 өрөө	room
-найз нь	friend
+найз	friend
 эхэлсэн	began
 санаа	idea
 загас	fish
 уулын	mountain
 зогсоох	stop
 нэг удаа	once
-үндсэн	base
+үндсэн	base,main,basic
 сонсооч	hear
 морь	horse
 тайрах	cut
 байгаа эсэхийг	sure
-харах	watch
 өнгө	color
-нүүр	face
-мод	wood
-үндсэн	main
+нүүр	face,front,lake
 нээлттэй	open
 шиг санагддаг	seem
 хамтдаа	together
 дараагийн	next
 цагаан	white
 хүүхдүүд	children
-эхлэх	begin
+эхлэх	begin,to start,to begin
 авсан	got
 алхах	walk
-жишээ нь	example
+жишээ	example
 хөнгөвчлөх	ease
 цаас	paper
 бүлэг	group
@@ -288,40 +242,40 @@
 дуу хөгжим	music
 тэдгээр	those
 аль аль нь	both
-тэмдэг	mark
+тэмдэг	mark,sign,symbol
 нь ихэвчлэн	often
 бичиг	letter
 хүртэл	until
 милийн	mile
 голын	river
 машины	car
-хөл	feet
+хөл	n. feet, leg
 тусламж	care
 хоёр дахь	second
 хангалттай	enough
-энгийн	plain
-охин	girl
+энгийн	plain,simple
+охин	girl,daughter
 ердийн	usual
 залуу	young
 бэлэн	ready
-Дээр дурдсан	above
+дээр дурдсан	above
 хэзээ нэгэн цагт	ever
 улаан	red
 жагсаалт	list
-Хэдийгээр	though
+хэдийгээр	though
 мэдрэх	feel
 хэлэлцүүлэг	talk
 шувуу	bird
 удахгүй	soon
-байгууллага	body
-нохой	dog
-гэр бүл	family
+байгууллага	n. body, organ
+нохой	n. dog
+гэр бүл	n. family
 шууд	direct
 загвар	pose
-орхих	leave
+орхих	v. to leave
 дуу	song
 хэмжих	measure
-хаалга	door
+хаалга	n. door
 бүтээгдэхүүн	product
 хар	black
 богино	short
@@ -329,41 +283,33 @@
 анги	class
 салхины	wind
 асуулт	question
-болох	happen
-бүрэн	complete
+бүрэн	adj. complete, full
 хөлөг онгоц	ship
-газар	area
-тэн хагас нь	half
+тэн	equal 
+хагас	half
 чулуулгийн	rock
-зэрэг	order
 гал түймэр	fire
 урд	south
-асуудал	problem
-хэсэг	piece
-гэж хэлсэн	told
+асуудал	problem,matter
 мэдэж байсан	knew
 өнгөрөх	pass
-Учир нь	since
+учир	since
 дээд	top
-бүхэлд нь	whole
+бүхэлд	whole
 хаан	king
 гудамж,	street
 инчийн	inch
 үржүүлэх	multiply
 юу ч биш	nothing
-Мэдээж	course
-байх	stay
-дугуй	wheel
-бүрэн	full
+мэдээж	course
 хүч	force
-хөх	blue
+хөх	adj. blue
 объект	object
 шийдвэр	decide
 газрын гадаргын	surface
 гүн гүнзгий	deep
 сар	moon
 арал	island
-хөл	foot
 систем	system
 завгүй	busy
 туршилтын	test
@@ -373,52 +319,44 @@
 алт	gold
 аль болох	possible
 нисэх онгоц	plane
-Үүний оронд	stead
+үүний оронд	stead
 хуурай,	dry
 гайхдаг	wonder
 инээд	laugh
 мянган	thousand
-өмнө	ago
 гүйж	ran
 шалгах	check
 тоглоом	game
-хэлбэр	shape
 тэнцэхгүй	equate
-халуун	hot
 өнгөрөөх	miss
 авчирсан	brought
-дулаан	heat
+дулаан	heat,warm,warm
 цас	snow
-дугуй	tire
 авчрах	bring
-Хэрэв тийм бол	yes
+хэрэв тийм бол	yes
 холын	distant
 бөглөх	fill
-зүүн	east
 будаг	paint
-хэл	language
-дунд	among
+хэл	language, tongue
+дунд	adj. among, middle, satisfactory
 нэгж	unit
 эрчим хүч	power
-хот	town
-нарийн	fine
-тодорхой	certain
+нарийн	fine, thin
+тодорхой	certain,clear
 ялаа	fly
-унах	fall
+унах	fall,to fall
 хүргэдэг	lead
 хашхирах	cry
 харанхуй	dark
-машин	machine
+машин	machine,car
 тэмдэглэл	note
-хүлээх	wait
+хүлээх	wait,to wait
 төлөвлөгөө	plan
-зураг	figure
 од	star
 хайрцаг	box
 нэр үг	noun
 талбар	field
-Бусад нь	rest
-зөв	correct
+зөв	correct,proper
 боломжтой	able
 фунт	pound
 хийгдсэн	done
@@ -426,68 +364,52 @@
 хөтөч	drive
 зогсов	stood
 агуулсан	contain
-нүүр	front
-заах	teach
+заах	teach,to teach
 долоо хоног	week
-эцсийн	final
 өгсөн	gave
 ногоон	green
 өө	oh
 хурдан	quick
 боловсруулах	develop
 далай	ocean
-дулаан	warm
 чөлөөт	free
 минут	minute
 хүчтэй	strong
 тусгай	special
 оюун ухаан	mind
-ард нь	behind
-тодорхой	clear
+ард	behind
 сүүл	tail
 үйлдвэрлэх	produce
-нь	fact
 орон зай	space
 сонслоо	heard
 хамгийн сайн	best
-цаг	hour
-сайн	better
 үнэн	true
-үед	during
 зуун	hundred
 таван	five
 санаж	remember
-алхам	step
 эрт	early
-барих	hold
 баруун тийш	west
 газрын	ground
-хүү	interest
-хүрэх	reach
-хурдан	fast
+хүрэх	reach,to touch
 үйл үг	verb
-дуулах	sing
-сонсох	listen
+дуулах	sing,to sing
+сонсох	listen,to listen
 зургаан	six
 хүснэгт	table
 аялал жуулчлалын	travel
-бага	less
 өглөө	morning
 арван	ten
-энгийн	simple
 хэд хэдэн	several
 эгшиг	vowel
 рүү	toward
 дайн	war
-тавих	lay
-эсрэг	against
+эсрэг	against,opposite
 хэв маяг	pattern
 удаан	slow
 төв	center
-хайр	love
-хүн	person
+хайр	love,favor
 мөнгө	money
-үйлчлэх	serve
+үйлчлэх	serve,to serve
 гарч ирэх	appear
 авто зам	road
 газрын зураг	map
@@ -504,85 +426,71 @@
 ор	bed
 ах дүү	brother
 өндөг	egg
-явах	ride
 эсийн	cell
 гэдэгт итгэдэг	believe
 магадгүй	perhaps
-түүх	pick
 гэнэт	sudden
-тоо	count
 дөрвөлжин	square
-шалтгаан нь	reason
-урт	length
 төлөөлөх	represent
 урлаг	art
 хичээл	subject
 бүс нутаг	region
-хэмжээ	size
-өөр өөр	vary
+хэмжээ	size,deal
 барагдуулах	settle
 үг хэлэх	speak
 жин	weight
-ерөнхий	general
+ерөнхий	general,chief
 мөс	ice
-асуудал	matter
 тойрог	circle
 хос	pair
 оруулах	include
 хуваагдал	divide
 үет	syllable
 эсгий	felt
-их	grand
+их	grand,a lot of
 бөмбөг	ball
 одоогоор	yet
 долгионы	wave
 унагаах	drop
 зүрхний	heart
-байна	am
 өнөөгийн	present
 хүнд	heavy
 бүжгийн	dance
 хөдөлгүүр	engine
 албан тушаал	position
-гар	arm
-өргөн	wide
+өргөн	wide,broad
 онгоцны далбаа	sail
 материал	material
-хэсэг	fraction
 ой	forest
-суух	sit
+суух	sit,to sit
 уралдаан	race
 цонх	window
-дэлгүүр	store
+дэлгүүр	store,shop,stores,electronics store,antique shop
 зуны	summer
 галт тэрэг	train
-унтах	sleep
+унтах	sleep,to sleep
 нотлох	prove
 цорын ганц	lone
 хөлөө	leg
 дасгал	exercise
 ханын	wall
-барих	catch
-холбох	mount
+холбох	mount,connect
 хүсвэл	wish
 тэнгэр	sky
-ТУЗ-ийн	board
+туз-ийн	board
 баяр хөөр	joy
 өвөл	winter
 орохдоо	sat
-бичсэн	written
+бичсэн	written,wrote
 зэрлэг	wild
-арга хэрэгсэл	instrument
-хадгалах	kept
+арга хэрэгсэл	instrument,tool
+хадгалах	kept,save
 шилэн	glass
 өвс	grass
 үнээ	cow
-ажил	job
-зах	edge
-тэмдэг	sign
+зах	edge,market
 айлчлал	visit
-өнгөрсөн	past
-зөөлөн	soft
+зөөлөн	soft,gentle
 хөгжилтэй	fun
 гэрэл гэгээтэй	bright
 хий	gas
@@ -599,38 +507,34 @@
 илааршсан	gone
 гадаад худалдааны	trade
 аялгуу	melody
-аялал	trip
+аялал	trip,hiking
 оффис	office
 хүлээн авах	receive
 эгнээ	row
 агшин	mouth
-яг	exact
-тэмдэг	symbol
+яг	exact,quite
 үхэх	die
-наад зах нь	least
+наад зах	least
 гай	trouble
 орө	shout
-бусад	except
-бичсэн	wrote
 үрийн	seed
 ая	tone
 нэгдэхийг	join
 санал болгож байна	suggest
 цэвэр	clean
 завсарлага	break
-эмэгтэй	lady
-талбай	yard
-босох	rise
+эмэгтэй	lady,woman
+талбай	yard,squire
+босох	rise,to get up
 муу	bad
 цохилт	blow
 газрын тос	oil
 цусны	blood
-барих	touch
-өссөн	grew
+өссөн	grew,rose
 хувь	cent
 холино	mix
 баг	team
-утас	wire
+утас	wire,thread
 зардал	cost
 алдагдсан	lost
 бор	brown
@@ -638,43 +542,33 @@
 цэцэрлэг	garden
 тэнцүү	equal
 илгээсэн	sent
-сонгох	choose
+сонгох	choose,to choose
 буурсан	fell
-таарах	fit
-урсгал	flow
+таарах	fit,to fit
 шударга	fair
 банк	bank
 цуглуулах,	collect
-хадгалах	save
 хяналтын	control
 аравтын	decimal
 чихний	ear
-өөр	else
-яг	quite
 эвдсэн	broke
 хэрэг	case
-дунд	middle
 алах	kill
-хүү	son
-нүүр	lake
 мөч	moment
 хэмжээний	scale
 чанга	loud
 хавар	spring
 ажиглах	observe
-хүүхэд	child
+хүүхэд	child,baby
 шулуун	straight
 гийгүүлэгч	consonant
-улс орон	nation
-Ончтой үр дүн	dictionary
+ончтой үр дүн	dictionary
 сүү	milk
 хурд	speed
 арга	method
-байгууллага	organ
-төлөх	pay
+төлөх	pay,to pay
 нас	age
-хэсэг	section
-хувцас	dress
+хувцас	dress,clothes
 үүл	cloud
 гайхуулах	surprise
 нам гүм	quiet
@@ -684,26 +578,22 @@
 сэрүүн	cool
 зураг төсөл	design
 ядуу	poor
-маш их	lot
 туршилт	experiment
 доод	bottom
-гол	key
+гол	key,stream,major,river
 төмрийн	iron
-нэг	single
-мод	stick
 хавтгай	flat
 хорин	twenty
 арьс	skin
 инээмсэглэл	smile
 уртасгахад	crease
 нүх	hole
-үсрэх	jump
-хүүхэд	baby
+үсрэх	jump,to jump
 найман	eight
 тосгон	village
 хангасан	meet
-эх	root
-худалдан авах	buy
+эх	root,original
+худалдан авах	buy,to buy
 өсөлт	raise
 шийдвэрлэх	solve
 металл	metal
@@ -715,25 +605,21 @@
 болно	shall
 зохион байгуулав	held
 үс	hair
-тайлбарлах	describe
-тогооч	cook
+тайлбарлах	describe,to explain
+тогооч	cook,cook/chef
 шал	floor
 аль нэг	either
 үр дүн	result
 шарах	burn
-толгой	hill
+толгой	hill,head
 аюулгүй	safe
 муур	cat
 зууны	century
 авч үзэх	consider
-төрөл	type
 хууль	law
-хэсэг	bit
-эрэг	coast
+эрэг	coast,shore
 хуулбар	copy
-өгүүлбэр	phrase
 чимээгүй	silent
-өндөр	tall
 элс,	sand
 хөрс	soil
 өнхрөх	roll
@@ -746,11 +632,9 @@
 зодож	beat
 сэтгэл татна	excite
 байгалийн	natural
-харах	view
 мэдрэмж	sense
 капитал	capital
 тийм юм байхгүй	won’t
-дарга	chair
 аюул	danger
 жимс	fruit
 баян	rich
@@ -759,7 +643,7 @@
 үйл явц	process
 үйл ажиллагаа явуулах	operate
 практик	practice
-тус тусад нь	separate
+тус тусад	separate
 хүнд хэцүү	difficult
 эмч,	doctor
 үү	please
@@ -773,11 +657,9 @@
 булангийн	corner
 нам	party
 хангамж	supply
-нь	whose
-олох	locate
 бөгж	ring
 тэмдэгт	character
-шавьж	insect
+шавьж	insect,insects
 татлаа	caught
 хугацаа	period
 харуулж байна	indicate
@@ -785,33 +667,27 @@
 ярьсан	spoke
 атомын	atom
 хүний	human
-түүх	history
 үр нөлөө	effect
-цахилгаан	electric
+цахилгаан	electric,lightening/bolt
 найдах	expect
 ясны	bone
 төмөр замын	rail
 төсөөлж	imagine
-өгөх	provide
 санал нэгтэй	agree
 ийн	thus
-зөөлөн	gentle
-эмэгтэй	woman
 ахмад	captain
-таах	guess
-шаардлагатай	necessary
+таах	guess,to guess
+шаардлагатай	necessary,require
 хурц	sharp
 жигүүр	wing
 бий болгох	create
 хөрш	neighbor
 угаалгын	wash
-Бат	bat
-харин	rather
+бат	bat
 олон хүн	crowd
 эрдэнэ шиш	corn
 харьцуулах	compare
 шүлэг	poem
-мөр	string
 хонх	bell
 хамааралтай	depend
 мах	meat
@@ -819,21 +695,16 @@
 хоолой	tube
 алдартай	famous
 доллар	dollar
-гол	stream
 айдас	fear
 нүдний хараа	sight
 нимгэн	thin
 гурвалжин	triangle
 гариг	planet
 яарах	hurry
-ерөнхий	chief
 колони	colony
-цаг	clock
 уул уурхайн	mine
 зангиа	tie
 оруул	enter
-гол	major
-шинэ	fresh
 хайлт	search
 илгээх	send
 шар	yellow
@@ -843,46 +714,34 @@
 нас барсан	dead
 спот	spot
 цөлийн	desert
-нэхэмжлэл	suit
+нэхэмжлэл	suit,claim
 одоогийн	current
 өргөгч	lift
-өссөн	rose
-ирэх	arrive
 мастер	master
-зам	track
+зам	track,path,road
 эцэг, эх	parent
-эрэг	shore
 хэлтэс	division
-хуудас	sheet
 бодис	substance
-хайр	favor
-холбох	connect
 дараах	post
 зарцуулах	spend
 хөвч	chord
 өөх	fat
 баяртай	glad
-эх	original
 эзлэх хувь	share
-газар	station
-аав	dad
 талх	bread
-үнэ	charge
-зөв	proper
-бар	bar
+үнэ	charge,price
+бар	bar,tiger
 санал болгох	offer
-хэсэг	segment
 боол	slave
 нугас	duck
 шуурхай	instant
 зах зээлийн	market
-зэрэг	degree
 нутагшуулах	populate
 дэгдээхэйн	chick
 хайрт	dear
 дайсан	enemy
-хариулах	reply
-ундаа	drink
+хариулах	reply,to answer
+ундаа	drink,beverages,soda
 тохиолддог	occur
 дэмжлэг үзүүлэх	support
 хэл яриа	speech
@@ -890,29 +749,27 @@
 хүрээ	range
 уурын	steam
 хөдөлгөөн	motion
-зам	path
 шингэн	liquid
 гуалин	log
-гэсэн үг	meant
 коэффицентийг	quotient
-шүд	teeth
+шүд	teeth,tooth
 бүрхүүл	shell
 хүзүү	neck
 хүчилтөрөгчийн	oxygen
-элсэн чихэр,	sugar
+элсэн чихэр	sugar
 үхэл	death
 нэлээн	pretty
 ур чадвар	skill
 эмэгтэйчүүд	women
 улирал	season
-Үүний шийдэл нь	solution
+үүний шийдэл	solution
 соронз	magnet
 мөнгөн	silver
 талархлын	thank
 салбар	branch
-Хүсч байгаа эд зүйлс	match
+хүсч байгаа эд зүйлс	match
 дагавар	suffix
-ялангуяа	especially
+ялангуяа	especially,particular
 инжрийн	fig
 айдаг	afraid
 асар их	huge
@@ -928,20 +785,17 @@
 худалдан авсан	bought
 удирдуулсан	led
 давирхай	pitch
-цув	coat
+цув	coat,rain coat
 олон нийтийн	mass
 карт	card
 хамтлаг	band
 олс	rope
-хуудас	slip
 хожил	win
 мөрөөдөж	dream
 орой	evening
 нөхцөл байдал	condition
 малын тэжээл	feed
-арга хэрэгсэл	tool
 нийт	total
-үндсэн	basic
 үнэр	smell
 хөндий	valley
 ч	nor
@@ -949,20 +803,15 @@
 суудал	seat
 үргэлжлүүлэх	continue
 блок	block
-зураг	chart
 малгай	hat
 борлуулах	sell
 амжилт	success
-компани нь	company
+компани	company
 хасах	subtract
 үйл явдал	event
-ялангуяа	particular
-хэмжээ	deal
 усанд сэлж	swim
-цаг	term
-эсрэг	opposite
 эхнэр	wife
-гутал	shoe
+гутал	shoe,boots
 мөрөн	shoulder
 тархах	spread
 зохион байгуулах	arrange
@@ -971,33 +820,1001 @@
 хөвөн	cotton
 төрөлхийн	born
 тодорхойлох	determine
- quart	quart
 есөн	nine
 ачааны машин	truck
 дуу чимээ	noise
 түвшин	level
 боломж	chance
 цуглуулах	gather
-дэлгүүр	shop
 сунгах	stretch
 хаях	throw
-гэрэл	shine
 үл хөдлөх хөрөнгийн	property
 багана	column
 молекул	molecule
-гэж сонгоод	select
 буруу	wrong
 саарал	gray
 давтан	repeat
-шаардлагатай	require
-өргөн	broad
 бэлтгэх	prepare
 давс	salt
 хамар	nose
 олон тооны	plural
 уур хилэн	anger
-нэхэмжлэл	claim
 тив	continent
 бүр	n. everyone
-сайхан	adj. nice
+сайхан	adj. nice,fine/nice
 урьд	prep. before
+тогтох	v. determine
+өмгөр	adj. very narrow
+нэгэн	art. a/an
+өвгөн	n. old man
+эмгэн	n. old woman
+чинээ	n. size
+энх	adj. peaceful
+эрүүл	adj. healthy
+саруул	adj. clear,lucent,serenity
+амьдрах	v. to live,to live
+гэх	v. to say
+зовлон	n. suffering
+гараа	n. starting point
+муудах	v. to decay
+хаяанд	prep. nearby
+хөөрхий	adj. pitiful
+дуудах	v. to call,to call out
+хажуу	prep. edge,side
+хүүхэлдэй	n. doll
+сонс	interj. i say!
+хэн	pron. who
+битгий	do not
+үзүүлэх	v. to show
+хэрвээ	conjunc. if
+чамд	pron. you
+тохиолдох	v. to occur
+хооллох	v. to feed
+яах	adv. how
+зөвлөх	v. to suggest
+сэтгэл	n. spirit
+ингэх	in this way/manner
+үнсэх	v. to kiss,to kiss
+нас барах	v. to die,to die
+харамсан	adv. pitifully
+гашуудах	v. to grieve
+нэлээд	adv. much
+удсан	adj. mature, stale
+авгай	n. aged woman
+ууртай	adj. angry
+чинь	pron. me
+догшин	adj. fierce
+зантай	adj. grumpy
+хорон	adj. mischievous
+хойт	adj. step-(family member) e.g. step-parent
+хорлох	v. to hurt
+хорлонтой	adj. evil
+цамаан	adj. fastidious
+үлдэх	v. continue,remain,to stay
+хорогдох	v. crouch,dwindle,escape,linger
+эцэг	n. parent,father
+гандах	v. crumble,wilt,wither
+галлах	v. fire (to burn?)
+зуух	v. to bake, bite,stove
+зөөх	v. to carry,transfer,to carry
+цэвэрлэх	v. to clean,to clean
+шан	n. compensation,fee
+сүүдэр	n. shade
+тайвшруулах	v. to appease,console
+уух	v. to drink,to drink
+амсах	v. to sample,savor
+уулга	n. yell,cry
+байгаа	adj. existent
+түгжих	v. to lock, fasten
+дотроо	prep. inwards
+пин	n. barn
+саах	v. to milk
+гэгч	adj. so-called
+өнөөх	v. inherent
+болгох	v. to convert,render
+болгон	adj. every
+үзэсгэлэнтэй	n. beauty, loveliness
+хэлшгүй	adj. unspeakable
+үлгэр	n. fable, fairytale
+улам	adj. more
+төрөх	v. to give birth,to be born
+төрүүлэх	v. to generate
+цаана	adj. beyond,farther
+хав	n. doggy
+усан	adj. aquatic
+цутгах	v. to cast, flood, stream
+салхи	n. wind,wind/breeze
+шуугих	v. jangle, fizz, clutter
+намар	n. autumn,autumn
+эргэ	n. precipice, steep rock or cliff
+тойрох	v. to beset, circle
+сүг	n. apparition, ghost
+тор	n. cage, mesh, net
+нэхэх	v. to weave, chase
+нөгөө	adj. other
+оймс	n. footgear, stockings,socks
+ээрэх	v. to falter, hesitate
+оноох	v. to appoint, impose, mete
+тэгээд	adv. then
+охид	n. girl, sister
+ажиллах	v. to do, get, work,to work
+ганц	adj. lone single
+баллуур	eraser
+гэрийн даалгавар	homework
+дэвтэр	notebook
+маш	very
+онц	excellent
+самбар	white board
+сандал	chair
+спорт заап	gym
+сурагч ширээ	desk
+толь бичиг	dictionary
+үзүүрлэгч	sharpener
+үзэг	pen
+үсэг	letter
+хавтас	cover/folder
+харандаа	pencil
+цавуу	glue
+цагийн хуваарь	timetable of lesson
+цэцгийн сав	flower pot
+шалгалт	test
+ширээ	table
+шугам	ruler
+эгшиг үсэг	vowel
+хүнсний ногоо	vegetable
+байцаа	cabbage
+вандуй	peas
+лууван	carrots
+өргөст хэмх	cucumber
+перец	black pepper
+сонгино	onion
+төмс	potato
+улаан лууван	radish
+улаан лооль	tomato
+улаан манжин	beet
+хулуу	pumpkin
+чинжүү	green pepper
+шар лууван	carrot
+шош	beans
+буурцаг	beans
+шар манжин	turnip
+амтат зүрж	orange
+бөөрөлзгөнө	raspberry
+бэрсүүт жүрж	tangerine
+гадил	banana
+гүзээлзгэнэ	strawberry
+интоор	cherry
+киви	kiwi
+лийр	pear
+нимбэг	lemon
+нэрс	blueberry
+тарвас	watermelon
+тоор	peach
+усан үзэм	grape
+үзэм	raisin
+хад	currant,госк
+хан боргоцой	pineapple
+чангаанз	apricot
+чавга	plum
+тариа	cereal
+бялуу	cake/pie
+бин	pancake
+гамбир	pancake
+гурил	flour
+гоймон	noodles
+жигнэмэг	biscuit/cookies
+зуурсан гурил	dough
+өрмөнцөр	waffle
+үр тариа	grain
+будаа	rice
+амттан	spices
+ёотон	lump suger/cube
+мax	meat
+адууны мах	horse meat
+гахайн мах	pork
+гахайн утсан мах	bacon
+зайдас	hot dog
+өндег	egg
+тахианы мах	chicken
+тарваганы мах	marmot
+үхрийн мах	beef
+хонины мах	mutton
+хиам	sausage
+хоол	meals
+зууш	dessert/snack
+оройн хоол	dinner
+өдрийн хоол	lunch
+өглөөний цай	breakfast
+хээрийн хоол	picnic
+шөл	soup
+цагаан идээ	dairy products
+бяслаг	cheese
+зайрмаг	ice-cream
+тараг	yogurt
+хайлмаг	melted butter
+цөцгийн тос	butter
+цөцгий	cream
+дарс	wine
+жимсний шүүс	juice
+кофе	coffee
+цай	tea
+шар айраг	beer
+гал тогооны хэрэгсэл	kitchen utensils
+аяга	bowl
+будаа агшаагч	rice cooker
+данх	kettle
+дийз	saucer
+махны машин	meat grinder
+өндөг хагалагч	egg beater
+сэрээ	fork
+савх	chopstick
+сэнжтэй аяга	cup
+таг	lid/cover
+таваг	plate
+тогоо	potato
+ус буцалгагч	water boiler
+хайруулын таваг	frying pan/skillet
+хутга	knife
+холигч	mixer
+халбага	spoon
+хапуун сав	thermos
+хундага	glass
+шарагч	broiler
+шанага	ladle
+шүүр	strainer,broom
+шарах шүүгээ	oven
+агуулах/эоорь	storage
+алчуур	towel
+аяганы шүүгээ	cupboard
+буйдан	sofa
+бие засах өрөө	restroom
+галын өрөө	kitchen
+гадаа жорлон	outhouse
+граш	garage
+зурагт	television/tv
+дэр	pillow
+дээвэр/тааз	ceiling
+жорлон	toilet
+зочны өрөө	living room
+зөөлөн сандал	armchair
+индүү	iron
+индүүний ширээ	ironing board
+орны даавуу	sheets
+оёдлын машин	sewing machine
+паар	radiator
+суурь	basement
+тавилга	furniture
+тагт	balcony
+телефон утас	telephone
+тоос сорогч	vacuum cleaner
+түлхүүр	key
+yraaryyp	sink
+угаалгын машин	washing machine
+угаалгын өрөө	bath/laundry room
+унждаг чийдэн	light
+усанд орох онгоц	bathtub
+үүдний өрөө	hall
+ширээний бүтээлэг	table cloth
+ширээний чийдэн	lamp
+шүршүүр	shower
+хана	wall
+ханын шүүгээ	closet
+хашаа	yard
+хивс	carpet/rug
+хогийн гаргуул	dust pan
+хоолны өрөө	dining room
+хөгжим	tape recorder,music
+хөнжил	blanket
+хөргөгч	refrigerator/fridge
+хөшиг	curtain
+хүүхдийн өрөө	kid’s room
+цонхны тавцан	window sill
+шалны хулдаас	linoleum
+яндан	chimney
+булган малгай	sable hat
+бүс	belt
+бээлий	gloves
+гутлын үдээс	shoe string
+гэрийн шаахай	slippers
+даашинз	dress
+дотуур хувцас	briefs
+дотуур цамц	t-shirt
+жинс өмд	jeans
+майк	undershirt
+ноосон цамц	sweater
+ороолт	scarf
+өмд	pants/trousers
+пальто	coat
+пиджак	blazer
+пүүз	sneakers/running shoes
+татуурга	suspenders
+тирко/шилэн оймс	nylons/tights
+туфль	high heel shoes
+тэлээ. бүс	belt
+унтлаганы хувцас	night gown
+урт оймс	stockings
+усны хувцас	swim suit
+халат	house dress
+хантааз	vest
+хормогч	apron
+хослол	suit
+хүрэм	jacket
+эмэгтэй цамц	blouse
+эрэгтэй цамц	shirt
+шуба	fur coat
+юбка	skirt
+ax	brother
+ач/зээ охин	niece
+ач/зээ хүү	nephew
+авга/нагац ах	uncle
+бэр эгч/дүү	sister in law
+нагац/авга эгч	aunt
+насанд хүрсэн хүн	adult
+нөхөр	husband
+өвөө	grandfather
+үеэл	cousin
+хамаатан садан	relatives
+хүргэн ах/дүү	brother in law
+эмэгтэй хүн	woman
+эмэгтэй хүүхэд	girl
+эмээ	grandmother
+эрэгтэй хүн	man
+эрэгтэй хүүхэд	boy
+эцэгэх	parents
+гаригууд	days of the week
+даваа	monday
+мягмар	tuesday
+лхагва	wednesday
+пүрэв	thursday
+баасан	friday
+бямба	saturday
+ням	sunday
+цаг хугацаа	time
+ажлын өдөр	weekday
+амралтын өдөр	weekend
+дараа жил	next year
+3 өдрийн өмнө	3 days ago
+заримдаа	sometimes
+ихэвчлэн	usually
+маргааш	tomorrow
+нар жаргасан орой	sunset
+нар мандах үе	sunrise
+нөгөөдөр	day after tomorrow
+нэг цаг	hour
+өчигдөр	yesterday
+өдөр бүр	every day
+өчигдөр орой	last night
+cap	month
+сарын дараа	after a month
+уржигдар	day before yesterday
+үдээс хойш	afternoon
+үд дунд	noon
+хараахан	yet
+хоног	day/24 hours
+2 жилийн өмнө	2 years ago
+шөнө дунд	midnight
+улиралууд	seasons
+зун	summer
+байгаль	nature
+аянга	thunder
+газар хедлелт	earthquake
+ган гачиг	drought
+зэрэглээ	mirage
+манан	fog
+мөндөр	hail
+нуур	lake/pond
+рашаан	spring
+солонго	rainbow
+уул	mountain
+халуун хүйтэн	temperature
+хунгар	drift
+цан	frost
+цасан шуурга	blizzard
+шавхай	slush
+шиврээ бороо	drizzle
+шороо	soil
+шуурга	storm
+элс	sand
+амьтад	animals
+алаг тахь	zebra
+анааш	giraffe
+арслан	lion
+баавгай	bear
+буга	deer
+булга	sable
+бух	bull
+гахай	pig
+гөлөг	puppy
+гөрөөс	antelope
+гүрвэл	lizard
+заан	elephant
+зараа	hedgehog
+зурам	gopher
+илжиг	donkey
+ирвэс	leopard
+ишиг	kid
+могой	snake
+мэлхий	frog
+сармагчин	monkey
+сарлаг	yak
+тарвага	marmot
+торой	piglet
+тугал	calf
+туулай	hare/rabbit
+тэмээ	camel
+унага	foal
+үнэг	fox
+үхэр	cow
+үхэр хулгана	rat
+халим	whale
+хандгай	elk/moose
+хонь	sheep
+хулгана	mouse
+хурга	lamb
+хэрэм	squirrel
+чоно	wolf
+шанаган хорхой	tadpole
+шар үхэр	ox
+шилүүс	lynx
+ямаа	goat
+яст мэлхий	turtle/tortoise
+аалз	spider
+жоом	cockroach
+бясаа	bug
+зөгий	bee
+хачиг/хувалз	tick
+царцаа	grasshopper
+шоргоолж	ant
+цох хорхой	ladybug
+шумуул	mosquito
+эрвээхэй	butterfly
+болжмор	lark/sparrow
+бүргэд	eagle
+галуу	goose
+тахианы дэгдээхэй	chicken
+тагтаа	pigeon
+тогоруу	crane
+тоншуул	woodpecker
+тоть	parrot
+хараацай	swallow
+хөхөө	cuckoo
+хун	swan
+хэрээ	crow
+шаазгай	magpie
+шар шувуу	owl
+шонхор	falcon
+цацагт хяруул	turkey
+элээ/тас	vulture
+ятуу	grouse
+дэс тоо	ordinal numbers
+дүрс	shapes
+долоон енцөгт	heptagon
+зургаан өнцөгт	hexagon
+зууван	oval
+конус	cone
+куб	cube
+мушгиа	spiral
+найман өнцөгт	octagon
+өнцөг	angle
+пирамид	pyramid
+таван өнцөгт	pentagon
+тэгш өнцөгт	rectangle
+хүний бие	parts of the body
+алга	palm
+ам	mouth
+бугуй	wrist
+булчин	calf
+гарын сарвуу	hand
+гуя	thigh
+гэдэс	stomach
+магнай/дух	forehead
+мэнгэ	birthmark
+нуруу	back/spine
+нүд	eye
+өвдөг	knee
+өгзөг	buttocks
+өсгий	heel
+сормуус	eyelash
+суга	armpit
+ташаа	hip
+тохой	elbow
+уруул	lip
+хацар	cheek
+хөлийн тавхай	foot
+хөмсөг	eye brow
+хелийн хуруу	toe
+хумс	finger nail
+хүй	navel
+цээж	chest
+чих	ear
+шагай	ankle
+эрүү	chin
+эрхий хуруу	thumb
+яс	bone
+эдлэлийн	jewelry store
+бичгийн хэрэгслийн	stationary
+гутлын дэлгүүр	shoe store
+зоогийн газар	restaurant
+их дэлгүүр	department store
+ломбард	pawn shop
+номындэлгүүр	book store
+ногооны мухлаг	vegetable stand
+сонины мухлаг	newsstand
+спортын барааны	sporting goods store
+талхны	bakery
+тасаг	department
+тооцоо	bill
+уран зургийн	art gallery
+үйлчилгээний төв	service center
+хариулт мөнгө	change
+хивсний дэлгүүр	carpet store
+хувцасны дэлгүүр	clothing store
+худалдааны төв	shopping center
+хөгжмийн дэлгүүр	music store
+хүнсний дэлгүүр	grocery store
+хүнсний зах	supermarket
+цайны газар	cafeteria
+эмийн сан	drugstore
+суурин	town
+автобус	bus
+автобусны буудал	bus stop
+авто зогсоол	parking lot
+амьтны хүрээлэн	zoo
+барилга	building
+байр.сууц	apartment
+гудамж	street
+дүүрэг	district
+кино	movie/film
+кино театр	cinema
+концерт	concert
+музей	museum
+өргөн чөлөө	avenue
+сүм	church
+театр	theater
+усан сан	swimming pool
+үзэсгэлэн	exhibition
+үйлдвэр	factory
+хот	n. city, town
+хороолол	micro district
+хүн ам	population
+цэнгэлдэх хүрээлэн	stadium
+цагдаагийн газар	police station
+цирк	circus
+шөнийн клуб	night club
+шуудан	post office
+эмнэлэг	hospital
+эрүүл мэндийн төв	health center
+спорт ба тоглоом	sports and games
+аварга	champion
+алхалт	jogging
+ан агнуур	hunting
+бильярд	billiards
+боулинг	bowling
+бокс	boxing
+бөхийн барилдаан	wrestling
+гар бөмбөг	volleyball
+гимнастик	gymnastics
+гүйлт	running
+дасгалжуулагч	trainer
+дугуй уналт	bicycling
+морь уналт	horse riding
+өрселдөгч	competitor
+поло	polo
+сагсан бөмбөг	basketball
+сур/байт сур	archery
+теннис	tennis
+тэмцээн	competition
+усан сэлэлт	swimming
+хожигдогч	loser
+хоккей	hockey
+хөл бөмбөг	football
+хүндийн өргөлт	weight lifting
+цанын спорт	skiing
+цом	cup
+шатар	chess
+ширээний теннис	ping pong
+эмээл	saddle
+ялагч	winner
+ажил алба	jobs and work
+аж ахуйн эзэн	farmer
+багш	teacher
+бие хамгаалагч	bodyguard
+бизнесмен	businessman
+бичээч	typist
+бүжигчин	dancer
+гал сөнөөгч	fireman
+гоо сайханч	beautician
+гэрийн багш	tutor
+дуучин	singer
+жолооч	driver
+жүжигчин	actor/actress
+зохиолч	writer
+зураач	artist
+илбэчин	magician
+инженер	engineer
+касс	cashier
+менежер	manager
+механик	mechanic
+мөрдөгч	detective
+мужаан	carpenter
+ня-бо	accountant
+орчуулагч	translator
+сэтгүүлч	journalist
+талхчин	baker
+цагдаа	policeman
+уих-ын гишүүн	parliament
+үсчин	barber
+хаалгач	doorman
+харваач	archer
+хөлсний ажилчин	wage worker
+хуульч	lawyer
+цэвэрлэгч	cleaner
+шууданч	postman
+шүдний эмч	dentist
+шүүгч	judge
+эмч	doctor
+худалдаа/наймаа	business
+албан татвар	tax
+баланс тэнцэтгэл	balance
+барьцаа.зээл	mortgage
+бэлэн мөнгө	cash
+гэрээ, хэлцэл	contract
+данс тооцоо	account
+жилийн тайлан	annual report
+зээл	credit
+орлого	income
+өртөг шан	fee
+өр төлбөр	debt
+санхүү-н шалгалт	audit
+сонирхол	interest
+түрээс	rent
+удирдлага	management
+үнэт цаас	bond
+үнэ өртөг	cost
+хандив	donation
+хөрөнгө	capital
+хөдөлмөрийн  гэрээ	labor contract
+хөрөнгө оруулалт	investment
+худалдаа	commercial
+хувь ноогдол	quota
+хувьцаа	stock
+хувьцааны ноогдол	value
+хүү.хувь	profit
+цалингийн цэс	payroll
+цалин хөлс	wage/salary
+цуцлалт	write off
+эдийн засаг	economy
+эд юмс ба багаж	tools
+алх	hammer
+амны алчуур	napkin
+бахь	pliers
+бугуйвч	bracelet
+бугуйн цаг	watch
+гар цүнх	handbag
+зангианы хавчаар	tie tack/clip
+зүү	needle
+зээлийнкарт	credit card
+нимгэн цаас	tissues
+нусны алчуур	handkerchief
+нүдний шил	eyeglasses
+сам	comb/brush
+сойз	toothbrush
+сүх	axe
+тооны машин	calculator
+түлхүүрийн оосор	key chain
+түрийвч	wallet
+үдээсний машин	stapler
+үсний хавчаар	hairpin
+хадаас	nail
+хайч	scissors
+хаягийн ном	address book
+хөзөр	deck of cards
+хөрөө	saw
+хуруувч	thimble
+хүзүүний зүүлт	necklace
+цаасны хавчаар	paper clips
+цүнх	briefcase
+шүхэр	umbrella
+ээмэг	earrings
+үйл үгс	verbs
+айх	to be afraid
+аялах	to travel
+барих/барилга/	to build
+барьж авах	to catch
+бодох	to think
+болох/байх	to be
+бороо орох	to rain
+будах	to paint
+буцалгах	to boil
+бүжиглэх	to dance
+гайхах	to be surprised
+гэрлэх	to be married
+дуу гаргах	to sound
+дуртай	to like
+дуусах	to finish
+жолоодох	to drive
+завгүй байх	to be busy
+завтай байх	to be free
+зажлах	to chew
+зарцуулах/өнгөрөөх	to spend
+зогсох	to stand
+зочлох	to visit
+зөв бичих	to spell
+зурах	to draw
+идэх	to eat
+инээх	to smile
+итгэх	to believe
+мартах	to forget
+мөлхөх	to climb
+мөнгө олох	to earn
+наах	to stick
+нисэх	to fly
+оёх	to sew
+ойлгох	to understand
+онгойлгох	to open
+орилох	to shout
+орчуулах	to translate
+өвдөх	to be sick
+өлсөх	to be hungry
+өмсөх/зүүх	to wear
+сайжруулах	to improve
+санах	to remember
+солих	to change
+сэлэх	to swim
+сэрэх	to wake up
+таалах	to enjoy
+тайлах	to take off
+талархах	to be glad
+товч тайлах	to unbutton
+тоолох	to count
+түрүүлэх	to win
+тэвчих	to endure
+тэжээх	to feed
+тэмдэглэх	to celebrate
+угаах	to wash
+уйлах	to cry
+унших	to read
+урих	to invite
+усанд орох	to bathe
+утсаар ярих	to call
+уулзах	to meet
+уурлах	to get angry
+үзэх	to see
+үнэрлэх	to smell
+хаах	to close
+хагалах(мод)	to chop (wood)
+хазах	to bite
+хаях/шидэх	to throw
+хоол хийх	to cook
+хоцрох	to be late
+хөлрөх	to sweat
+хөдлөх	to move
+хөхрөх	to laugh
+хувилах	to copy
+худалдах	to sell
+хүсэх	to want
+хүрч ирэх	to arrive
+хэвтэх	to lie
+хэрэглэх	to use
+хэрчих	to cut
+хэрэгтэй байх	to need
+цадах	to get full
+цангах	to be thirsty
+цас орох	to snow
+цахилгаан татах	to zipper
+цоожлох	to lock
+чадах	to be able
+чанах	to brew
+шумбах	to dive
+эвдэх.хагалах	to break
+эргэх	to turn
+эрэх/хайх	to look for
+ядрах	to tire
+ярих	to speak
+ярилцах	to talk
+тэмдэг нэр	adjectives
+алтан	gold
+амархан	easy
+анхны	first
+бага зэрэг	a little bit
+бороотой	rainy
+бохир	dirty
+буржгар	curly
+бүдүүн	thick
+бүрхэг	overcast
+гоолиг	slender
+гоё	beautiful
+дундуур	half full
+дүүрэн	full
+жаахан	a little
+залхуу	lazy
+зөвхөн	only
+илүү сайн	better
+инээдтэй	funny
+муухай	ugly
+намхан	short
+нартай	sunny
+нил ягаан	violet/purple
+өвчтэй	sick
+өтгөн	strong
+салхитай	windy
+тарган	fat
+тоостой	dusty
+тэнэг	stupid
+тэгш	flat
+ухаантай	clever
+үнэтэй	expensive
+халтиргаатай	slippery
+хамгийн муу	worst
+хөгшин	old
+хуурай	dry
+хүрэн	brown
+хэцүү	difficult
+хямдхан	cheap
+цайвар шаргал	beige
+цастай	snowy
+цөөхен	few
+шаргал	orange
+шингэн/сул	weak
+эвдэрхий	broken
+ягаан	pink/rose
+асуух үг	question words
+аль	which
+хаашаа	where to
+хаанаас	where from
+хэзээ	when
+хэнд	to whom
+хэний	whose
+хэр их	how much
+хэр олон	how often
+юу	what
+юунд	to what
+яаж	how
+үлдээх	v. to void, omit
+асах	v. to ignite
+тэртээ	prep. beyond
+нийлэх	v. to unite
+очих	v. to visit
+хашхиралдах	v. to yell
+хашгиралдах	v. to yell
+гаргах	v. to launch
+гялайлаа	thank you
+цааш	adj. farther
+хойно	adj. then, after, behind
+харлах	v. to feel sick or faint, to darken
+мичид	n. evening star
+гэрэлтэх	v. to shine
+чичрэх	v. to shake
+элгэн	adj. chesnut,maroon
+цав	n. fissure, slit
+цалин	n. salary
+хазаар	n. bridle, bit
+торгон	n. silk
+давхих	v. to gallop
+үүр	n. dawn
+цайх	v. to dawn
+хожуул	n. stump,stub
+бут	n. bush
+арай	adj. near
+ядах	v. to have difficulty
+арай ядан	adj. barely, hardly
+шүүдэр	n. dew
+бүрхэх	v. to cover
+хөрөх	v. to freeze
+хөших	v. to become numb, stiff
+ухаа	adj. reddish
+хонгор	adj. lovable
+мандах	v. to rise
+ээх	v. to warm
+дулаацуулах	v. to heat up
+хяруу	n. white frost
+хатаах	v. to dry
+өдөржингөө	adv. all day long
+аглаг	n. solitude
+тойруулах	v. to encircle, get around
+гавал	n. skull
+цүү	n. spike
+балмагдах	v. to be afraid
+хөшөө	n. monument, memorial
+мэт	adj. somewhat
+шингэх	v. to be absorbed, soaked, set
+дээрх	prep. above
+гэгээ	n. daylight, glow
+дагжих	v. cower, shake
+чичирсэн	adj. shivery, tremulous
+аймшиг	n. awe, fear
+зугтах	v. to avoid, flee
+шигдэх	v. to sag, sink
+доргих	v. to chatter, jiggle, vibrate
+сүр	n. grandeur, majesty
+чимээ	n. clamour, news, noise, word
+бол	and, are, hold
+суугаа	n. resident
+нүдүүр	n. beater, pounder
+шүүрдэх	v. to sweep, whisk
+ирмэг	n. border, edge
+дөхөх	v. to approach
+доор	prep. below, beneath
+бөхийх	v. to bend, bow
+дор	prep. downstairs, under
+даруу	adj. decent, humble, lowly
+ир	n. blade, edge, spike
+явуулах	v. despatch, send
+хамаатан	n. kin, relative
+цүг	adj. together
+олдох	v. to be available
+гэсэх	v. defrost
+бат	adj. firm, steady
+бөх	adj. firmness, strong
+онгойх	v. to open
+баялаг	n. abundance, exuberance, gold
+үүд	n. gate, portal
+нээгдэх	v. to open
+хашгирах	v. exclaim, shout
+урах	v. to germinate,grow
+гуядах	v. flog
+завдах	v. to intend, manage
+хус	n. boy
+орчих	v. spin, wheel
+үүн	pron. it
+бүү	no
+шавхуурдах	v. flog, smack
+дагуулах	v. append, guide
+болиулах	v. cease, suspend
+дэргэд	prep. beside, near
+ухасхийх	v. recoil
+хахир	adj. rugged, stern
+над	pron. me
+амар	n. rest, peaceful
+маажих	v. to scratch
+вандан	n. board, bench
+хувин	adj. pitcher, bucket
+дэгдээх	v. to stir up
+дөчин	adj. forty years
+аяга	n.	cup
+дэгдээхий	adj. fledgling
+нугас	n. duck, brain
+боов	n. bun,turnover
+амтат	adj. sweet
+бал	n. noun
+хөөсрөх	v. to foam, froth
+исгэлэн	adj. eager, sour
+хэм	n. degree, measure
+цөм	n. core, nucleus
+булан	n. anger, angle, nook
+шуудай	n. bag, sack
+ялгаа	n. departure, discrepancy, difference
+биелүүлэх	v. to fulfill
+дүнгэнэх	v. to buzz, drone
+хурхирах	v. to snore
+эдлэх	v. to consume, taste
+алба	n. employment
+хариу	n. answer
+гуних	v. to grieve
+сэргэлэн	adj. alive, animated
+тайван	adj. calm, composed
+аргадах	v. appease, coax
+дөнгөх	v. to barely do something
+шувуухай	n. small bird
+цэнхэр	adj. azure, blue
+бүгдээрээ	adj. all
+нашаа	adv. here
+саатах	v. to linger, overstay
+үй түмэн	n. multitude
+дуугарах	v. clang, clatter
+үр	n. kernel, seed
+мөхлөг	n. grain, granule
+тийш	prep. toward
+үртэс	n. chip, crumb
+ялгах	v. determine, differentiate, segregate, identify
+олз	n. loot, plunder
+омог	n. capture, pride, stem, kindred
+намуу	n. poppy
+цэцгийн	adj. floral
+холилдох	v. to blend, jumble
+бүгд	n. everybody, everyone
+салгах	v. to deliver, detatch, disengage
+гадаа	adj. outside
+хангинах	v. blare, clang, jingle
+шүгэлдэх	v. hiss, whistle
+одоо	adv. now

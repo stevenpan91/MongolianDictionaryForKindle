@@ -5,3 +5,5 @@ adjective adj.
 preposition prep.
 adverb adv.
 article art.
+interjection interj.
+conjunction conjunc.
