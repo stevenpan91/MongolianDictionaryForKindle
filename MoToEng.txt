@@ -177,7 +177,7 @@
 дөрвөн	four
 хооронд	between
 улсын	state
-байлгах	keep
+байлгах	keep, carry, retain
 нүдний	eye
 хэзээ ч	never
 өнгөрсөн	last,past
@@ -1063,7 +1063,8 @@
 шанага	ladle
 шүүр	strainer,broom
 шарах шүүгээ	oven
-агуулах/эоорь	storage
+агуулах	storage
+эоорь	storage
 алчуур	towel
 аяганы шүүгээ	cupboard
 буйдан	sofa
@@ -1073,7 +1074,8 @@
 граш	garage
 зурагт	television/tv
 дэр	pillow
-дээвэр/тааз	ceiling
+дээвэр	ceiling
+тааз	ceiling
 жорлон	toilet
 зочны өрөө	living room
 зөөлөн сандал	armchair
@@ -1128,7 +1130,8 @@ yraaryyp	sink
 пиджак	blazer
 пүүз	sneakers/running shoes
 татуурга	suspenders
-тирко/шилэн оймс	nylons/tights
+тирко оймс	nylons/tights
+шилэн оймс	nylons/tights
 туфль	high heel shoes
 тэлээ. бүс	belt
 унтлаганы хувцас	night gown
@@ -1144,17 +1147,23 @@ yraaryyp	sink
 шуба	fur coat
 юбка	skirt
 ax	brother
-ач/зээ охин	niece
-ач/зээ хүү	nephew
-авга/нагац ах	uncle
-бэр эгч/дүү	sister in law
-нагац/авга эгч	aunt
+ач охин	niece
+зээ охин	niece
+ач хүү	nephew
+зээ хүү	nephew
+авга ах	uncle
+нагац ах	uncle
+бэр эгч	sister in law
+бэр дүү	sister in law
+нагац эгч	aunt
+авга эгч	aunt
 насанд хүрсэн хүн	adult
 нөхөр	husband
 өвөө	grandfather
 үеэл	cousin
 хамаатан садан	relatives
-хүргэн ах/дүү	brother in law
+хүргэн ах	brother in law
+хүргэн дүү	brother in law
 эмэгтэй хүн	woman
 эмэгтэй хүүхэд	girl
 эмээ	grandmother
@@ -1262,7 +1271,8 @@ cap	month
 жоом	cockroach
 бясаа	bug
 зөгий	bee
-хачиг/хувалз	tick
+хачиг	tick
+хувалз	tick
 царцаа	grasshopper
 шоргоолж	ant
 цох хорхой	ladybug
@@ -1284,7 +1294,8 @@ cap	month
 шар шувуу	owl
 шонхор	falcon
 цацагт хяруул	turkey
-элээ/тас	vulture
+элээ	vulture
+тас	vulture
 ятуу	grouse
 дэс тоо	ordinal numbers
 дүрс	shapes
@@ -1307,7 +1318,8 @@ cap	month
 гарын сарвуу	hand
 гуя	thigh
 гэдэс	stomach
-магнай/дух	forehead
+магнай	forehead
+дух	forehead
 мэнгэ	birthmark
 нуруу	back/spine
 нүд	eye
@@ -1401,7 +1413,8 @@ cap	month
 өрселдөгч	competitor
 поло	polo
 сагсан бөмбөг	basketball
-сур/байт сур	archery
+сур	archery
+байт сур	archery
 теннис	tennis
 тэмцээн	competition
 усан сэлэлт	swimming
@@ -1453,7 +1466,8 @@ cap	month
 шүдний эмч	dentist
 шүүгч	judge
 эмч	doctor
-худалдаа/наймаа	business
+худалдаа	business
+наймаа	business
 албан татвар	tax
 баланс тэнцэтгэл	balance
 барьцаа.зээл	mortgage
@@ -1519,10 +1533,12 @@ cap	month
 үйл үгс	verbs
 айх	to be afraid
 аялах	to travel
-барих/барилга/	to build
+барих	to build
+барилга	to build
 барьж авах	to catch
 бодох	to think
-болох/байх	to be
+болох	to be
+байх	to be
 бороо орох	to rain
 будах	to paint
 буцалгах	to boil
@@ -1536,7 +1552,8 @@ cap	month
 завгүй байх	to be busy
 завтай байх	to be free
 зажлах	to chew
-зарцуулах/өнгөрөөх	to spend
+зарцуулах	to spend
+өнгөрөөх	to spend
 зогсох	to stand
 зочлох	to visit
 зөв бичих	to spell
@@ -1556,7 +1573,8 @@ cap	month
 орчуулах	to translate
 өвдөх	to be sick
 өлсөх	to be hungry
-өмсөх/зүүх	to wear
+өмсөх	to wear
+зүүх	to wear
 сайжруулах	to improve
 санах	to remember
 солих	to change
@@ -1584,7 +1602,8 @@ cap	month
 хаах	to close
 хагалах(мод)	to chop (wood)
 хазах	to bite
-хаях/шидэх	to throw
+хаях	to throw
+шидэх	to throw
 хоол хийх	to cook
 хоцрох	to be late
 хөлрөх	to sweat
@@ -1608,7 +1627,8 @@ cap	month
 шумбах	to dive
 эвдэх.хагалах	to break
 эргэх	to turn
-эрэх/хайх	to look for
+эрэх	to look for
+хайх	to look for
 ядрах	to tire
 ярих	to speak
 ярилцах	to talk
@@ -1655,7 +1675,8 @@ cap	month
 цастай	snowy
 цөөхен	few
 шаргал	orange
-шингэн/сул	weak
+шингэн	weak
+сул	weak
 эвдэрхий	broken
 ягаан	pink/rose
 асуух үг	question words
@@ -1818,3 +1839,85 @@ cap	month
 хангинах	v. blare, clang, jingle
 шүгэлдэх	v. hiss, whistle
 одоо	adv. now
+уур	n. anger, wrath, vapor
+шүүрэх	v. to grab, percolate, leak, grasp
+цангинуулах	v. to shout in a shrill voice
+алс	adj. far
+амбаар	n. barn
+сав	n. can, container, vase, uterus
+айл	n. family
+оготно	n. mouse
+нааш	adv. this way
+шуудайлах	v. to put in a bag
+аяга	n. cup, bowl
+цаагуур	adv. further, other side
+шажигнах	v. creak, grate, sputter
+навчис	n. leaf
+шаржигнах	v. sizzle
+пийшин	n. cooker, furnace
+чих	n. ear, dock
+чагнах	v. listen, monitor
+дуулах	v. chant, crow
+дуулдах	v. arise, carry
+тавиур	n. leg, mat, stand
+тавхай	n. foot, sole
+хучих	v. envelop, inlay, tuck
+дайлах	v. entertain, treat
+энхрий	adj. affectionate, beloved, gentle
+салах	v. conquer, divide, separate
+амин	adj. crucial, essential, important
+тод	adj. articulate, bold, bright
+түлэх	v. burn, scald, sear
+халаах	v. scorch, warm, heat
+тус	v. profit, boost, help
+хүргэх	v. bring, deliver, extend, touch
+бэлэглэх	v. donate, give, present
+шунаг	adj. lascivious
+ул	n. relic, sole
+зугтаах	v. abscond
+эрс	adj. categorical, overwhelming
+харайх	v. bounce, dance, jump
+ороолгох	v. flog
+мөчир	n. branch, graft, twig
+өнгийн	adj. chromo-
+тууз	n. band, ribbon
+өлгөх	v. hang, suspend, dangle
+хаагдах	v. shut
+тос	n. fat, grease, oil
+түрхэх	v. dab, paint, smear
+сохлох	adj. blind
+сугалах	v. draw, extract, pull
+суулгах	v. install, diarrhea, embed
+зүг	n. direction, way
+сэдэх	v. brew, invent, plan, contrive
+ёс	n. ceremony, procedure
+эрхэмлэх	v. prefer, preference
+дээдлэх	v. prefer
+уламжлал	v.tradition, legacy
+соёл	n. culture
+заншил	n. custom, habit, ritual
+багаар	adj. less
+алдагдал	n. detriment, disadvantage, loss 
+суртахуун	n. morals, ethics
+доройтох	v. languish, fall
+буй	adj. existing
+өнөө	adv. now, today
+залуусын	adj. junior
+санаачлах	v. to initiate, dream up, invent
+дээшлүүлэх	v. to upgrade
+энэхүү	n. the present
+уралдаан	n. race, match
+зорилго	n. point, purpose
+орших	v. to exist
+цацарч	n. marquee
+суниах	v. to go
+биеийн	adj. personal, bodily
+чилэх	v. to go numb
+өрөөнд	adj. indoors
+зүтгэх	v. to endeavor, to seek
+өгөө	n. obligation
+гүйн	adv. hurriedly
+дураараа	adj. willful, contrary, unsubmissive
+хичнээн	how many
+хэлтэрхий	n. chip, morsel, fragment
+чангаар	adj. loud, high

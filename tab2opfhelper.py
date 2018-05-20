@@ -313,7 +313,11 @@ def writekey(to, key, defn):
         # else:
         #     vowelharmony='a'
 
-        
+		#plurals
+        if(vowelharmony=='а' or vowelharmony=='у' or vowelharmony=='о'):
+            buildsourceword=buildsourceword+makeinflection(term[:-1]+"ууд")
+        else:
+            buildsourceword=buildsourceword+makeinflection(term[:-1]+"үүд")
 
         #if consonant
         if(not isMNVowel(lastletter) and len(term)>1):
