@@ -268,7 +268,7 @@ def makeinflection(word,capitalizeYN=True, negativeYN=False):
     if(capitalizeYN):
         retval=retval+"<idx:infl><idx:iform value=\""+capitalize(word)+"\"/></idx:infl>"
     if(negativeYN):
-        retval="<idx:infl><idx:iform value=\""+word+"гүй\"/></idx:infl>"
+        retval=retval+"<idx:infl><idx:iform value=\""+word+"гүй\"/></idx:infl>"
         if(capitalizeYN):
             retval=retval+"<idx:infl><idx:iform value=\""+capitalize(word)+"гүй\"/></idx:infl>"
     return retval
@@ -399,41 +399,63 @@ def writekey(to, key, defn):
                 if(len(term)>2 and (term[-3]=="г" or term[-3]=="в" or term[-3]=="р")):
                     buildsourceword=buildsourceword+makeinflection(term[:-2]+"ч")
 				
-                #narrative past
+                
                 if(len(term)>2):
+                    #narrative past
                     buildsourceword=buildsourceword+makeinflection(term[:-2]+"жээ")
-                    buildsourceword=buildsourceword+makeinflection(term[:-1]+"жээ")
                     buildsourceword=buildsourceword+makeinflection(term[:-2]+"чээ")
-                    buildsourceword=buildsourceword+makeinflection(term[:-1]+"чээ")
+
+                    #complete action
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"чих",negativeYN=True)
+
+                    #past tense
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"с"+vowelharmony+"н",negativeYN=True)
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"с"+vowelharmony+"н"+vowelharmony+vowelharmony,negativeYN=True)
+
+                    #future tense
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"н"+vowelharmony)
+
+                    #perpetual
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"д"+vowelharmony+"г",negativeYN=True)
+
+                    #recent past
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"л"+vowelharmony+vowelharmony)
+
+                    #intent
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"м"+vowelharmony+vowelharmony+"р")
+
+                    #imperative
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+\
+                                vowelharmony+vowelharmony+"р"+vowelharmony+"й")
+                    
+
+                #narrative past
+                buildsourceword=buildsourceword+makeinflection(term[:-1]+"жээ")
+                buildsourceword=buildsourceword+makeinflection(term[:-1]+"чээ")
+
+                #complete action
+                buildsourceword=buildsourceword+makeinflection(term[:-1]+"чих",negativeYN=True)
 
                 #past tense
-                buildsourceword=buildsourceword+makeinflection(term[:-2]+"с"+vowelharmony+"н",negativeYN=True)
                 buildsourceword=buildsourceword+makeinflection(term[:-1]+"с"+vowelharmony+"н",negativeYN=True)
-                buildsourceword=buildsourceword+makeinflection(term[:-2]+"с"+vowelharmony+"н"+vowelharmony+vowelharmony,negativeYN=True)
                 buildsourceword=buildsourceword+makeinflection(term[:-1]+"с"+vowelharmony+"н"+vowelharmony+vowelharmony,negativeYN=True)
 
                 #future tense
-                buildsourceword=buildsourceword+makeinflection(term[:-2]+"н"+vowelharmony)
                 buildsourceword=buildsourceword+makeinflection(term[:-1]+"н"+vowelharmony)
 
                 #perpetual
-                buildsourceword=buildsourceword+makeinflection(term[:-2]+"д"+vowelharmony+"г")
                 buildsourceword=buildsourceword+makeinflection(term[:-1]+"д"+vowelharmony+"г")
 
                 #recent past
-                buildsourceword=buildsourceword+makeinflection(term[:-2]+"л"+vowelharmony+vowelharmony)
                 buildsourceword=buildsourceword+makeinflection(term[:-1]+"л"+vowelharmony+vowelharmony)
 
                 #intent
-                buildsourceword=buildsourceword+makeinflection(term[:-2]+"м"+vowelharmony+vowelharmony+"р")
                 buildsourceword=buildsourceword+makeinflection(term[:-1]+"м"+vowelharmony+vowelharmony+"р")
 
 				#action happens before main action
                 buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"д")
                 
-                #imperative
-                buildsourceword=buildsourceword+makeinflection(term[:-2]+\
-                                vowelharmony+vowelharmony+"р"+vowelharmony+"й")
+                
 
                 #Let's ___
                 if(isMNVowel(term[-2])):
@@ -448,6 +470,8 @@ def writekey(to, key, defn):
                         buildsourceword=buildsourceword+makeinflection(term[:-1]+"ъё")
         #ends in vowel
         else:
+            
+            buildsourceword=buildsourceword+makeinflection(term+"ч")
 
 			#ablative case (from <term>)
             buildsourceword=buildsourceword+makeinflection(term+"н"+vowelharmony+vowelharmony+"с")

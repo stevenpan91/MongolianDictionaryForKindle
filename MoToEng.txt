@@ -933,7 +933,7 @@
 нэхэх	v. to weave, chase
 нөгөө	adj. other
 оймс	n. footgear, stockings,socks
-ээрэх	v. to falter, hesitate
+ээрэх	v. to falter, hesitate, to spin
 оноох	v. to appoint, impose, mete
 тэгээд	adv. then
 охид	n. girl, sister
@@ -1961,3 +1961,39 @@ cap	month
 торго	n. silk
 гоёмсог	adj. elegant, delicate
 сүвлэх	n. thread
+алдах	v. lose,fail, mistake
+зарах	v. sell, exert
+ордон	n. castle, palace
+аваачих	v. to take away
+үнэлэх	v. apprise, price, measure
+бэлэг	n. donation, gift, grant
+сайшаагдах	v. approve
+талархах	v. acknowledge, thank
+зүрхлэх	v. dare, presume
+тун	adv. absolutely, greatly, very
+чиг	n. landmark
+эвдэх	v. breach, trample
+вий	conj. lest
+эсгэх	v. to cut off
+айх	v. to recoil
+ийм	adj. such
+хийц	n. fabric, cloth
+оёо	n. stitch
+тэгвэл	conj. when...,if...
+тушаах	v. to submit, surrender, order
+сувд	n. pearl
+зарц	n. servant
+үзэгдэх	v. to appear
+өдрөөс	from day
+хойш	adj. next, hence
+цагаахан	adj. white
+өөрийнхөө	pron. my
+удалгүй	adj. soon
+хурим	n. wedding
+ая	n. situation, condition, sound
+тусч	adj. helping
+хөөрхөн	adj. cute, nice
+халаас	n. pocket
+эрхэм	adj. important, master
+зочид	n. guests
+золгох	v. to meet
