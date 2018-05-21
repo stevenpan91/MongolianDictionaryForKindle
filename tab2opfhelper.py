@@ -263,10 +263,14 @@ def capitalize(word):
     
     return word
 
-def makeinflection(word,capitalizeYN=True):
+def makeinflection(word,capitalizeYN=True, negativeYN=False):
     retval="<idx:infl><idx:iform value=\""+word+"\"/></idx:infl>"
     if(capitalizeYN):
         retval=retval+"<idx:infl><idx:iform value=\""+capitalize(word)+"\"/></idx:infl>"
+    if(negativeYN):
+        retval="<idx:infl><idx:iform value=\""+word+"гүй\"/></idx:infl>"
+        if(capitalizeYN):
+            retval=retval+"<idx:infl><idx:iform value=\""+capitalize(word)+"гүй\"/></idx:infl>"
     return retval
 
 def getvowelharmonyletter(word):
@@ -303,7 +307,7 @@ def writekey(to, key, defn):
 
         #capitalize
         #print(term)
-        buildsourceword=buildsourceword+makeinflection(capitalize(term),False)
+        buildsourceword=buildsourceword+makeinflection(capitalize(term),capitalizeYN=False)
 
 		
 
@@ -329,7 +333,7 @@ def writekey(to, key, defn):
             buildsourceword=buildsourceword+makeinflection(term+vowelharmony+vowelharmony+"с")
 
             #instrumental case
-            buildsourceword=buildsourceword+makeinflection(term+vowelharmony+vowelharmony+"р")
+            buildsourceword=buildsourceword+makeinflection(term+vowelharmony+vowelharmony+"р",negativeYN=True)
 
             #genitive case + accusitive case
             if(lastletter=="ж" or lastletter=="ч" or lastletter=="г" or lastletter=="ш" or lastletter=="ь" or lastletter=="к"):
@@ -403,10 +407,10 @@ def writekey(to, key, defn):
                     buildsourceword=buildsourceword+makeinflection(term[:-1]+"чээ")
 
                 #past tense
-                buildsourceword=buildsourceword+makeinflection(term[:-2]+"с"+vowelharmony+"н")
-                buildsourceword=buildsourceword+makeinflection(term[:-1]+"с"+vowelharmony+"н")
-                buildsourceword=buildsourceword+makeinflection(term[:-2]+"с"+vowelharmony+"н"+vowelharmony+vowelharmony)
-                buildsourceword=buildsourceword+makeinflection(term[:-1]+"с"+vowelharmony+"н"+vowelharmony+vowelharmony)
+                buildsourceword=buildsourceword+makeinflection(term[:-2]+"с"+vowelharmony+"н",negativeYN=True)
+                buildsourceword=buildsourceword+makeinflection(term[:-1]+"с"+vowelharmony+"н",negativeYN=True)
+                buildsourceword=buildsourceword+makeinflection(term[:-2]+"с"+vowelharmony+"н"+vowelharmony+vowelharmony,negativeYN=True)
+                buildsourceword=buildsourceword+makeinflection(term[:-1]+"с"+vowelharmony+"н"+vowelharmony+vowelharmony,negativeYN=True)
 
                 #future tense
                 buildsourceword=buildsourceword+makeinflection(term[:-2]+"н"+vowelharmony)
