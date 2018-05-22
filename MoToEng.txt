@@ -1562,7 +1562,7 @@ cap	month
 инээх	to smile
 итгэх	to believe
 мартах	to forget
-мөлхөх	to climb
+мөлхөх	to climb, crawl, creep
 мөнгө олох	to earn
 наах	to stick
 нисэх	to fly
@@ -1997,3 +1997,44 @@ cap	month
 эрхэм	adj. important, master
 зочид	n. guests
 золгох	v. to meet
+дархан	n. artisan, craftsman
+хулгай	n. robbery, theft
+харуул	n. convoy, escort, guard
+манаа	n. guard, patrol, sentinel
+болих	v. quit, discontinue
+уруу	adj. downhill, downstream, downcast
+царай	n. expression, look
+гуниглах	n. regret
+тайтгаруулах	v. appease, calm, console
+хөвгүүдийн	adj. boyish
+гутрах	v. gloom, droop
+өөрсдөө	pron. themselves
+манах	v. to guard, patrol
+онцолсон	adj. emphatic
+өвсөн	adj. grassy
+зүүрмэглэх	v. nap, snooze
+хонох	v. sleep, stay over
+баярлуулах	v. indulge
+эд	n. stuff, thing
+нойр	n. dream, slumber
+өвс	n. grass, hay, pasture
+бүүр	adv. already
+модон	adj. wooden
+тонших	v. knock, peck
+гэтэх	v. creep, sneak, prowl
+өд	n. feather, pinion
+одох	v. depart
+гэмтэн	n. guilt, wrongdoing
+хүндэт	adj. dear, honorable
+амьтан	n. animal
+мултрах	v. to slip away
+баярлах	v. appreciate, rejoice, thank
+мориор	n. riding
+мордох	v. to ride
+туулах	v. confront, pass, conquer
+нутгийн	adj. native
+буун	n. shot, discharge, report
+чөдөрлөх	v. clog, fetter
+унтаа	adj. dormant
+баах	v. defecate
+мөлжих	v. gnaw, milk, exploit
