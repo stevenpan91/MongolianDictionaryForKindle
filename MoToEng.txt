@@ -2038,3 +2038,56 @@ cap	month
 унтаа	adj. dormant
 баах	v. defecate
 мөлжих	v. gnaw, milk, exploit
+унаа	n. movement, transportation
+халаглах	n. tut
+заяа	n. luck
+явган	adj. by foot, pedestrian
+үхтлээ	adj. dead
+зүлгэх	v. swab, brighten
+өрөвдөх	v. pity, sympathize
+зориг	n. confidence, daring, nerve
+чонын	adj. like a wolf
+шүргэх	v. contact, kiss, rub
+хурдлах	v. race, lick
+торон	adj. lacy, meshy
+давах	v. confront, conquer, outdo
+өвөр	adj. front, inside
+цайз	n. castle, fortress
+үлээх	v. inflate, puff, gas
+хэц	n. tambourine
+бөмбөр	n. drum
+дэлдэн	adj. lop eared
+сэрээх	v. awaken, rouse
+ичгүүр	n. disgrace, humiliation
+эцгийн	adj. paternal
+хүндлэх	v. honor, regard,respect
+шившиг	adj. disgrace, dishonor
+даяар	adv. all over, throughout
+зарлах	v. advertise, announce
+дуугүй	adj. noiseless, silent
+өршөөх	v. excuse, pardon, forgive
+дэл	n. mane
+гунихрах	v. to grieve
+гуйх	v. beg, ask
+суу	adj. genius
+жүчээ	n. stall
+орон	n. house, nation, situation
+чулуун	adj. stony
+шигтгээ	adj. inlaid
+санагдах	v. appear, seem
+гүнж	n. princess
+асрагч	n. guardian, trustee
+шивэгчин	n. maidservant
+буцах	v. back, forswear, go, return
+гүйцэх	v. outpace
+олуул	n. flock
+зугаалах	v. journey, stroll
+дүүрэх	v. fill, pervade, swim
+утгах	v. shovel, ladle
+хөөх	v. chase away, eject
+тэгэхэд	conj. whereas
+хаа	n. whereabouts
+нуух	v. cloak, conceal
+хувирах	v. change, convert
+тонгорох	v. somersault, spill
+адил	n. analogy
