@@ -2115,3 +2115,41 @@ cap	month
 тохиролцох	v. arrange, bargain, concert
 айлгах	v. endanger, bluff, frighten, intimidate
 сүрдүүлэх	v. browbeat, intimidate
+зуурах	v. grip, deadlock
+билгийн	adj. fateful
+мөнхийн	adj. eternal, everlasting
+суллах	v. discharge, release
+тул	conj. because, on account of
+шарх	v. cut, wound
+аних	v. close
+эдгэрэх	v. recover
+сэргэх	v. awaken
+омгийн	adj. tribal
+алах	v. assassinate, kill
+тараах	v. carry, chase, dismiss
+өөртөө	pron. oneself
+аян	n. campaign, crusade, expidition
+тайтгарах	v. quieten
+жаргах	v. delight, pleasure
+дүү	n. cousin
+элдэх	v. crumple
+элбэг	adj. bountiful, copious
+дэлбэг	adj. lavish, luxuriant
+агуулах	v. embody, store, reservoir
+арвай	n. barley
+бужигнах	v. to be muddled
+орчин	n. environment
+амжуулах	v. to manage in
+хичээх	v. to take care, struggle
+өмсүүлэх	v. to wear
+гялс	adv. passingly
+дуусгах	v. to finish
+мундаг	adj. huge
+аягүй	adj. unbecoming
+бараг	adj. A kind of ___,almost/nearly something____
+эртхэн	adjv. go without delay
+оруулах	v. to introduce, set up, go
+бэлдэх	v. to prepare
+хань	n. partner
+гайгүй	adj. not too bad
+таших	v. clap
