@@ -1698,7 +1698,7 @@ cap	month
 очих	v. to visit
 хашхиралдах	v. to yell
 хашгиралдах	v. to yell
-гаргах	v. to launch
+гаргах	v. to launch, issue
 гялайлаа	thank you
 цааш	adj. farther
 хойно	adj. then, after, behind
@@ -2184,3 +2184,43 @@ cap	month
 шидэт	n. wizard, fairy
 бүтээлгийг авах	v. uncover
 бүхэн	adj. each
+доошоо	prep. down
+гоо	adj. pretty
+амралт	n. vacation
+залгах	v. plug in
+бассейн	n. pool
+тэгэнгээ	conj. while
+уралдах	v. to race
+хаачих	v. where are you going
+ийш	adv. here
+бөөнөөрөө	adv. quickly
+захиалах	v. order
+хага	n. burst
+соруулах	v. suck
+холдох	v. to withdraw
+алив	phrase. let's
+онгоц	n. plane
+динозавр	n. dinosaur
+буух	v. get off
+цадтал	adv. to glut
+ундлах	v. offer food
+атаархах	v. envy
+бүлтийх	v. stare
+тэнд	adv. there
+манайх	n. house
+бүлэх	v. jab, stab
+бүтээлэг	n. blanket
+өрөг	n. game
+бий	v. have
+дэлгэх	v. display
+атаархах	v.envy
+улайх	v. confess, flush, redden
+цатгалан	adj. satiated
+элэгсэг	adj. loving
+үдэх	v. see off
+ижил	adj. same
+унд	n. dish, beverage
+цэмцийх	v. to become element
+бүтээл	n. invention, work
+гаслах	v. to mourn
+зоорь	n. cellar
