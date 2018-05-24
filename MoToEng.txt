@@ -2153,3 +2153,34 @@ cap	month
 хань	n. partner
 гайгүй	adj. not too bad
 таших	v. clap
+нуга	n. lawn
+бэлчих	v. graze
+хөвсгөр	adj. fryable
+намаг	n. swamp
+намгийн	adj. growing in a wet or swampy area
+атга	n. handful
+чимх	v. handful
+ширхэг	n. fiber, piece
+аргаа барсан	adj. desperate
+зээлдүүлэх	v. lend, loan
+тэг	n. nothing
+гадар	n. outside, jacket, surface
+өгөөрэй	interj. please
+зайл	adj. away
+өр	n. debt, liability
+зээл	n. credit, loan
+тавь	adj. fifty
+гомдоох	v. annoy, grieve
+өлөн	adj. hungry
+хоосон	adj. blank, deceitful, futile
+дэггүйтэх	v. wanton
+чиглэх	v. focus, steer, trend
+асар	n. citadel, pavilion, tent
+царс	n. oak
+хонгил	n. basement, corridor, tunnel
+хийсгэх	v. blow away
+харих	v. return, reverse
+төлөө	prep. for, on behalf of
+шидэт	n. wizard, fairy
+бүтээлгийг авах	v. uncover
+бүхэн	adj. each

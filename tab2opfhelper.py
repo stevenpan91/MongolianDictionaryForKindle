@@ -339,6 +339,9 @@ def writekey(to, key, defn):
             if(lastletter=="ж" or lastletter=="ч" or lastletter=="г" or lastletter=="ш" or lastletter=="ь" or lastletter=="к"):
                 #gen
                 buildsourceword=buildsourceword+makeinflection(term+"ийн")
+                if(lastletter=="г"):
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"гийн")
+
                 #acc
                 buildsourceword=buildsourceword+makeinflection(term+"ийг")
             elif(lastletter=="н"):
@@ -427,6 +430,9 @@ def writekey(to, key, defn):
                     #imperative
                     buildsourceword=buildsourceword+makeinflection(term[:-2]+\
                                 vowelharmony+vowelharmony+"р"+vowelharmony+"й")
+
+                    #conditional converb (if __, when __)
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"в"+vowelharmony+"л")
                     
 
                 #narrative past
@@ -455,7 +461,8 @@ def writekey(to, key, defn):
 				#action happens before main action
                 buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"д")
                 
-                
+				#conditional converb (if __, when __)
+                buildsourceword=buildsourceword+makeinflection(term[:-1]+"в"+vowelharmony+"л")
 
                 #Let's ___
                 if(isMNVowel(term[-2])):
