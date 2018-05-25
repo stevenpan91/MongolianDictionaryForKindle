@@ -2224,3 +2224,22 @@ cap	month
 бүтээл	n. invention, work
 гаслах	v. to mourn
 зоорь	n. cellar
+зутан	n. gruel
+хайлуулах	v. flux, liquefy, melt
+халих	v. overflow, spill, fill
+асгарах	v. flow, spill
+аальгүй	adj. flirty, prudish
+шоглох	v. tease
+эрэл	n. reconnaisance, assessment
+өмнөхөн	n. eve
+улалзах	v. gleam
+балчир	n. green
+хутгах	v. blend, mix, agitate
+бөндгөр	adj. knobby
+боргоцой	n. cone
+бөөн	n. clogging, knot, clump
+туух	v. drive, pursue
+өлсгөх	v. starve
+дарах	v. crush, extinguish, delete
+хуурах	v. deceive, delude
+жирийн	adj. common, humble
