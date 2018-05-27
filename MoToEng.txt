@@ -1311,14 +1311,14 @@ cap	month
 таван өнцөгт	pentagon
 тэгш өнцөгт	rectangle
 хүний бие	parts of the body
-алга	palm
-ам	mouth
-бугуй	wrist
-булчин	calf
-гарын сарвуу	hand
-гуя	thigh
-гэдэс	stomach
-магнай	forehead
+алга	n.palm, is not
+ам	n. mouth
+бугуй	n. wrist
+булчин	n. calf
+гарын сарвуу	n. hand
+гуя	n. thigh
+гэдэс	n. stomach
+магнай	n. forehead
 дух	forehead
 мэнгэ	birthmark
 нуруу	back/spine
@@ -2243,3 +2243,54 @@ cap	month
 дарах	v. crush, extinguish, delete
 хуурах	v. deceive, delude
 жирийн	adj. common, humble
+түмпэн	n. basin, pan
+исгэрэх	v. hiss, sizzle, whistle
+жавар	n. frost
+тасхийж	adj. biting
+шоглоом	n. fun, trick
+гүн	adj. deep, innermost
+огт	adv. absolutely, whatsoever
+мөрдөх	v. chase, exercise
+хүнхэр	adj. concave, curved in
+доогуур	prep. below, beneath
+хэвтэх	v. lie down
+хөлдөөх	v. freeze
+ердөө	adv. generally, ordinarily
+асгах	v. dump, flood, shower
+уут	n. bag, sack
+бороохой	n. club, bludgeon
+хаагуур	n. whereabouts
+нурах	v. collapse, crumble
+хэмхэрсэн	adj. battered, broken
+засах	v. invite, steer, sail
+залах	v. govern, invite, steer
+нарсан	adj. related to pine trees
+балбах	v. batter, club, pound
+хуур	n. fiddle, violin
+чөлөө	n. clearning, expanse, freedom
+өршөөгч	n. philantropist
+уутан	adj. related to sleeping
+шахах	v. compel, constrain
+булан	adj. anger, corner, nook
+амтлах	v. sweeten, flavor, relish
+хээ	 n. ornament, pattern, stamp
+тавтай	adj. cosy
+тухтай	adj. comfortable
+шонхор	n. falcon
+тарих	v. to plant, grow, inject
+тариачин	n. small farmer
+хөлс	n. wage, rent, hire
+ор	n. bed, vacancy, space
+туслуулах	v. look to
+гадна	adj. outside
+ажиллуулах	v. activate
+дэх	???. seems to be a modifier for previous word (e.g four=дөрөв, fourth=дөрөв дэх)
+хорсох	v. hate
+үзэмж	n. beauty
+биеэ	pron. me
+янзлах	v. repair, polish
+янзалж	adj. modeled, related to a figure
+ховдог	adj. greedy
+бошинз	n. gown, frock
+удаа	n. instance, time (as in "one time")
+захирах	v. to direct, govern
