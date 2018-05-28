@@ -2294,3 +2294,38 @@ cap	month
 бошинз	n. gown, frock
 удаа	n. instance, time (as in "one time")
 захирах	v. to direct, govern
+алаг	adj. checkered
+тах	n. horseshoe, shoe
+хөнгөн	adj. easily, spry, nimble
+захих	v. instruct
+дахь	prep. upon (also modifier хоёр=two, хоёр дахь=second)
+дээгүүр	prep. above
+өөд	prep. for, toward, up
+нандигнах	v. sanctify
+харамгүй	n. generosity
+дурлах	v. crave, desire, like
+мөргөх	v. bump, bang, strike
+нээх	v. detect, discover, open, start
+хөөрөх	v. brag, swagger, converse
+ховлох	v. denounce
+цаашилбал	conj. furthermore
+жааз	n. cadre, framework
+шивэх	v. perforate, tattoo
+зоог	n. feast
+энгэр	n. board, flap, downhill
+шархдуулах	v. injure, wound
+төмөр	n. iron
+элээх	v. to wear out
+таяг	n. cane, stick
+хугалах	v. fracture
+гашуун	adj. biting, sour, salt
+нулимс	n. brine, tears
+урсгах	v. shed
+цус	n. blood
+аашилж	adj. lashing out
+хорих	v. withdraw, suppress
+дайрах	v. abuse, insult
+үйл	n. action
+лай	n. mud, dirt, trouble
+гэхдээ	conj. however, but
+хийлгэх	v. to force, call on
