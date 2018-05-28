@@ -1,28 +1,28 @@
 ﻿гэж	as,that
-би	i
-өөрийн	his,own
-тэр	he,she,would
+би	pron. i
+өөрийн	pron. his,own
+тэр	pron. he,she,would
 байсан	was,had,were,did,been
 нь	for, with, from, is, to, a/an, in, which, will, fact, whose
-дээр	on,up,over
-байна	are,have,has,am
-тэд	they
-байх	be,stay
+дээр	prep. on,up,over
+байна	v. are,have,has,am
+тэд	pron. they
+байх	v. be,stay
 үед	at,when,during
-нэг	one,same,single
-энэ	this,it,pron. this
+нэг	adj. one,same,single
+энэ	pron. this,it
 өөр	by,else,another
-халуун	hot
-үг	word
+халуун	adj. hot
+үг	n. word
 харин	but,while,rather
 ямар	what
 зарим	some
-хэрэв та	you
+хэрэв та	pron. you
 буюу	or
 олон тоо	the
  -ийн	of
 болон	and
-бид	we
+бид	pron. we
 болох	can,could,may,happen
 гарах	out,to leave/exit
 бусад	other,rest,except
@@ -2329,3 +2329,28 @@ cap	month
 лай	n. mud, dirt, trouble
 гэхдээ	conj. however, but
 хийлгэх	v. to force, call on
+харгуй	n. path
+жигүүртэн	n. bird
+хөгжилдөх	v. liven, revel
+жиргэх	v. chatter, chirp
+зүрх	v. daring, nerve
+баясгах	v. amuse
+горхи	n. brook, creek
+сэрүүцүүлэх	v. to refresh
+цугларах	v. accumulate, flock
+халдах	v. catch, invade
+довтлох	v. attack
+тахиа	n. chicken
+ар	n. background
+ангайх	v. yawn
+үмх	v. nibble
+харуулах	v. show, exhibit
+шулмас	n. demon
+үнэр	n. scent, odor
+үнэртэх	v. smell, savour
+тулах	v. recline, touch, lean
+тахир	adj. curly, winding
+илбэ	n. magic, sorcery
+хатан	n. madame, lady
+ханд	n. extraction, liquor
+өнхрүүлэх	v. trundle
