@@ -1797,7 +1797,7 @@ cap	month
 нугас	n. duck, brain
 боов	n. bun,turnover
 амтат	adj. sweet
-бал	n. noun
+бал	conj. provided that ___, ball, honey
 хөөсрөх	v. to foam, froth
 исгэлэн	adj. eager, sour
 хэм	n. degree, measure
@@ -2354,3 +2354,21 @@ cap	month
 хатан	n. madame, lady
 ханд	n. extraction, liquor
 өнхрүүлэх	v. trundle
+гутлаа	n. shoes
+шивээ	n. barricade, fence
+бүсгүй	n. young girl
+орос	n. Russia
+тусах	v. reflect
+тэлүүр	n. frame for embroidery
+хамба	n. bishop
+зар	n. notice, spend
+гэрэлтүүлэх	v. illuminate, glorify
+ханцуй	n. branch, sleeve
+адуу	n. horse
+гавлах	v. arrest, handcuff
+эр	n. male
+эндэх	n. to err, make a mistake
+цуврах	v. drip, trickle
+тогтоох	v. determine, establish, identify
+ууль	n. owl
+сандаргах	v. agitate, confuse

@@ -295,6 +295,24 @@ def getvowelharmonyletter(word):
 def conjugateverb(originalWord,buildsourceword):
     term=originalWord
     vowelharmony=getvowelharmonyletter(term)
+
+    #imperative
+    impCount=0
+    stop=False
+    for c in reversed(term[:-1]): #go through term without x at end of verb
+        if(stop==False and (c=="а" or c=="у" or c=="о" or c=="ү" or c=="ө")):
+            impCount+=1
+            if (len(term)>impCount+2 and term[-(impCount+2)]=="г"): #+2 because skip x and skip letter just added
+                impCount+=1
+        else:
+            stop=True
+
+    #build imperative
+    buildsourceword=buildsourceword+makeinflection(term[:-1])
+
+    if(len(term)>impCount+1):
+        buildsourceword=buildsourceword+makeinflection(term[:(-1*(1+impCount))])
+
     #when/while ____
     buildsourceword=buildsourceword+makeinflection(term[:-1]+"х"+vowelharmony+"д")
     buildsourceword=buildsourceword+makeinflection(term[:-1]+"хд"+vowelharmony+vowelharmony)
@@ -309,7 +327,7 @@ def conjugateverb(originalWord,buildsourceword):
     #still dative case?
     buildsourceword=buildsourceword+makeinflection(term[:-1]+"нд")
     #modified verbs for action verbs
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+"л")
+    buildsourceword=buildsourceword+makeinflection(term[:-1]+"л",negativeYN=True)
     #print(term+str(len(term)))
     #print(len(term)>2)
 
@@ -389,8 +407,8 @@ def conjugateverb(originalWord,buildsourceword):
             buildsourceword=buildsourceword+makeinflection(term[:-2]+"ъя")
             buildsourceword=buildsourceword+makeinflection(term[:-1]+"ъя")
         elif(term[-2]=="э" or term[-2]=="и" or term[-2]=="ө" or term[-2]=="ү"):
-            buildsourceword=buildsourceword+makeinflection(term[:-2]+"ья")
-            buildsourceword=buildsourceword+makeinflection(term[:-1]+"ья")
+            buildsourceword=buildsourceword+makeinflection(term[:-2]+"ье")
+            buildsourceword=buildsourceword+makeinflection(term[:-1]+"ье")
         else:
             buildsourceword=buildsourceword+makeinflection(term[:-2]+"ъё")
             buildsourceword=buildsourceword+makeinflection(term[:-1]+"ъё")
@@ -433,6 +451,9 @@ def writekey(to, key, defn):
             #check second to last letter
             #if(isMNVowelHarmonyVowel(term[-2])):
             #    vowelharmony=term[-2]
+
+			#possibly converb?
+            buildsourceword=buildsourceword+makeinflection(term+vowelharmony+"н")
 
             #ablative case (from <term>)
             buildsourceword=buildsourceword+makeinflection(term+vowelharmony+vowelharmony+"с")
@@ -488,10 +509,14 @@ def writekey(to, key, defn):
         #ends in vowel
         else:
             
+			#possibly converb?
+            buildsourceword=buildsourceword+makeinflection(term+"н")
+
             buildsourceword=buildsourceword+makeinflection(term+"ч")
 
 			#ablative case (from <term>)
             buildsourceword=buildsourceword+makeinflection(term+"н"+vowelharmony+vowelharmony+"с")
+            buildsourceword=buildsourceword+makeinflection(term+vowelharmony+"с")
             #instrumental case
             buildsourceword=buildsourceword+makeinflection(term+"г"+vowelharmony+vowelharmony+"р")
 
