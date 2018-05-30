@@ -452,8 +452,8 @@ def writekey(to, key, defn):
             #if(isMNVowelHarmonyVowel(term[-2])):
             #    vowelharmony=term[-2]
 
-			#possibly converb?
-            buildsourceword=buildsourceword+makeinflection(term+vowelharmony+"н")
+			#possibly converb? Causes conflicts, commented out
+            #buildsourceword=buildsourceword+makeinflection(term+vowelharmony+"н")
 
             #ablative case (from <term>)
             buildsourceword=buildsourceword+makeinflection(term+vowelharmony+vowelharmony+"с")
