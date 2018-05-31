@@ -24,16 +24,16 @@
 болон	and
 бид	pron. we
 болох	can,could,may,happen
-гарах	out,to leave/exit
+гарах	v. out,to leave/exit
 бусад	other,rest,except
-хийх	do,make,to do
+хийх	v. do,make,to do
 тэдний	their
-цаг	time,hour,clock,term
+цаг	n. time,hour,clock,term
 хэрэв	if
 хэрхэн	how
 гэж хэлсэн	said,told
 тус бүр	each
-хэлэх	tell
+хэлэх	v. tell
 вэ	does
 багц	set
 гурван	three
@@ -62,22 +62,23 @@
 дагах	follow
 акт	act
 яагаад	why
-асуух	ask,to ask
-эрэгтэй	men
+асуух	v. ask,to ask
+эрэгтэй	n. men
 өөрчлөлт	change
-явав	went
-гэрэл	light,shine
+явав	v. went
+гэрэл	n. light,shine
 төрөл	kind,type
 унтраах	off
-хэрэгтэй	need
-байшин	house
+хэрэгтэй	v. need
+байшин	n. house
 зураг	picture,figure,chart
-оролдох	try,to try
-ану-ын	us
+оролдох	v. to try
+ану-ын	pron. us
 дахин	again
-мал, амьтны	animal
-цэг	point
-ээж	mother
+мал	n. animal
+амьтны	n. animal
+цэг	n. point
+ээж	n. mother
 дэлхийн	world
 ойролцоо	near
 барих	build,take,hold,catch,touch
@@ -86,59 +87,59 @@
 аав	father,dad
 ямар ч	any,no
 шинэ	new,fresh
-ажил	work,job
+ажил	n. work,job
 хэсэг	n. part, piece, fraction, section, bit, segment
-авах	get,to take
-хийсэн	made
+авах	v. get,to take
+хийсэн	v. made
 амьдарч байна	live
 хаана	where
 дараа	after,then
 буцааж	back
-бага	little,low,less
+бага	adj. little,low,less
 нь зөвхөн	only
 дугуй	round,wheel,tire,circle
-хүн	man,people,who,person
-жил	year
-ирсэн	came
+хүн	n. man,people,who,person
+жил	n. year
+ирсэн	v. came
 шоу	show
 бүх	every,all
-намайг	me
-өгөх	give,provide,to give
-манай	our
-дагуу	under
-нэр	name
-маш их	very,much,lot
-дамжуулан	through
+намайг	pron. me
+өгөх	v. give,provide,to give
+манай	pron. our
+дагуу	prep. under
+нэр	n. name
+маш их	adj. very,much,lot
+дамжуулан	prepthrough
 зүгээр л	just
-хэлбэр	form,shape
-өгүүлбэр	sentence,phrase
+хэлбэр	n. form,shape
+өгүүлбэр	n. sentence,phrase
 агуу их	great
-гэж боддог	think
-гэж хэлэх	say
-туслах	help,to help
-мөр	line,string,shoulder
-өөр өөр	differ,vary
-ээлж	turn
-шалтгаан	cause,reason
+гэж боддог	v. think
+гэж хэлэх	v. say
+туслах	v. to help
+мөр	n. line,string,shoulder
+өөр	adj. differ,vary
+ээлж	v. turn
+шалтгаан	n. cause,reason
 гэсэн үг	mean,meant
 өмнө	prep. before, ago
 алхам	move,step
-эрх	right
-хүү	boy,interest,son,son
-хуучин	old
-ашиглах	use
-таны	your
+эрх	adj. right
+хүү	n. boy,interest,son,son
+хуучин	adj. old
+ашиглах	v. use
+таны	pron. your
 арга зам	way
 тухай	about
-олон	many
+олон	adj. many
 тэднийг	them
-бичих	write,to write
+бичих	v. write,to write
 шиг	like
 тийм	so
 эдгээр	these
 түүнийг	her,him
-урт	long
-зүйл	thing
+урт	adj. long
+зүйл	n. thing
  -г үзнэ үү	see
 хоёр	two
 харах	look,watch,view,to see/look at
@@ -320,7 +321,6 @@
 аль болох	possible
 нисэх онгоц	plane
 үүний оронд	stead
-хуурай,	dry
 гайхдаг	wonder
 инээд	laugh
 мянган	thousand
@@ -370,7 +370,7 @@
 ногоон	green
 өө	oh
 хурдан	quick
-боловсруулах	develop
+боловсрох	develop
 далай	ocean
 чөлөөт	free
 минут	minute
@@ -570,7 +570,7 @@
 нас	age
 хувцас	dress,clothes
 үүл	cloud
-гайхуулах	surprise
+гайхах	surprise
 нам гүм	quiet
 чулуу	stone
 жижигхэн	tiny
@@ -620,7 +620,6 @@
 эрэг	coast,shore
 хуулбар	copy
 чимээгүй	silent
-элс,	sand
 хөрс	soil
 өнхрөх	roll
 температур	temperature
@@ -736,7 +735,7 @@
 нугас	duck
 шуурхай	instant
 зах зээлийн	market
-нутагшуулах	populate
+нутагших	populate
 дэгдээхэйн	chick
 хайрт	dear
 дайсан	enemy
@@ -778,7 +777,7 @@
 хэлэлцэх	discuss
 урагш	forward
 ижил төстэй	similar
-чиглүүлэх	guide
+чиглэх	guide
 туршлага	experience
 оноо	score
 алим	apple
@@ -801,7 +800,7 @@
 ч	nor
 давхар	double
 суудал	seat
-үргэлжлүүлэх	continue
+үргэлжлэх	continue
 блок	block
 малгай	hat
 борлуулах	sell
@@ -825,7 +824,7 @@
 дуу чимээ	noise
 түвшин	level
 боломж	chance
-цуглуулах	gather
+цуглах	gather
 сунгах	stretch
 хаях	throw
 үл хөдлөх хөрөнгийн	property
@@ -900,7 +899,7 @@
 цэвэрлэх	v. to clean,to clean
 шан	n. compensation,fee
 сүүдэр	n. shade
-тайвшруулах	v. to appease,console
+тайвшрах	v. to appease,console
 уух	v. to drink,to drink
 амсах	v. to sample,savor
 уулга	n. yell,cry
@@ -918,7 +917,7 @@
 үлгэр	n. fable, fairytale
 улам	adj. more
 төрөх	v. to give birth,to be born
-төрүүлэх	v. to generate
+төрөх	v. to generate
 цаана	adj. beyond,farther
 хав	n. doggy
 усан	adj. aquatic
@@ -1575,7 +1574,7 @@ cap	month
 өлсөх	to be hungry
 өмсөх	to wear
 зүүх	to wear
-сайжруулах	to improve
+сайжрах	to improve
 санах	to remember
 солих	to change
 сэлэх	to swim
@@ -1600,7 +1599,7 @@ cap	month
 үзэх	to see
 үнэрлэх	to smell
 хаах	to close
-хагалах(мод)	to chop (wood)
+хагалах	to chop (wood)
 хазах	to bite
 хаях	to throw
 шидэх	to throw
@@ -1625,7 +1624,8 @@ cap	month
 чадах	to be able
 чанах	to brew
 шумбах	to dive
-эвдэх.хагалах	to break
+эвдэх	to break
+хагалах	to break
 эргэх	to turn
 эрэх	to look for
 хайх	to look for
@@ -1727,12 +1727,12 @@ cap	month
 хонгор	adj. lovable
 мандах	v. to rise
 ээх	v. to warm
-дулаацуулах	v. to heat up
+дулаацах	v. to heat up
 хяруу	n. white frost
 хатаах	v. to dry
 өдөржингөө	adv. all day long
 аглаг	n. solitude
-тойруулах	v. to encircle, get around
+тойрох	v. to encircle, get around
 гавал	n. skull
 цүү	n. spike
 балмагдах	v. to be afraid
@@ -1805,7 +1805,7 @@ cap	month
 булан	n. anger, angle, nook
 шуудай	n. bag, sack
 ялгаа	n. departure, discrepancy, difference
-биелүүлэх	v. to fulfill
+биелэх	v. to fulfill
 дүнгэнэх	v. to buzz, drone
 хурхирах	v. to snore
 эдлэх	v. to consume, taste
@@ -1904,7 +1904,7 @@ cap	month
 өнөө	adv. now, today
 залуусын	adj. junior
 санаачлах	v. to initiate, dream up, invent
-дээшлүүлэх	v. to upgrade
+дээшлэх	v. to upgrade
 энэхүү	n. the present
 уралдаан	n. race, match
 зорилго	n. point, purpose
@@ -2005,7 +2005,7 @@ cap	month
 уруу	adj. downhill, downstream, downcast
 царай	n. expression, look
 гуниглах	n. regret
-тайтгаруулах	v. appease, calm, console
+тайтгарах	v. appease, calm, console
 хөвгүүдийн	adj. boyish
 гутрах	v. gloom, droop
 өөрсдөө	pron. themselves
@@ -2014,7 +2014,7 @@ cap	month
 өвсөн	adj. grassy
 зүүрмэглэх	v. nap, snooze
 хонох	v. sleep, stay over
-баярлуулах	v. indulge
+баярлах	v. indulge
 эд	n. stuff, thing
 нойр	n. dream, slumber
 өвс	n. grass, hay, pasture
@@ -2114,7 +2114,7 @@ cap	month
 хамаг	adj. everything
 тохиролцох	v. arrange, bargain, concert
 айлгах	v. endanger, bluff, frighten, intimidate
-сүрдүүлэх	v. browbeat, intimidate
+сүрдэх	v. browbeat, intimidate
 зуурах	v. grip, deadlock
 билгийн	adj. fateful
 мөнхийн	adj. eternal, everlasting
@@ -2141,7 +2141,7 @@ cap	month
 орчин	n. environment
 амжуулах	v. to manage in
 хичээх	v. to take care, struggle
-өмсүүлэх	v. to wear
+өмсөх	v. to wear
 гялс	adv. passingly
 дуусгах	v. to finish
 мундаг	adj. huge
@@ -2162,7 +2162,7 @@ cap	month
 чимх	v. handful
 ширхэг	n. fiber, piece
 аргаа барсан	adj. desperate
-зээлдүүлэх	v. lend, loan
+зээлдэх	v. lend, loan
 тэг	n. nothing
 гадар	n. outside, jacket, surface
 өгөөрэй	interj. please
@@ -2196,7 +2196,7 @@ cap	month
 бөөнөөрөө	adv. quickly
 захиалах	v. order
 хага	n. burst
-соруулах	v. suck
+сорох	v. suck
 холдох	v. to withdraw
 алив	phrase. let's
 онгоц	n. plane
@@ -2225,7 +2225,7 @@ cap	month
 гаслах	v. to mourn
 зоорь	n. cellar
 зутан	n. gruel
-хайлуулах	v. flux, liquefy, melt
+хайлах	v. flux, liquefy, melt
 халих	v. overflow, spill, fill
 асгарах	v. flow, spill
 аальгүй	adj. flirty, prudish
@@ -2281,9 +2281,9 @@ cap	month
 тариачин	n. small farmer
 хөлс	n. wage, rent, hire
 ор	n. bed, vacancy, space
-туслуулах	v. look to
+туслах	v. look to
 гадна	adj. outside
-ажиллуулах	v. activate
+ажиллах	v. activate
 дэх	???. seems to be a modifier for previous word (e.g four=дөрөв, fourth=дөрөв дэх)
 хорсох	v. hate
 үзэмж	n. beauty
@@ -2313,7 +2313,7 @@ cap	month
 шивэх	v. perforate, tattoo
 зоог	n. feast
 энгэр	n. board, flap, downhill
-шархдуулах	v. injure, wound
+шархдах	v. injure, wound
 төмөр	n. iron
 элээх	v. to wear out
 таяг	n. cane, stick
@@ -2336,7 +2336,7 @@ cap	month
 зүрх	v. daring, nerve
 баясгах	v. amuse
 горхи	n. brook, creek
-сэрүүцүүлэх	v. to refresh
+сэрүүцэх	v. to refresh
 цугларах	v. accumulate, flock
 халдах	v. catch, invade
 довтлох	v. attack
@@ -2353,7 +2353,7 @@ cap	month
 илбэ	n. magic, sorcery
 хатан	n. madame, lady
 ханд	n. extraction, liquor
-өнхрүүлэх	v. trundle
+өнхрөх	v. trundle
 гутлаа	n. shoes
 шивээ	n. barricade, fence
 бүсгүй	n. young girl
@@ -2362,7 +2362,7 @@ cap	month
 тэлүүр	n. frame for embroidery
 хамба	n. bishop
 зар	n. notice, spend
-гэрэлтүүлэх	v. illuminate, glorify
+гэрэлтэх	v. illuminate, glorify
 ханцуй	n. branch, sleeve
 адуу	n. horse
 гавлах	v. arrest, handcuff
@@ -2412,7 +2412,7 @@ cap	month
 цуглах	v. gather, congregate
 гэм	n. defect, fault
 шүүх	v. judge, prosecute
-уулзуулах	v. encounter
+уулзах	v. encounter
 тангараг	n. vow
 хайрлах	v. cherish, favor, bestow
 бараа	n. outline, silhouette
@@ -2429,3 +2429,21 @@ cap	month
 орох	v. enter
 дэргэдүүр	adj. near
 зориулах	v. devote to
+эзгүй	adj. absent
+эелдэг	adj. courteous
+хунар	n. clothes
+таних	v. identify, recognize
+байтугай	conj. moreover (тэр ч байтугай)
+унжих	v. hang
+дасах	v. adapt
+ширмэн	adj. cast-iron
+балга	n. sip of ___
+зайлах	v. evade
+гомдох	v. grieve
+ширүүн	adj. heavy, furious
+бяцлах	v. smash
+ёроол	n. bed, floor
+чангаах	v. to pull
+ногоо	n. grass
+ороох	v. entwine, twist
+уян	n. resilience

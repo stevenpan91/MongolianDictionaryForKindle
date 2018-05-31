@@ -296,6 +296,7 @@ def conjugateverb(originalWord,buildsourceword):
     term=originalWord
     vowelharmony=getvowelharmonyletter(term)
 
+
     #imperative
     impCount=0
     stop=False
@@ -505,7 +506,18 @@ def writekey(to, key, defn):
                 buildsourceword=buildsourceword+conjugateverb(term,buildsourceword)
                 #complete action
                 buildsourceword=buildsourceword+makeinflection(term[:-2]+"чих",negativeYN=True)
-                #buildsourceword=buildsourceword+conjugateverb(term[:-2]+"чих",buildsourceword)
+                buildsourceword=buildsourceword+conjugateverb(term[:-2]+"чих",buildsourceword)
+
+
+                #passive voice
+                if(term[-5:]!="уулах" and term[-5:]!="үүлэх"):
+                    if(vowelharmony=='а' or vowelharmony=='у' or vowelharmony=='о'):
+                        buildsourceword=buildsourceword+makeinflection(term[:-2]+"уулах",negativeYN=True)
+                        buildsourceword=buildsourceword+conjugateverb(term[:-2]+"уулах",buildsourceword)
+                    else:
+                        buildsourceword=buildsourceword+makeinflection(term[:-2]+"үүлэх",negativeYN=True)
+                        buildsourceword=buildsourceword+conjugateverb(term[:-2]+"уулах",buildsourceword)
+
         #ends in vowel
         else:
             
@@ -523,7 +535,7 @@ def writekey(to, key, defn):
 
             #accusative case
             buildsourceword=buildsourceword+makeinflection(term+"г")
-            buildsourceword=buildsourceword+makeinflection(term+"гаа") # with reflexive
+            buildsourceword=buildsourceword+makeinflection(term+"г"+vowelharmony+vowelharmony) # with reflexive
 			#dative case
             buildsourceword=buildsourceword+makeinflection(term+"д")
             #figure out what this is later
