@@ -2394,3 +2394,38 @@ cap	month
 ханах	v. satiate
 угалз	n. sandstorm
 маргааш	n. tomorrow
+элэг	n. liver, sneer
+зүрх	n. heart
+тэврэх	v. embrace
+нүцгэн	adj. bare, bleak
+дусах	v. drop
+халуу	n. heat
+цоргих	v. jet
+нутаг	n. shore, land
+урвах	v. betray
+уухай	n. cry
+зарлигдах	v. order
+тайх	v. hallow
+ноёд	n. noblepeople
+тариачид	n. peasantry
+худалдаачид	n. tradefolk
+цуглах	v. gather, congregate
+гэм	n. defect, fault
+шүүх	v. judge, prosecute
+уулзуулах	v. encounter
+тангараг	n. vow
+хайрлах	v. cherish, favor, bestow
+бараа	n. outline, silhouette
+жинхэнэ	adj. authentic, factual
+хагацаах	v. deprive
+буудах	v. shoot
+олны	adj. public
+донсолго	n. jolt
+зорих	v. pursue, purpose
+худаг	n. water hole, well
+төөнөх	v. glow, sear, grill
+үхрийн	adj. related to cows
+туурай	n. hoof
+орох	v. enter
+дэргэдүүр	adj. near
+зориулах	v. devote to

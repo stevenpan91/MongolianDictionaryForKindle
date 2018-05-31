@@ -497,7 +497,7 @@ def writekey(to, key, defn):
                 buildsourceword=buildsourceword+makeinflection(term+"д")
 
 			#exceptions for dative case
-            if(lastletter=="л"):
+            if(lastletter=="л" or lastletter=="н"):
                 buildsourceword=buildsourceword+makeinflection(term+"т")
 
             #verbs
@@ -519,6 +519,7 @@ def writekey(to, key, defn):
             buildsourceword=buildsourceword+makeinflection(term+vowelharmony+"с")
             #instrumental case
             buildsourceword=buildsourceword+makeinflection(term+"г"+vowelharmony+vowelharmony+"р")
+            buildsourceword=buildsourceword+makeinflection(term+vowelharmony+"р")
 
             #accusative case
             buildsourceword=buildsourceword+makeinflection(term+"г")
