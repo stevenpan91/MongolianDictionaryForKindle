@@ -232,7 +232,7 @@ def isMNVowelHarmonyVowel(letter):
 def isMNVowel(letter):
     ignorelettercase=letter.lower()
     retval=False
-    vowels=['а','е','ё','и','й','о','ө','у','ү','э'] #all
+    vowels=['а','е','ё','и','й','о','ө','у','ү','э','я','ё'] #all
     #vowels=['а','о','ө','э'] #just count these
     for c in vowels:
         if(letter==c):
@@ -263,7 +263,8 @@ def capitalize(word):
     
     return word
 
-def makeinflection(word,capitalizeYN=True, negativeYN=False):
+def makeinflection(word,capitalizeYN=True, negativeYN=False,reflexiveYN=False,instrumentalYN=False,whichIsMarkerYN=False):
+    vowelharmony=getvowelharmonyletter(word)
     retval="<idx:infl><idx:iform value=\""+word+"\"/></idx:infl>"
     if(capitalizeYN):
         retval=retval+"<idx:infl><idx:iform value=\""+capitalize(word)+"\"/></idx:infl>"
@@ -271,6 +272,19 @@ def makeinflection(word,capitalizeYN=True, negativeYN=False):
         retval=retval+"<idx:infl><idx:iform value=\""+word+"гүй\"/></idx:infl>"
         if(capitalizeYN):
             retval=retval+"<idx:infl><idx:iform value=\""+capitalize(word)+"гүй\"/></idx:infl>"
+    if(reflexiveYN):
+        retval=retval+"<idx:infl><idx:iform value=\""+word+vowelharmony+vowelharmony+"\"/></idx:infl>"
+        if(capitalizeYN):
+            retval=retval+"<idx:infl><idx:iform value=\""+capitalize(word)+vowelharmony+vowelharmony+"\"/></idx:infl>"
+    if(instrumentalYN):
+        retval=retval+"<idx:infl><idx:iform value=\""+word+vowelharmony+vowelharmony+"р\"/></idx:infl>"
+        if(capitalizeYN):
+            retval=retval+"<idx:infl><idx:iform value=\""+capitalize(word)+vowelharmony+vowelharmony+"р\"/></idx:infl>"
+    if(whichIsMarkerYN):
+        retval=retval+makeinflection(word+"х",reflexiveYN=True)
+        #retval=retval+"<idx:infl><idx:iform value=\""+word+"х\"/></idx:infl>"
+        #if(capitalizeYN):
+            #retval=retval+"<idx:infl><idx:iform value=\""+capitalize(word)+"х\"/></idx:infl>"        
     return retval
 
 def getvowelharmonyletter(word):
@@ -279,7 +293,7 @@ def getvowelharmonyletter(word):
     index=len(word)-1
     while(notfound):
         if(isMNVowel(word[index])):
-            if(word[index]=='а' or word[index]=='у' or word[index]=='о'): #if a masculine vowel is found, switch to 'a'
+            if(word[index]=='а' or word[index]=='у' or word[index]=='о' or word[index]=='я' or word[index]=='ё'): #if a masculine vowel is found, switch to 'a'
                 retval='а'
 
         if(isMNVowelHarmonyVowel(word[index])):
@@ -314,6 +328,9 @@ def conjugateverb(originalWord,buildsourceword):
     if(len(term)>impCount+1):
         buildsourceword=buildsourceword+makeinflection(term[:(-1*(1+impCount))])
 
+    #unsure what this is
+    buildsourceword=buildsourceword+makeinflection(term[:-1]+"г"+vowelharmony+vowelharmony+"д")
+
     #when/while ____
     buildsourceword=buildsourceword+makeinflection(term[:-1]+"х"+vowelharmony+"д")
     buildsourceword=buildsourceword+makeinflection(term[:-1]+"хд"+vowelharmony+vowelharmony)
@@ -329,6 +346,7 @@ def conjugateverb(originalWord,buildsourceword):
     buildsourceword=buildsourceword+makeinflection(term[:-1]+"нд")
     #modified verbs for action verbs
     buildsourceword=buildsourceword+makeinflection(term[:-1]+"л",negativeYN=True)
+    buildsourceword=buildsourceword+makeinflection(term[:-1]+"лт",reflexiveYN=True,instrumentalYN=True)
     #print(term+str(len(term)))
     #print(len(term)>2)
 
@@ -443,9 +461,9 @@ def writekey(to, key, defn):
 
 		#plurals
         if(vowelharmony=='а' or vowelharmony=='у' or vowelharmony=='о'):
-            buildsourceword=buildsourceword+makeinflection(term[:-1]+"ууд")
+            buildsourceword=buildsourceword+makeinflection(term[:-1]+"ууд",reflexiveYN=True,instrumentalYN=True)
         else:
-            buildsourceword=buildsourceword+makeinflection(term[:-1]+"үүд")
+            buildsourceword=buildsourceword+makeinflection(term[:-1]+"үүд",reflexiveYN=True,instrumentalYN=True)
 
         #if consonant
         if(not isMNVowel(lastletter) and len(term)>1):
@@ -458,6 +476,8 @@ def writekey(to, key, defn):
 
             #ablative case (from <term>)
             buildsourceword=buildsourceword+makeinflection(term+vowelharmony+vowelharmony+"с")
+            if(lastletter=="х"):
+                buildsourceword=buildsourceword+makeinflection(term+"н"+vowelharmony+vowelharmony+"с")
 
             #instrumental case
             buildsourceword=buildsourceword+makeinflection(term+vowelharmony+vowelharmony+"р",negativeYN=True)
@@ -465,48 +485,49 @@ def writekey(to, key, defn):
             #genitive case + accusitive case
             if(lastletter=="ж" or lastletter=="ч" or lastletter=="г" or lastletter=="ш" or lastletter=="ь" or lastletter=="к"):
                 #gen
-                buildsourceword=buildsourceword+makeinflection(term+"ийн")
+                buildsourceword=buildsourceword+makeinflection(term+"ийн",whichIsMarkerYN=True)
                 if(lastletter=="г"):
-                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"гийн")
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"гийн",whichIsMarkerYN=True)
 
                 #acc
                 buildsourceword=buildsourceword+makeinflection(term+"ийг")
             elif(lastletter=="н"):
                 #gen
-                buildsourceword=buildsourceword+makeinflection(term+"ий")
-                buildsourceword=buildsourceword+makeinflection(term+"ы")
-                buildsourceword=buildsourceword+makeinflection(term+"гийн")
+                buildsourceword=buildsourceword+makeinflection(term+"ий",whichIsMarkerYN=True)
+                buildsourceword=buildsourceword+makeinflection(term+"ы",whichIsMarkerYN=True)
+                buildsourceword=buildsourceword+makeinflection(term+"гийн",whichIsMarkerYN=True)
                 #acc
                 buildsourceword=buildsourceword+makeinflection(term+"ийг")
                 buildsourceword=buildsourceword+makeinflection(term+"ыг")
             else:
                 #gen
-                buildsourceword=buildsourceword+makeinflection(term+"ийн")
-                buildsourceword=buildsourceword+makeinflection(term+"ын")
+                buildsourceword=buildsourceword+makeinflection(term+"ийн",whichIsMarkerYN=True)
+                buildsourceword=buildsourceword+makeinflection(term+"ын",whichIsMarkerYN=True)
                 #acc
                 buildsourceword=buildsourceword+makeinflection(term+"ийг")
                 buildsourceword=buildsourceword+makeinflection(term+"ыг")
 
             #dative case
             if(lastletter=="г" or lastletter=="в" or lastletter=="с" or lastletter=="р" or lastletter=="к"):
-                buildsourceword=buildsourceword+makeinflection(term+"т")
+                buildsourceword=buildsourceword+makeinflection(term+"т",reflexiveYN=True,instrumentalYN=True)
             elif(lastletter=="д" or lastletter=="т" or lastletter=="з" or lastletter=="ц"):
-                buildsourceword=buildsourceword+makeinflection(term+vowelharmony+"д")
+                buildsourceword=buildsourceword+makeinflection(term+vowelharmony+"д",reflexiveYN=True,instrumentalYN=True)
             elif(lastletter=="ж" or lastletter=="ч" or lastletter=="ш"):
-                buildsourceword=buildsourceword+makeinflection(term+"ид")
+                buildsourceword=buildsourceword+makeinflection(term+"ид",reflexiveYN=True,instrumentalYN=True)
             else:
-                buildsourceword=buildsourceword+makeinflection(term+"д")
+                buildsourceword=buildsourceword+makeinflection(term+"д",reflexiveYN=True,instrumentalYN=True)
 
 			#exceptions for dative case
             if(lastletter=="л" or lastletter=="н"):
-                buildsourceword=buildsourceword+makeinflection(term+"т")
+                buildsourceword=buildsourceword+makeinflection(term+"т",reflexiveYN=True,instrumentalYN=True)
 
             #verbs
             if(lastletter=="х"):
                 buildsourceword=buildsourceword+conjugateverb(term,buildsourceword)
                 #complete action
-                buildsourceword=buildsourceword+makeinflection(term[:-2]+"чих",negativeYN=True)
-                buildsourceword=buildsourceword+conjugateverb(term[:-2]+"чих",buildsourceword)
+                if(len(term)>3):
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"чих",negativeYN=True)
+                    buildsourceword=buildsourceword+conjugateverb(term[:-2]+"чих",buildsourceword)
 
 
                 #passive voice
@@ -537,12 +558,13 @@ def writekey(to, key, defn):
             buildsourceword=buildsourceword+makeinflection(term+"г")
             buildsourceword=buildsourceword+makeinflection(term+"г"+vowelharmony+vowelharmony) # with reflexive
 			#dative case
-            buildsourceword=buildsourceword+makeinflection(term+"д")
+            buildsourceword=buildsourceword+makeinflection(term+"д",reflexiveYN=True,instrumentalYN=True)
+            buildsourceword=buildsourceword+makeinflection(term+"т",reflexiveYN=True,instrumentalYN=True)
             #figure out what this is later
             buildsourceword=buildsourceword+makeinflection(term+"д"+vowelharmony+vowelharmony)
             #genitive case
             if(lastletter=="й"):
-                buildsourceword=buildsourceword+makeinflection(term+"н")
+                buildsourceword=buildsourceword+makeinflection(term+"н",whichIsMarkerYN=True)
             #long vowel
             elif(len(term)>1 and term[-2]==lastletter):            
                 buildsourceword=buildsourceword+makeinflection(term+"ны")
@@ -551,8 +573,8 @@ def writekey(to, key, defn):
             #single vowel at end
             if(len(term)>1 and not isMNVowel(term[-2])):
                 buildsourceword=buildsourceword+makeinflection(term+"ны")
-                buildsourceword=buildsourceword+makeinflection(term+"ын")
-                buildsourceword=buildsourceword+makeinflection(term+"ийн")
+                buildsourceword=buildsourceword+makeinflection(term+"ын",whichIsMarkerYN=True)
+                buildsourceword=buildsourceword+makeinflection(term+"ийн",whichIsMarkerYN=True)
 
         #dimunitives (like shortened names)
         buildsourceword=buildsourceword+makeinflection(term+"х"+vowelharmony+"н")
@@ -562,6 +584,9 @@ def writekey(to, key, defn):
 
 		#add suffix -тай
         buildsourceword=buildsourceword+makeinflection(term+"т"+vowelharmony+"й")
+
+        #unsure what this is (I think it's dative plus reflexive, taken care of above)
+        #buildsourceword=buildsourceword+makeinflection(term+"д"+vowelharmony+vowelharmony)
 
         #end        
         buildsourceword=buildsourceword+"</idx:orth>"

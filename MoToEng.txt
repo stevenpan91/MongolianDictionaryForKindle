@@ -1737,7 +1737,7 @@ cap	month
 цүү	n. spike
 балмагдах	v. to be afraid
 хөшөө	n. monument, memorial
-мэт	adj. somewhat
+мэт	adj. somewhat, as if, like, as
 шингэх	v. to be absorbed, soaked, set
 дээрх	prep. above
 гэгээ	n. daylight, glow
@@ -2447,3 +2447,75 @@ cap	month
 ногоо	n. grass
 ороох	v. entwine, twist
 уян	n. resilience
+овсгоо	n. enterprise, push, drive
+энцэлэх	v. end something
+дараалах	v. to be next
+булш	n. grave
+залхуурах	v. to be lazy
+хагарах	v. to break, split
+сонин	n. newspaper
+өлсгөлөн	n. hunger
+хуцах	v. to bark, wolf
+баахан	n. big number
+мөөг	n. mushroom
+шаахай	n. sandals
+сүлжих	v. knit
+халгаах	v. to be shy
+цэлгэр	adj. large, spacious
+цэнхэртэх	v. become blue
+үүлэн	adj. cloudlike
+ээрэх	v. hesitate, stutter
+жирэлзэх	v. dash, run
+баруун	n. right (as opposed to "left")
+дахих	v. to repeat
+орд	n. field, mansion
+цагираг	n. ring, wheel
+босгох	v. build
+үсрэлт	n. lunge, jump
+услах	v. irrigate
+самнах	v. comb
+зүс	n. color, appearance
+цуг	adj. together
+азаа	n. dare (as in азаа үзэх)
+доог	n. mockery
+духдуулах	v. put hat on head
+морио	n. horse
+хавирах	v. grind
+уухайлах	v. cry out
+тоос	n. dust, dirt
+эрээн	adj. spotted, speckled
+чичиргэх	v. to pulse
+дөл	n. fire, light
+дүрэлзэх	v. to inflame, blaze
+утаа	n. smoke
+олгойдох	v. spout
+хадагдах	v. to nail
+зогтусах	v. stop suddenly
+илэх	v. caress, rub
+хазаарлах	v. to restrain, bridle
+толгод	n. rise, swell
+ханарах	v. fall on the same side
+ургаа	adj. rooted, growing
+хоорондуур	prep. between
+үй	adj. a lot (like үй олон)
+үймэлдэх	v. to be in disorder
+улс	n. country
+ээлжлэх	v. rotate, alternate
+хүршгүй	adj. untouchable,unconquerable
+үсэргэх	v. to jet, spring, splash
+дутах	v. to lack
+цойлох	v. plunge
+ахиад	adv. repeatedly
+тасхийх	v. clank, growl
+духах	v. to wear
+амжих	v. to make, have time to do
+шуугилдах	v. to make a lot of noise
+эрэлхэг	adj. brave
+сураг	n. news, rumor
+боох	v. wrap
+онцгой	adj. special, unique
+туяа	n. radiance
+цацрах	v. beam, radiate
+шатаах	v. shoot, roast, singe
+түшмэл	n. officer, clerc
+найрах	v. to agree, mix
