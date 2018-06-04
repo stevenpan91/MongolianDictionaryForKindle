@@ -459,11 +459,7 @@ def writekey(to, key, defn):
         # else:
         #     vowelharmony='a'
 
-		#plurals
-        if(vowelharmony=='а' or vowelharmony=='у' or vowelharmony=='о'):
-            buildsourceword=buildsourceword+makeinflection(term[:-1]+"ууд",reflexiveYN=True,instrumentalYN=True)
-        else:
-            buildsourceword=buildsourceword+makeinflection(term[:-1]+"үүд",reflexiveYN=True,instrumentalYN=True)
+		
 
         #if consonant
         if(not isMNVowel(lastletter) and len(term)>1):
@@ -538,7 +534,18 @@ def writekey(to, key, defn):
                     else:
                         buildsourceword=buildsourceword+makeinflection(term[:-2]+"үүлэх",negativeYN=True)
                         buildsourceword=buildsourceword+conjugateverb(term[:-2]+"уулах",buildsourceword)
-
+            else:
+                #plurals for non verbs
+                if(vowelharmony=='а' or vowelharmony=='у' or vowelharmony=='о'):
+                    if(lastletter=='н'):
+                        buildsourceword=buildsourceword+makeinflection(term[:-1]+"гууд",reflexiveYN=True,instrumentalYN=True)
+                    else:
+                        buildsourceword=buildsourceword+makeinflection(term+"ууд",reflexiveYN=True,instrumentalYN=True)
+                else:
+                    if(lastletter=='н'):
+                        buildsourceword=buildsourceword+makeinflection(term[:-1]+"гүүд",reflexiveYN=True,instrumentalYN=True)
+                    else:
+                        buildsourceword=buildsourceword+makeinflection(term+"үүд",reflexiveYN=True,instrumentalYN=True)
         #ends in vowel
         else:
             
@@ -576,6 +583,11 @@ def writekey(to, key, defn):
                 buildsourceword=buildsourceword+makeinflection(term+"ын",whichIsMarkerYN=True)
                 buildsourceword=buildsourceword+makeinflection(term+"ийн",whichIsMarkerYN=True)
 
+            #plurals
+            if(vowelharmony=='а' or vowelharmony=='у' or vowelharmony=='о'):
+                buildsourceword=buildsourceword+makeinflection(term+"нууд",reflexiveYN=True,instrumentalYN=True)
+            else:
+                buildsourceword=buildsourceword+makeinflection(term+"нүүд",reflexiveYN=True,instrumentalYN=True)
         #dimunitives (like shortened names)
         buildsourceword=buildsourceword+makeinflection(term+"х"+vowelharmony+"н")
         

@@ -2519,3 +2519,30 @@ cap	month
 шатаах	v. shoot, roast, singe
 түшмэл	n. officer, clerc
 найрах	v. to agree, mix
+баршгүй	adj. infinite, limitless
+уулгалах	v. plunder, surprise attack
+хосгүй	adj. matchless, unparalleled
+зочин	n. guest, visitor
+аяг	n. habit, fit
+шимшрэх	v. disappointed
+гэзэг	n. braid, pigtail
+арзайх	v. bristle
+үнс	n. ash, cinder
+тортог	n. smoke
+цохих	v. jab, bash, hit
+өчих	v. point out
+тайлбар	n. comment, explanation
+ойртох	v. approach
+гялбах	v. flash, spark
+инээдэм	n. humor
+хөлгүй	adj. deep, steep
+төгсөх	v. to finish
+зодох	v. to hit, strike
+томоотой	adj. well behaved
+илүүдэх	v. exceed
+нудрах	v. hit
+дутуудах	v. to be inadequate
+дугтчих	v. to twitch
+магтах	v. to praise
+цорвойх	v. to protrude
+түлээ	n. wood for fire
