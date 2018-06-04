@@ -389,8 +389,12 @@ def conjugateverb(originalWord,buildsourceword):
         
 
     #narrative past
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+"жээ")
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+"чээ")
+    if(term[-3:]=="чих"):
+        buildsourceword=buildsourceword+makeinflection(term+"жээ")
+        buildsourceword=buildsourceword+makeinflection(term+"чээ")
+    else:
+        buildsourceword=buildsourceword+makeinflection(term[:-1]+"жээ")
+        buildsourceword=buildsourceword+makeinflection(term[:-1]+"чээ")
 
     #complete action
     #buildsourceword=buildsourceword+makeinflection(term[:-1]+"чих",negativeYN=True)
@@ -419,6 +423,9 @@ def conjugateverb(originalWord,buildsourceword):
     
     #conditional converb (if __, when __)
     buildsourceword=buildsourceword+makeinflection(term[:-1]+"в"+vowelharmony+"л")
+
+    #no idea what this is
+    buildsourceword=buildsourceword+makeinflection(term[:-1]+"т"+vowelharmony+"л")
 
     #Let's ___
     if(isMNVowel(term[-2])):
@@ -520,6 +527,8 @@ def writekey(to, key, defn):
             #verbs
             if(lastletter=="х"):
                 buildsourceword=buildsourceword+conjugateverb(term,buildsourceword)
+                buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"гүй")
+                
                 #complete action
                 if(len(term)>3):
                     buildsourceword=buildsourceword+makeinflection(term[:-2]+"чих",negativeYN=True)

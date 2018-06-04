@@ -570,7 +570,6 @@
 нас	age
 хувцас	dress,clothes
 үүл	cloud
-гайхах	surprise
 нам гүм	quiet
 чулуу	stone
 жижигхэн	tiny
@@ -2546,3 +2545,24 @@ cap	month
 магтах	v. to praise
 цорвойх	v. to protrude
 түлээ	n. wood for fire
+хараах	v. curse
+дэгдэх	v. fly up, escape
+намдах	v. to ease, soothe
+давардах	v. to overcome
+хорвоо	n. earth
+тонилгох	v. cause death, kill
+минь	pron. my
+үглэх	v. to grumble, complain
+зөрөх	v. to disagree
+хөллөх	v. hitch, harness
+чарга	n. sleigh
+гацуур	n. fir tree
+даарах	v. feel cold
+бөндгөнөх	v. move by rolling
+чахрах	v. to squeak, creak
+дулаахан	adj. warm
+доошлох	v. descend,fall
+няс	adj. crackling (as in тас няс)
+бээрэх	v. freeze
+эвлүүлэх	v. gather, assemble
+хөдөлгөх	v. move
