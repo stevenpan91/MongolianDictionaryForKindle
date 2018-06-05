@@ -348,6 +348,9 @@ def conjugateverb(originalWord,buildsourceword,completionMod=False):
     buildsourceword=buildsourceword+makeinflection(term[:-1]+"л",negativeYN=True)
     buildsourceword=buildsourceword+makeinflection(term[:-1]+"лт",reflexiveYN=True,instrumentalYN=True)
 
+    #action of the main clause has been happening since the action of the sub clause
+    buildsourceword=buildsourceword+makeinflection(term[:-1]+"с"+vowelharmony+vowelharmony+"р",negativeYN=True)
+
     buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"гүй")
 
     if(len(term)>2):
@@ -385,11 +388,14 @@ def conjugateverb(originalWord,buildsourceword,completionMod=False):
 
                 #intent
                 buildsourceword=buildsourceword+makeinflection(term[:-2]+"м"+vowelharmony+vowelharmony+"р")
+
+				#perpetual
+                buildsourceword=buildsourceword+makeinflection(term[:-2]+"д"+vowelharmony+"г",negativeYN=True)
             else:
 
                 
             
-                if(term[-2])=="и"):
+                if(term[-2]=="и"):
                     #narrative past
                     buildsourceword=buildsourceword+makeinflection(term[:-2]+"ьжээ")
                     buildsourceword=buildsourceword+makeinflection(term[:-2]+"чээ")
@@ -400,6 +406,9 @@ def conjugateverb(originalWord,buildsourceword,completionMod=False):
                     buildsourceword=buildsourceword+makeinflection(term[:-2]+"ьс"+vowelharmony+"н",negativeYN=True,reflexiveYN=True)
                     #future tense
                     buildsourceword=buildsourceword+makeinflection(term[:-2]+"ьн"+vowelharmony)
+
+                    #perpetual
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"ьд"+vowelharmony+"г")
                 else:
 
                     #narrative past
@@ -415,6 +424,9 @@ def conjugateverb(originalWord,buildsourceword,completionMod=False):
                     #intent
                     buildsourceword=buildsourceword+makeinflection(term[:-1]+"м"+vowelharmony+vowelharmony+"р")
 
+                    #perpetual
+                    buildsourceword=buildsourceword+makeinflection(term[:-1]+"д"+vowelharmony+"г")
+
                 
 
 
@@ -425,15 +437,11 @@ def conjugateverb(originalWord,buildsourceword,completionMod=False):
     
     if(len(term)>2):
         
-
-        #perpetual
-        buildsourceword=buildsourceword+makeinflection(term[:-2]+"д"+vowelharmony+"г",negativeYN=True)
-
+        
         #recent past
         buildsourceword=buildsourceword+makeinflection(term[:-2]+"л"+vowelharmony+vowelharmony)
 
         
-
         #imperative
         buildsourceword=buildsourceword+makeinflection(term[:-2]+\
                     vowelharmony+vowelharmony+"р"+vowelharmony+"й")
@@ -452,14 +460,9 @@ def conjugateverb(originalWord,buildsourceword,completionMod=False):
     #unsure of this
     buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"ч")
 
-    #perpetual
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+"д"+vowelharmony+"г")
-
+    
     #recent past
     buildsourceword=buildsourceword+makeinflection(term[:-1]+"л"+vowelharmony+vowelharmony)
-
-    #intent
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+"м"+vowelharmony+vowelharmony+"р")
 
     #action happens before main action
     buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"д")
@@ -570,7 +573,16 @@ def writekey(to, key, defn):
                         buildsourceword=buildsourceword+conjugateverb(term[:-2]+"уулах",buildsourceword)
                     else:
                         buildsourceword=buildsourceword+makeinflection(term[:-2]+"үүлэх",negativeYN=True)
-                        buildsourceword=buildsourceword+conjugateverb(term[:-2]+"уулах",buildsourceword)
+                        buildsourceword=buildsourceword+conjugateverb(term[:-2]+"үүлэх",buildsourceword)
+
+                #no good description on what this is except that it's inherited from Classical Mongolian
+                if(term[-4:]!="лдах" and term[-4:]!="лдэх"):
+                    if(vowelharmony=='а' or vowelharmony=='у' or vowelharmony=='о'):
+                        buildsourceword=buildsourceword+makeinflection(term[:-1]+"лдах",negativeYN=True)
+                        #buildsourceword=buildsourceword+conjugateverb(term[:-1]+"лдах",buildsourceword)
+                    else:
+                        buildsourceword=buildsourceword+makeinflection(term[:-1]+"лдэх",negativeYN=True)
+                        #buildsourceword=buildsourceword+conjugateverb(term[:-1]+"лдэх",buildsourceword)
             else:
                 #plurals for non verbs
                 if(vowelharmony=='а' or vowelharmony=='у' or vowelharmony=='о'):

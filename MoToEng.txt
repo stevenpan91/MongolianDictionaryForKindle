@@ -810,7 +810,7 @@
 усанд сэлж	swim
 эхнэр	wife
 гутал	shoe,boots
-мөрөн	shoulder
+мөрөн	shoulder, shoulder
 тархах	spread
 зохион байгуулах	arrange
 бааз	camp
@@ -2593,3 +2593,35 @@ cap	month
 харвах	v. shoot, dart
 нугалах	v. bend, fold
 үүргэвч	n. knapsack
+аз	n. luck
+анх	adj. first
+хором	n. instant, moment
+үүрэглэх	v. drowse, nap
+харуулдах	v. chip, shave
+далавч	n. leaf, blade
+шургах	v. creep in
+ёсоор	adv. accordingly
+дагина	n. pixy
+асрах	v. nurse, tend to
+халамжилсан	adj. tutorial
+авлах	v. hunt
+эзэн	n. boss
+өчүүхэн	adj. inconspicuous, insignificant
+төдий	adj. mere
+бүхэл	adj. full, whole
+багтаах	v. contain, comprise, include
+хадан	adj. rocky
+сүлжилдэх	v. interlace
+сүрэглэх	v. flock, horde
+гийх	v. shine
+навч	n. blade, leaf
+тохох	v. to put on
+дэмий	adv. in vain
+сайх	adj. the same
+хүмүүс	n. people
+гүйлдэх	v. run together
+шаваарах	v. crowd
+тохирох	v. convenient
+сүйх	n. carriage
+тэрэг	n. wagon
+хүчлэх	v. to force
