@@ -2566,3 +2566,30 @@ cap	month
 бээрэх	v. freeze
 эвлүүлэх	v. gather, assemble
 хөдөлгөх	v. move
+дээл	n. coat, garment
+өдөх	v. challenge, provoke
+нөмөргөх	v. sheet
+зөнөг	adj. senile
+оршуулах	v. bury
+халууцах	v. swelter
+гоёл	n. embroidery, garb
+хөөр	n. zest, jubilation
+сэлт	adj. imminent
+ачих	v. load, stow, freight
+хайрах	v. fry, sear
+худлаа	n. lie, not true
+цацарсан	adj. radiant
+буулгах	v. demolish, lower, down
+хөлдөх	v. freeze
+шуурах	v. storm, tempest
+хурдал	adv. hurry up
+угтах	v. greet, welcome
+мэргэ	n. prophecy
+гөрөх	v. braid, entwine
+шугуй	n. forest
+хэсэх	v. scour, wander
+үдшийн	n. nightfall
+урам	n. enthusiasm
+харвах	v. shoot, dart
+нугалах	v. bend, fold
+үүргэвч	n. knapsack

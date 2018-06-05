@@ -306,7 +306,7 @@ def getvowelharmonyletter(word):
     
     return retval
 
-def conjugateverb(originalWord,buildsourceword):
+def conjugateverb(originalWord,buildsourceword,completionMod=False):
     term=originalWord
     vowelharmony=getvowelharmonyletter(term)
 
@@ -347,29 +347,84 @@ def conjugateverb(originalWord,buildsourceword):
     #modified verbs for action verbs
     buildsourceword=buildsourceword+makeinflection(term[:-1]+"л",negativeYN=True)
     buildsourceword=buildsourceword+makeinflection(term[:-1]+"лт",reflexiveYN=True,instrumentalYN=True)
-    #print(term+str(len(term)))
-    #print(len(term)>2)
+
+    buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"гүй")
+
+    if(len(term)>2):
+        
+        if(term[-3:]=="чих"):
+            if(completionMod):
+                #narrative past
+                buildsourceword=buildsourceword+makeinflection(term+"жээ")
+                buildsourceword=buildsourceword+makeinflection(term+"чээ")
+
+                #past tense
+                buildsourceword=buildsourceword+makeinflection(term+"с"+vowelharmony+"н",negativeYN=True,reflexiveYN=True)
+
+            else:
+                #past tense
+                buildsourceword=buildsourceword+makeinflection(term[:-2]+"с"+vowelharmony+"н",negativeYN=True,reflexiveYN=True)
+
+                #intent
+                buildsourceword=buildsourceword+makeinflection(term[:-2]+"м"+vowelharmony+vowelharmony+"р")
+
+
+        else:
+            if(isMNVowelHarmonyVowel(term[-2])):
+
+                #narrative past
+                buildsourceword=buildsourceword+makeinflection(term[:-2]+"жээ")
+                buildsourceword=buildsourceword+makeinflection(term[:-2]+"чээ")
+
+                buildsourceword=buildsourceword+makeinflection(term[:-2]+"ж")
+
+                #past tense
+                buildsourceword=buildsourceword+makeinflection(term[:-2]+"с"+vowelharmony+"н",negativeYN=True,reflexiveYN=True)
+                #future tense
+                buildsourceword=buildsourceword+makeinflection(term[:-2]+"н"+vowelharmony)
+
+                #intent
+                buildsourceword=buildsourceword+makeinflection(term[:-2]+"м"+vowelharmony+vowelharmony+"р")
+            else:
+
+                
+            
+                if(term[-2])=="и"):
+                    #narrative past
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"ьжээ")
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"чээ")
+
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"ьж")
+
+                    #past tense
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"ьс"+vowelharmony+"н",negativeYN=True,reflexiveYN=True)
+                    #future tense
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"ьн"+vowelharmony)
+                else:
+
+                    #narrative past
+                    buildsourceword=buildsourceword+makeinflection(term[:-1]+"жээ")
+                    buildsourceword=buildsourceword+makeinflection(term[:-1]+"чээ")
+
+                    buildsourceword=buildsourceword+makeinflection(term[:-1]+"ж")
+                    #past tense
+                    buildsourceword=buildsourceword+makeinflection(term[:-1]+"с"+vowelharmony+"н",negativeYN=True,reflexiveYN=True)
+                    #future tense
+                    buildsourceword=buildsourceword+makeinflection(term[:-1]+"н"+vowelharmony)
+
+                    #intent
+                    buildsourceword=buildsourceword+makeinflection(term[:-1]+"м"+vowelharmony+vowelharmony+"р")
+
+                
+
 
     #take care of exceptions to ч rule
-    if(len(term)>2):
-        buildsourceword=buildsourceword+makeinflection(term[:-2]+"ж")
-        if(term[-2]=="и"):
-            buildsourceword=buildsourceword+makeinflection(term[:-2]+"ьж")
     if(len(term)>2 and (term[-3]=="г" or term[-3]=="в" or term[-3]=="р")):
         buildsourceword=buildsourceword+makeinflection(term[:-2]+"ч")
     
     
     if(len(term)>2):
-        #narrative past
-        buildsourceword=buildsourceword+makeinflection(term[:-2]+"жээ")
-        buildsourceword=buildsourceword+makeinflection(term[:-2]+"чээ")
-
-        #past tense
-        buildsourceword=buildsourceword+makeinflection(term[:-2]+"с"+vowelharmony+"н",negativeYN=True)
-        buildsourceword=buildsourceword+makeinflection(term[:-2]+"с"+vowelharmony+"н"+vowelharmony+vowelharmony,negativeYN=True)
-
-        #future tense
-        buildsourceword=buildsourceword+makeinflection(term[:-2]+"н"+vowelharmony)
+        
 
         #perpetual
         buildsourceword=buildsourceword+makeinflection(term[:-2]+"д"+vowelharmony+"г",negativeYN=True)
@@ -377,8 +432,7 @@ def conjugateverb(originalWord,buildsourceword):
         #recent past
         buildsourceword=buildsourceword+makeinflection(term[:-2]+"л"+vowelharmony+vowelharmony)
 
-        #intent
-        buildsourceword=buildsourceword+makeinflection(term[:-2]+"м"+vowelharmony+vowelharmony+"р")
+        
 
         #imperative
         buildsourceword=buildsourceword+makeinflection(term[:-2]+\
@@ -386,28 +440,17 @@ def conjugateverb(originalWord,buildsourceword):
 
         #conditional converb (if __, when __)
         buildsourceword=buildsourceword+makeinflection(term[:-2]+"в"+vowelharmony+"л")
-        
 
-    #narrative past
-    if(term[-3:]=="чих"):
-        buildsourceword=buildsourceword+makeinflection(term+"жээ")
-        buildsourceword=buildsourceword+makeinflection(term+"чээ")
-    else:
-        buildsourceword=buildsourceword+makeinflection(term[:-1]+"жээ")
-        buildsourceword=buildsourceword+makeinflection(term[:-1]+"чээ")
+        #no idea what this is
+        buildsourceword=buildsourceword+makeinflection(term[:-2]+"т"+vowelharmony+"л")
+
+    
 
     #complete action
     #buildsourceword=buildsourceword+makeinflection(term[:-1]+"чих",negativeYN=True)
 
     #unsure of this
     buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"ч")
-
-    #past tense
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+"с"+vowelharmony+"н",negativeYN=True)
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+"с"+vowelharmony+"н"+vowelharmony+vowelharmony,negativeYN=True)
-
-    #future tense
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+"н"+vowelharmony)
 
     #perpetual
     buildsourceword=buildsourceword+makeinflection(term[:-1]+"д"+vowelharmony+"г")
@@ -451,22 +494,8 @@ def writekey(to, key, defn):
         #vowelharmony=""
         vowelharmony=getvowelharmonyletter(term)
 
-        #negation
-        buildsourceword=buildsourceword+makeinflection(term+"гүй")
-
-        #capitalize
-        #print(term)
-        buildsourceword=buildsourceword+makeinflection(capitalize(term),capitalizeYN=False)
-
-		
-
-        #if 'а','о','ө','э'
-        # if(isMNVowelHarmonyVowel(lastletter)):
-        #     vowelharmony=lastletter
-        # else:
-        #     vowelharmony='a'
-
-		
+        #negation and capitalize
+        buildsourceword=buildsourceword+makeinflection(term,capitalizeYN=True,negativeYN=True)
 
         #if consonant
         if(not isMNVowel(lastletter) and len(term)>1):
@@ -527,12 +556,11 @@ def writekey(to, key, defn):
             #verbs
             if(lastletter=="х"):
                 buildsourceword=buildsourceword+conjugateverb(term,buildsourceword)
-                buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"гүй")
                 
                 #complete action
-                if(len(term)>3):
+                if(len(term)>3 and term[-3:]!="чих"):
                     buildsourceword=buildsourceword+makeinflection(term[:-2]+"чих",negativeYN=True)
-                    buildsourceword=buildsourceword+conjugateverb(term[:-2]+"чих",buildsourceword)
+                    buildsourceword=buildsourceword+conjugateverb(term[:-2]+"чих",buildsourceword,completionMod=True)
 
 
                 #passive voice
