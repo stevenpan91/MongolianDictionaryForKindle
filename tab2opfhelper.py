@@ -280,6 +280,10 @@ def makeinflection(word,capitalizeYN=True, negativeYN=False,reflexiveYN=False,in
         retval=retval+"<idx:infl><idx:iform value=\""+word+vowelharmony+vowelharmony+"р\"/></idx:infl>"
         if(capitalizeYN):
             retval=retval+"<idx:infl><idx:iform value=\""+capitalize(word)+vowelharmony+vowelharmony+"р\"/></idx:infl>"
+        if(reflexiveYN):
+            retval=retval+"<idx:infl><idx:iform value=\""+word+vowelharmony+vowelharmony+"р"+vowelharmony+vowelharmony+"\"/></idx:infl>"
+            if(capitalizeYN):
+                retval=retval+"<idx:infl><idx:iform value=\""+capitalize(word)+vowelharmony+vowelharmony+"р"+vowelharmony+vowelharmony+"\"/></idx:infl>"
     if(whichIsMarkerYN):
         retval=retval+makeinflection(word+"х",reflexiveYN=True)
         #retval=retval+"<idx:infl><idx:iform value=\""+word+"х\"/></idx:infl>"
@@ -364,6 +368,9 @@ def conjugateverb(originalWord,buildsourceword,completionMod=False):
                 #past tense
                 buildsourceword=buildsourceword+makeinflection(term+"с"+vowelharmony+"н",negativeYN=True,reflexiveYN=True)
 
+                #
+                buildsourceword=buildsourceword+makeinflection(term+vowelharmony+vowelharmony+"д",negativeYN=True,reflexiveYN=True)
+
 
         else:
             if((isMNVowelHarmonyVowel(term[-2]) and not isMNVowel(term[-2]))  or term[-3:]=="чих"): #filter out double vowels
@@ -380,9 +387,17 @@ def conjugateverb(originalWord,buildsourceword,completionMod=False):
                 #past tense
                 buildsourceword=buildsourceword+makeinflection(term[:-2]+"с"+vowelharmony+"н",negativeYN=True,reflexiveYN=True)
                 
-                #future tense
+                
                 if(term[-3]=="н"):
+                    #future tense
                     buildsourceword=buildsourceword+makeinflection(term[:-1]+"н"+vowelharmony)
+                elif(term[-3]=="г" or term[-3]=="в" or term[-3]=="р"):
+                    #take care of exceptions to ч rule
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"ч")
+                    buildsourceword=buildsourceword+makeinflection(term[:-3]+term[-2]+term[-3]+"ч") #take into account consonant vowel switch
+
+                    #future tense
+                    buildsourceword=buildsourceword+makeinflection(term[:-3]+term[-2]+term[-3]+"н"+vowelharmony) #take into account consonant vowel switch
                 else:
                     buildsourceword=buildsourceword+makeinflection(term[:-2]+"н"+vowelharmony)
 
@@ -391,6 +406,15 @@ def conjugateverb(originalWord,buildsourceword,completionMod=False):
 
 				#perpetual
                 buildsourceword=buildsourceword+makeinflection(term[:-2]+"д"+vowelharmony+"г",negativeYN=True)
+
+				
+   	            
+
+                if(isMNVowelHarmonyVowel(term[-2]) and not isMNVowel(term[-2])):
+				    #action happens before main action
+                    buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"д")
+                else: #term[-3:]=="чих"
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+vowelharmony+vowelharmony+"д")
             else:
 
                 
@@ -416,6 +440,9 @@ def conjugateverb(originalWord,buildsourceword,completionMod=False):
 
                     #perpetual
                     buildsourceword=buildsourceword+makeinflection(term[:-2]+"ьд"+vowelharmony+"г")
+
+                    #action happens before main action
+                    buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"д")
                 else:
 
                     #narrative past
@@ -434,12 +461,13 @@ def conjugateverb(originalWord,buildsourceword,completionMod=False):
                     #perpetual
                     buildsourceword=buildsourceword+makeinflection(term[:-1]+"д"+vowelharmony+"г")
 
+                    #action happens before main action
+                    buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"д")
+
                 
 
 
-    #take care of exceptions to ч rule
-    if(len(term)>2 and (term[-3]=="г" or term[-3]=="в" or term[-3]=="р")):
-        buildsourceword=buildsourceword+makeinflection(term[:-2]+"ч")
+    
     
     
     if(len(term)>2):
@@ -471,8 +499,7 @@ def conjugateverb(originalWord,buildsourceword,completionMod=False):
     #recent past
     buildsourceword=buildsourceword+makeinflection(term[:-1]+"л"+vowelharmony+vowelharmony)
 
-    #action happens before main action
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"д")
+    
     
     #conditional converb (if __, when __)
     buildsourceword=buildsourceword+makeinflection(term[:-1]+"в"+vowelharmony+"л")
@@ -574,7 +601,7 @@ def writekey(to, key, defn):
 
 
                 #passive voice
-                if(term[-5:]!="уулах" and term[-5:]!="үүлэх"):
+                if(len(term)>6 and term[-5:]!="уулах" and term[-5:]!="үүлэх"):
                     if(vowelharmony=='а' or vowelharmony=='у' or vowelharmony=='о'):
                         buildsourceword=buildsourceword+makeinflection(term[:-2]+"уулах",negativeYN=True)
                         buildsourceword=buildsourceword+conjugateverb(term[:-2]+"уулах",buildsourceword)
