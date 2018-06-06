@@ -323,7 +323,6 @@
 үүний оронд	stead
 гайхдаг	wonder
 инээд	laugh
-мянган	thousand
 гүйж	ran
 шалгах	check
 тоглоом	game
@@ -2625,3 +2624,35 @@ cap	month
 сүйх	n. carriage
 тэрэг	n. wagon
 хүчлэх	v. to force
+бус	???. not
+мянга	adj. thousand
+гүрэн	n. country
+атгах	v. grasp, squeeze
+байц	n. cliff
+хөлөг	n. small boat
+ийнхүү	adv. like this
+гөлрөх	v. stare
+хорчийх	v. wrap, mummify
+турах	v. reduce, thin
+ажих	v. look at
+тогших	v. knock
+хэрэх	v. loiter, roam
+зохих	v. behoove, warrant, suit
+хагацах	v. divoce, depart
+учрах	v. happen, occur
+тэгэхээр	conj. thereupon
+сүвэгч	n. eyehole
+бүтэх	v. realize, form
+урамшуулах	v. embolden, encourage
+шагнах	v. award, bestow, encourage
+зарлиг	n. decree, ordinance
+шаналах	v. regret, suffer
+уй	n. sadness (as in уй гашуу)
+ноорхой	adj. tattered, raggedy
+уйтгарлах	v. to sadden
+гэр	n. home
+бүтээх	v. accomplish, invent, envelop
+эргүү	n. idiot
+заль	n. deceit, lie, ruse
+даах	v. suffer
+эцэслэх	v. to do away with, end, terminate
