@@ -443,6 +443,10 @@ def conjugateverb(originalWord,buildsourceword,completionMod=False):
 
                     #action happens before main action
                     buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"д")
+
+                    if(term[-3]=="г" or term[-3]=="в" or term[-3]=="р"):
+                        #take care of exceptions to ч rule
+                        buildsourceword=buildsourceword+makeinflection(term[:-2]+"ч")
                 else:
 
                     #narrative past
@@ -569,12 +573,20 @@ def writekey(to, key, defn):
                 buildsourceword=buildsourceword+makeinflection(term+"ийг")
                 buildsourceword=buildsourceword+makeinflection(term+"ыг")
             else:
-                #gen
-                buildsourceword=buildsourceword+makeinflection(term+"ийн",whichIsMarkerYN=True)
-                buildsourceword=buildsourceword+makeinflection(term+"ын",whichIsMarkerYN=True)
-                #acc
-                buildsourceword=buildsourceword+makeinflection(term+"ийг")
-                buildsourceword=buildsourceword+makeinflection(term+"ыг")
+                if(lastletter=="р"):
+                    #gen
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+lastletter+"ийн",whichIsMarkerYN=True)
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+lastletter+"ын",whichIsMarkerYN=True)
+                    #acc
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+lastletter+"ийг")
+                    buildsourceword=buildsourceword+makeinflection(term[:-2]+lastletter+"ыг")
+                else:
+                    #gen
+                    buildsourceword=buildsourceword+makeinflection(term+"ийн",whichIsMarkerYN=True)
+                    buildsourceword=buildsourceword+makeinflection(term+"ын",whichIsMarkerYN=True)
+                    #acc
+                    buildsourceword=buildsourceword+makeinflection(term+"ийг")
+                    buildsourceword=buildsourceword+makeinflection(term+"ыг")
 
             #dative case
             if(lastletter=="г" or lastletter=="в" or lastletter=="с" or lastletter=="р" or lastletter=="к"):

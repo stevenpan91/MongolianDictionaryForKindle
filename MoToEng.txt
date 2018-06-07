@@ -2673,3 +2673,15 @@ cap	month
 хоёул	adj. both
 чөтгөр	n. demon,ghost
 овоолох	v. to pile up
+хааш	adj. whither
+бороохойдох	v. club, bludgeon
+мэндлэх	v. greet
+зовних	v. sorrow
+аягалах	v. pour
+нойрсуулах	v. hypnotize
+таашаагдах	???. please
+үнэнч	adj. faithful
+нойрсох	v. sleep
+ял	n. accusation, condemnation
+зэс	n. copper
+тугалган	n. tin
