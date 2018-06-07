@@ -329,6 +329,8 @@ def conjugateverb(originalWord,buildsourceword,completionMod=False):
     #build imperative
     buildsourceword=buildsourceword+makeinflection(term[:-1])
 
+    #if(term=="зайлуулах"):
+        #print(term[:(-1*(1+impCount))])
     if(len(term)>impCount+1):
         buildsourceword=buildsourceword+makeinflection(term[:(-1*(1+impCount))])
 
@@ -373,7 +375,7 @@ def conjugateverb(originalWord,buildsourceword,completionMod=False):
 
 
         else:
-            if((isMNVowelHarmonyVowel(term[-2]) and not isMNVowel(term[-2]))  or term[-3:]=="чих"): #filter out double vowels
+            if((isMNVowelHarmonyVowel(term[-2]) and not isMNVowel(term[-3]))  or term[-3:]=="чих"): #filter out double vowels
 
                 #narrative past
                 buildsourceword=buildsourceword+makeinflection(term[:-2]+"жээ")
@@ -573,7 +575,7 @@ def writekey(to, key, defn):
                 buildsourceword=buildsourceword+makeinflection(term+"ийг")
                 buildsourceword=buildsourceword+makeinflection(term+"ыг")
             else:
-                if(lastletter=="р"):
+                if(lastletter=="р" and not isMNVowel(term[:-3])):
                     #gen
                     buildsourceword=buildsourceword+makeinflection(term[:-2]+lastletter+"ийн",whichIsMarkerYN=True)
                     buildsourceword=buildsourceword+makeinflection(term[:-2]+lastletter+"ын",whichIsMarkerYN=True)
@@ -609,11 +611,13 @@ def writekey(to, key, defn):
                 #complete action
                 if(len(term)>3 and term[-3:]!="чих"):
                     buildsourceword=buildsourceword+makeinflection(term[:-2]+"чих",negativeYN=True)
-                    buildsourceword=buildsourceword+conjugateverb(term[:-2]+"чих",buildsourceword,completionMod=True)
+                    #buildsourceword=buildsourceword+conjugateverb(term[:-2]+"чих",buildsourceword,completionMod=True)
 
-
+                #if(term=="зайлах"):
+                    #print(term)
+                    #print(term[:-2]+"уулах")
                 #passive voice
-                if(len(term)>6 and term[-5:]!="уулах" and term[-5:]!="үүлэх"):
+                if(len(term)>2 and term[-5:]!="уулах" and term[-5:]!="үүлэх"):
                     if(vowelharmony=='а' or vowelharmony=='у' or vowelharmony=='о'):
                         buildsourceword=buildsourceword+makeinflection(term[:-2]+"уулах",negativeYN=True)
                         buildsourceword=buildsourceword+conjugateverb(term[:-2]+"уулах",buildsourceword)
@@ -625,9 +629,11 @@ def writekey(to, key, defn):
                 if(term[-4:]!="лдах" and term[-4:]!="лдэх"):
                     if(vowelharmony=='а' or vowelharmony=='у' or vowelharmony=='о'):
                         buildsourceword=buildsourceword+makeinflection(term[:-1]+"лдах",negativeYN=True)
+                        buildsourceword=buildsourceword+makeinflection(term[:-1]+"лдан")
                         #buildsourceword=buildsourceword+conjugateverb(term[:-1]+"лдах",buildsourceword)
                     else:
                         buildsourceword=buildsourceword+makeinflection(term[:-1]+"лдэх",negativeYN=True)
+                        buildsourceword=buildsourceword+makeinflection(term[:-1]+"лдан")
                         #buildsourceword=buildsourceword+conjugateverb(term[:-1]+"лдэх",buildsourceword)
             else:
                 #plurals for non verbs

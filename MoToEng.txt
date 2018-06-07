@@ -2685,3 +2685,31 @@ cap	month
 ял	n. accusation, condemnation
 зэс	n. copper
 тугалган	n. tin
+бэрхшээх	v. despair
+тоочих	v. to enumerate
+нарлах	v. sunbathe
+өвөрлөх	v. to harbor, nourish
+тэртээх	v. located on the other side
+гишгэх	v. to step
+бахиар	n. pincer
+хавчих	v. clamp
+саваа	n. stick, rod
+амт	n. aroma
+хугарах	v. deflect
+тахилзах	v. crooked
+нахилзах	v. shake
+янз	n. type of
+лам	n. monk
+жанчих	v. to beat, hit
+ид	n. witchcraft (as in ид шид)
+савалзах	v. move fast
+давших	v. advance, progress
+хэнхдэг	n. front of chest
+сандрах	v. to be in confusion
+түргэн	adv. quickly
+түгжээ	n. lock
+ухаан	n. intellect
+эз	n. omen
+занах	v. hatred, grudge
+туйл	n. the extreme end of something, pole (like magnetic pole)
+устгах	v. eliminate
