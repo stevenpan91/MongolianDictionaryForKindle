@@ -2713,7 +2713,7 @@ cap	month
 занах	v. hatred, grudge
 туйл	n. the extreme end of something, pole (like magnetic pole)
 устгах	v. eliminate
-эс	n. fiber, tissue
+эс	n. fiber, tissue, also "not to know" as in (эс мэдэх)
 хууч	n. sickness
 залгилах	v. lap, swill
 сахих	v. maintain, preserve
@@ -2733,3 +2733,58 @@ cap	month
 сэв	n. blemish
 тов	n. date (as in time)
 бөөрөнхий	adj. round
+гүйцэтгэх	v. to carry out
+наманчлах	v. confess, redeem
+хазагдах	v. to be bitten
+буурах	v. decrease
+өрөх	v. set, arrange
+нэрэлхэх	v. hesitate
+зовох	v. worry, agonize
+шалгаах	v. beseech, implore
+саван	n. soap
+хувцаслах	v. to clothe
+бүлээн	adj. warm
+хаяа	n. perspective, plane
+араатан	n. beast, predator
+бяц	n. small pieces
+бухал	n. hay
+ойчих	n. fall
+хийлэх	v. pump, ventilate
+жим	n. path, runway
+таглах	v. cork, cover
+хучигдсан	adj. under, cloudy
+сахал	n. facial hair
+хадам	adj. in-law
+чанга	adj. abrupt, acute
+торх	n. barrel, keg
+жигнэх	v. steam, stew
+гулууз	n. rolling pin
+огтлох	v. cleave, chop
+сармис	n. garlic
+дүрэх	v. jab, thrust
+сайшаах	v. applaud, praise
+хог	n. dirt, garbage
+үлдэгдэл	n. leftovers, odds and ends
+чангалах	v. fix, fasten
+амттан	n. candy, sweets
+хэчнээн	adj. how many, what
+түлэнхий	adj. sear, scorch
+барах	v. deplete, drain
+ач	n. favor
+хүр	n. silkworm moth
+солбих	v. cross, intersect
+түрүүн	adv. previously
+хүчит	adj. strong
+хуйлрах	v. twirl, roll
+жижигрэх	v. decrease
+долгион	n. wave
+гайхамшиг	n. phoenix, marvel
+дундах	v. in the middle
+хөвөх	v. swim, sail
+зангуу	n. anchor
+зав	n. free time
+арлын	n. insular
+гялалзах	v. to glow
+шимтэх	v. to endeavor
+арз	n. milk vodka
+ирмэх	v. to twinkle, wink

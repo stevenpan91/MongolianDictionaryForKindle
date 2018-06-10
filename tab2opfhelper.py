@@ -264,7 +264,8 @@ def capitalize(word):
     return word
 
 def makeinflection(word,capitalizeYN=True, negativeYN=False,reflexiveYN=False,instrumentalYN=False,whichIsMarkerYN=False):
-    vowelharmony=getvowelharmonyletter(word)
+    #vowelharmony=getvowelharmonyletter(word)
+    vowelharmony=getvowelharmonyletter(word)[0]
     retval="<idx:infl><idx:iform value=\""+word+"\"/></idx:infl>"
     if(capitalizeYN):
         retval=retval+"<idx:infl><idx:iform value=\""+capitalize(word)+"\"/></idx:infl>"
@@ -292,423 +293,442 @@ def makeinflection(word,capitalizeYN=True, negativeYN=False,reflexiveYN=False,in
     return retval
 
 def getvowelharmonyletter(word):
-    retval='э'#feminine vowels and words with only neutral vowels will have э for vowel harmony
+    retval=['э','э','ү'] #0: individual VH, 1: primary VH, 2: secondary VH
+    #retval='э'#feminine vowels and words with only neutral vowels will have э for vowel harmony
     notfound=True
     index=len(word)-1
-    while(notfound):
-        if(isMNVowel(word[index])):
-            if(word[index]=='а' or word[index]=='у' or word[index]=='о' or word[index]=='я' or word[index]=='ё'): #if a masculine vowel is found, switch to 'a'
-                retval='а'
+    #print(word)
+    if(len(word)>1):
+        while(notfound):
+            if(isMNVowel(word[index])):
+                if(word[index]=='а' or word[index]=='у' or word[index]=='о' or word[index]=='я' or word[index]=='ё'): #if a masculine vowel is found, switch to 'a'
+                    #retval='а'
+                    retval=['а','а','у']
 
-        if(isMNVowelHarmonyVowel(word[index])):
-            notfound=False
-            retval=word[index]
-        index-=1
-        if(index<0):
-            notfound=False
-        #print(index)
+            if(isMNVowelHarmonyVowel(word[index])):
+                notfound=False
+                #retval=word[index]
+                retval[0]=word[index]
+            index-=1
+            if(index<0):
+                notfound=False
+            #print(index)
     
     return retval
 
-def conjugateverb(originalWord,buildsourceword,completionMod=False):
-    term=originalWord
-    vowelharmony=getvowelharmonyletter(term)
 
 
-    #imperative
-    impCount=0
-    stop=False
-    for c in reversed(term[:-1]): #go through term without x at end of verb
-        if(stop==False and (c=="а" or c=="у" or c=="о" or c=="ү" or c=="ө")):
-            impCount+=1
-            if (len(term)>impCount+2 and term[-(impCount+2)]=="г"): #+2 because skip x and skip letter just added
-                impCount+=1
+class MongolianWord:
+    term=""
+    chain=""
+    vowelharmonies=[]
+    vowelharmony=""
+    PVH=""
+    SVH=""
+    def __init__(self,word):
+        self.term=word
+        #chain="<idx:orth value=\""+key+"\">"
+        self.chain=""
+        self.vowelharmonies=getvowelharmonyletter(word)
+        self.vowelharmony=self.vowelharmonies[0]
+        self.PVH=self.vowelharmonies[1]
+        self.SVH=self.vowelharmonies[2]
+
+    def buildIt(self,combo,modifier="None",capitalizeYN=True, negativeYN=False,reflexiveYN=False,instrumentalYN=False,whichIsMarkerYN=False): #absorbed as in the vowel before "х" is absorbed
+        modifiedTerm=self.getModifiedTerm(modifier)
+        self.chain=self.chain+makeinflection(modifiedTerm+combo,capitalizeYN=capitalizeYN, negativeYN=negativeYN,reflexiveYN=reflexiveYN,instrumentalYN=instrumentalYN,whichIsMarkerYN=whichIsMarkerYN)
+
+    def buildItVerb(self,combo,modifier="RemoveLast",capitalizeYN=True, negativeYN=False,reflexiveYN=False,instrumentalYN=False,whichIsMarkerYN=False): #absorbed as in the vowel before "х" is absorbed
+        modifiedTerm=self.getModifiedTerm(modifier)
+        self.chain=self.chain+makeinflection(modifiedTerm+combo,capitalizeYN=capitalizeYN, negativeYN=negativeYN,reflexiveYN=reflexiveYN,instrumentalYN=instrumentalYN,whichIsMarkerYN=whichIsMarkerYN)
+
+    def conjugateIt(self,combo="",modifier="None"):
+        modifiedTerm=self.getModifiedTerm(modifier)
+        self.chain=self.chain+self.conjugateverb(modifiedTerm+combo)
+
+    def makeGenAcc(self,combo="ий",modifier="None",dropGenEnd=False): #make genitive accusative
+        #modifiedTerm=self.getModifiedTerm(modifier)
+
+        #gen
+        if(dropGenEnd):
+            self.buildIt(combo,modifier,whichIsMarkerYN=True)
         else:
-            stop=True
-
-    #build imperative
-    buildsourceword=buildsourceword+makeinflection(term[:-1])
-
-    #if(term=="зайлуулах"):
-        #print(term[:(-1*(1+impCount))])
-    if(len(term)>impCount+1):
-        buildsourceword=buildsourceword+makeinflection(term[:(-1*(1+impCount))])
-
-    #unsure what this is
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+"г"+vowelharmony+vowelharmony+"д")
-
-    #when/while ____
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+"х"+vowelharmony+"д")
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+"хд"+vowelharmony+vowelharmony)
-
-    #modified verbs for progressive tense
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+"ж")
+            self.buildIt(combo+"н",modifier,whichIsMarkerYN=True)
     
-    #modified verbs for recent past
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+"в")
-    #modified verbs for modal converb
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+"н")
-    #still dative case?
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+"нд")
-    #modified verbs for action verbs
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+"л",negativeYN=True)
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+"лт",reflexiveYN=True,instrumentalYN=True)
+        #acc
+        self.buildIt(combo+"г",modifier)
 
-    #action of the main clause has been happening since the action of the sub clause
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+"с"+vowelharmony+vowelharmony+"р",negativeYN=True)
+    def makeDat(self,combo="д",modifier="None"):
+        self.buildIt(combo,modifier,reflexiveYN=True,instrumentalYN=True)
 
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"гүй")
+    def makeVerbSuffixes(self,combo="",modifier="RemoveLast"):
+        #past
+        self.buildIt(combo+"с"+self.vowelharmony+"н",modifier,negativeYN=True,reflexiveYN=True)
 
-    if(len(term)>2):
-        
-        if(term[-3:]=="чих" and completionMod):
-            if(completionMod):
-                #narrative past
-                buildsourceword=buildsourceword+makeinflection(term+"жээ")
-                buildsourceword=buildsourceword+makeinflection(term+"чээ")
+        #future
+        self.buildIt(combo+"н"+self.vowelharmony,modifier)
 
-                #past tense
-                buildsourceword=buildsourceword+makeinflection(term+"с"+vowelharmony+"н",negativeYN=True,reflexiveYN=True)
+        self.buildIt(combo+"ж",modifier)
 
-                #
-                buildsourceword=buildsourceword+makeinflection(term+vowelharmony+vowelharmony+"д",negativeYN=True,reflexiveYN=True)
+        #narrative past
+        self.buildIt(combo+"жээ",modifier)
+        self.buildIt("чээ",modifier)
 
+        self.buildIt("ч",modifier)
 
-        else:
-            if((isMNVowelHarmonyVowel(term[-2]) and not isMNVowel(term[-3]))  or term[-3:]=="чих"): #filter out double vowels
-
-                #narrative past
-                buildsourceword=buildsourceword+makeinflection(term[:-2]+"жээ")
-                buildsourceword=buildsourceword+makeinflection(term[:-2]+"чээ")
-
-                if(term[-3]=="ш" or term[-3]=="ж"):
-                    buildsourceword=buildsourceword+makeinflection(term[:-1]+"ж")
-                else:
-                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"ж")
-
-                #past tense
-                buildsourceword=buildsourceword+makeinflection(term[:-2]+"с"+vowelharmony+"н",negativeYN=True,reflexiveYN=True)
-                
-                
-                if(term[-3]=="н"):
-                    #future tense
-                    buildsourceword=buildsourceword+makeinflection(term[:-1]+"н"+vowelharmony)
-                elif(term[-3]=="г" or term[-3]=="в" or term[-3]=="р"):
-                    #take care of exceptions to ч rule
-                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"ч")
-                    buildsourceword=buildsourceword+makeinflection(term[:-3]+term[-2]+term[-3]+"ч") #take into account consonant vowel switch
-
-                    #future tense
-                    buildsourceword=buildsourceword+makeinflection(term[:-3]+term[-2]+term[-3]+"н"+vowelharmony) #take into account consonant vowel switch
-                else:
-                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"н"+vowelharmony)
-
-                #intent
-                buildsourceword=buildsourceword+makeinflection(term[:-2]+"м"+vowelharmony+vowelharmony+"р")
-
-				#perpetual
-                buildsourceword=buildsourceword+makeinflection(term[:-2]+"д"+vowelharmony+"г",negativeYN=True)
-
-				
-   	            
-
-                if(isMNVowelHarmonyVowel(term[-2]) and not isMNVowel(term[-2])):
-				    #action happens before main action
-                    buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"д")
-                else: #term[-3:]=="чих"
-                    buildsourceword=buildsourceword+makeinflection(term[:-2]+vowelharmony+vowelharmony+"д")
-            else:
-
-                
-            
-                if(term[-2]=="и"):
-                    #narrative past
-                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"ьжээ")
-                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"чээ")
-
-                    if(term[-3]=="ш" or term[-3]=="ж"):
-                        buildsourceword=buildsourceword+makeinflection(term[:-1]+"ж")
-                    else:
-                        buildsourceword=buildsourceword+makeinflection(term[:-2]+"ьж")
-
-                    #past tense
-                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"с"+vowelharmony+"н",negativeYN=True,reflexiveYN=True)
-                
-                    #future tense
-                    if(term[-3]=="н"):
-                        buildsourceword=buildsourceword+makeinflection(term[:-1]+"н"+vowelharmony)
-                    else:
-                        buildsourceword=buildsourceword+makeinflection(term[:-2]+"ьн"+vowelharmony)
-
-                    #perpetual
-                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"ьд"+vowelharmony+"г")
-
-                    #action happens before main action
-                    buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"д")
-
-                    if(term[-3]=="г" or term[-3]=="в" or term[-3]=="р"):
-                        #take care of exceptions to ч rule
-                        buildsourceword=buildsourceword+makeinflection(term[:-2]+"ч")
-                else:
-
-                    #narrative past
-                    buildsourceword=buildsourceword+makeinflection(term[:-1]+"жээ")
-                    buildsourceword=buildsourceword+makeinflection(term[:-1]+"чээ")
-
-                    buildsourceword=buildsourceword+makeinflection(term[:-1]+"ж")
-                    #past tense
-                    buildsourceword=buildsourceword+makeinflection(term[:-1]+"с"+vowelharmony+"н",negativeYN=True,reflexiveYN=True)
-                    #future tense
-                    buildsourceword=buildsourceword+makeinflection(term[:-1]+"н"+vowelharmony)
-
-                    #intent
-                    buildsourceword=buildsourceword+makeinflection(term[:-1]+"м"+vowelharmony+vowelharmony+"р")
-
-                    #perpetual
-                    buildsourceword=buildsourceword+makeinflection(term[:-1]+"д"+vowelharmony+"г")
-
-                    #action happens before main action
-                    buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"д")
-
-                
-
-
-    
-    
-    
-    if(len(term)>2):
-        
-        
-        #recent past
-        buildsourceword=buildsourceword+makeinflection(term[:-2]+"л"+vowelharmony+vowelharmony)
-
-        
-        #imperative
-        buildsourceword=buildsourceword+makeinflection(term[:-2]+\
-                    vowelharmony+vowelharmony+"р"+vowelharmony+"й")
+        #perpetual
+        self.buildItVerb(combo+"д"+self.vowelharmony+"г",modifier,negativeYN=True)
 
         #conditional converb (if __, when __)
-        buildsourceword=buildsourceword+makeinflection(term[:-2]+"в"+vowelharmony+"л")
+        self.buildItVerb(combo+"в"+self.vowelharmony+"л",modifier)
 
         #no idea what this is
-        buildsourceword=buildsourceword+makeinflection(term[:-2]+"т"+vowelharmony+"л")
+        self.buildItVerb(combo+"т"+self.vowelharmony+"л",modifier)
 
-    
+        #intent
+        self.buildItVerb(combo+"м"+self.vowelharmony+self.vowelharmony+"р",modifier) 
 
-    #complete action
-    #buildsourceword=buildsourceword+makeinflection(term[:-1]+"чих",negativeYN=True)
+        #recent past
+        self.buildItVerb(combo+"л"+self.vowelharmony+self.vowelharmony,modifier)
 
-    #unsure of this
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"ч")
+        #as soon as
+        self.buildItVerb(combo+"м"+self.vowelharmony+"гц",modifier) 
 
-    
-    #recent past
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+"л"+vowelharmony+vowelharmony)
+    def getModifiedTerm(self,modifier="None"):
+        modifiedTerm=self.term #default to none
+        
+        if(modifier=="Absorbed"):
+            modifiedTerm=self.term[:-2]
+        elif(modifier=="RemoveLast"):
+            modifiedTerm=self.term[:-1]
+        elif(modifier=="Switch"): #switch
+            modifiedTerm=self.term[:-3]+self.term[-2]+self.term[-3]
 
-    
-    
-    #conditional converb (if __, when __)
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+"в"+vowelharmony+"л")
+        return modifiedTerm
 
-    #no idea what this is
-    buildsourceword=buildsourceword+makeinflection(term[:-1]+"т"+vowelharmony+"л")
 
-    #Let's ___
-    if(isMNVowel(term[-2])):
-        if(term[-2]=="а" or term[-2]=="у" or term[-2]=="я"):
-            buildsourceword=buildsourceword+makeinflection(term[:-2]+"ъя")
-            buildsourceword=buildsourceword+makeinflection(term[:-1]+"ъя")
-        elif(term[-2]=="э" or term[-2]=="и" or term[-2]=="ө" or term[-2]=="ү"):
-            buildsourceword=buildsourceword+makeinflection(term[:-2]+"ье")
-            buildsourceword=buildsourceword+makeinflection(term[:-1]+"ье")
-        else:
-            buildsourceword=buildsourceword+makeinflection(term[:-2]+"ъё")
-            buildsourceword=buildsourceword+makeinflection(term[:-1]+"ъё")
+    def conjugateverb(self,originalWord=term,completionMod=False):
+        term=originalWord
+        #vowelharmony=getvowelharmonyletter(term)
+        vowelharmony=getvowelharmonyletter(term)[0]
 
-    return buildsourceword
+        #imperative
+        impCount=0
+        stop=False
+        for c in reversed(term[:-1]): #go through term without x at end of verb
+            if(stop==False and (c=="а" or c=="у" or c=="о" or c=="ү" or c=="ө")):
+                impCount+=1
+                if (len(term)>impCount+2 and term[-(impCount+2)]=="г"): #+2 because skip x and skip letter just added
+                    impCount+=1
+            else:
+                stop=True
+
+        #build imperative
+        self.buildItVerb("")
+
+        if(len(term)>impCount+1):
+            #buildsourceword=buildsourceword+makeinflection(term[:(-1*(1+impCount))])
+            self.chain=self.chain+makeinflection(term[:(-1*(1+impCount))])
+
+        #unsure what this is
+        self.buildItVerb("г"+vowelharmony+vowelharmony+"д")
+
+        #when/while ____
+        self.buildItVerb("х"+vowelharmony+"д")
+        self.makeDat("хд",modifier="RemoveLast")
+
+        #modified verbs for progressive tense
+        self.buildItVerb("ж")
+        
+        #modified verbs for recent past
+        self.buildItVerb("в")
+
+        #modified verbs for modal converb
+        self.buildItVerb("н")
+        
+        #still dative case?
+        self.makeDat("нд",modifier="RemoveLast")
+        
+        #modified verbs for action verbs
+        self.buildItVerb("л",negativeYN=True)
+        self.makeDat("лт",modifier="RemoveLast")
+
+        self.buildItVerb(vowelharmony+"гүй")
+
+        
+        if(len(term)>2):
+            
+            if(term[-3:]=="чих" and completionMod):
+                if(completionMod):
+
+                    self.makeVerbSuffixes(modifier="None")
+
+                    #
+                    #buildsourceword=buildsourceword+makeinflection(term+vowelharmony+vowelharmony+"д",negativeYN=True,reflexiveYN=True)
+                    self.buildItVerb(vowelharmony+vowelharmony+"д",modifier="None",negativeYN=True,reflexiveYN=True)
+
+
+            else:
+                if((isMNVowelHarmonyVowel(term[-2]) and not isMNVowel(term[-3]) and term[-3]!="г")  or term[-3:]=="чих"): #filter out double vowels
+                    #action of the main clause has been happening since the action of the sub clause
+                    #buildsourceword=buildsourceword+makeinflection(term[:-2]+"с"+vowelharmony+vowelharmony+"р",negativeYN=True)
+                    self.buildItVerb("с"+vowelharmony+vowelharmony+"р",modifier="Absorbed",negativeYN=True)
+
+                    if(term[-3]=="ш" or term[-3]=="ж" or term[-3]=="н" or term[-3]=="з"):
+                        self.makeVerbSuffixes()
+                    elif(len(term)>5 and ( (term[-3]=="л" or term[-3]=="р") and not isMNVowel(term[-4]) ) ):
+                        self.makeVerbSuffixes(modifier="Switch")
+                    else:
+                        self.makeVerbSuffixes(modifier="Absorbed")
+
+                    if(isMNVowelHarmonyVowel(term[-2]) and not isMNVowel(term[-2])):
+                        #action happens before main action
+                        self.buildItVerb(vowelharmony+"д")
+                    else: #term[-3:]=="чих"
+                        self.buildItVerb(vowelharmony+vowelharmony+"д",modifier="Absorbed")
+                else:
+
+                    #action of the main clause has been happening since the action of the sub clause
+                    #buildsourceword=buildsourceword+makeinflection(term[:-1]+"с"+vowelharmony+vowelharmony+"р",negativeYN=True)
+                    self.buildItVerb("с"+vowelharmony+vowelharmony+"р",negativeYN=True)
+                
+                    if(term[-2]=="и"):
+
+
+                        if(term[-3]=="н" or term[-3]=="ш" or term[-3]=="ж"):
+                            self.makeVerbSuffixes()
+                        else:
+                            self.makeVerbSuffixes("ь")
+
+
+                        #action happens before main action
+                        #buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"д")
+                        self.buildItVerb(vowelharmony+"д")
+
+                        if(term[-3]=="г" or term[-3]=="в" or term[-3]=="р"):
+                            #take care of exceptions to ч rule
+                            #buildsourceword=buildsourceword+makeinflection(term[:-2]+"ч")
+                            self.buildItVerb("ч",modifier="Absorbed")
+                    else:
+
+
+                        self.makeVerbSuffixes()
+
+
+                        #action happens before main action
+                        #buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"д")
+                        self.buildItVerb(vowelharmony+"д")
+                    
+
+
+        
+        buildsourceword=self.chain
+        
+        if(len(term)>2):
+            
+
+            
+            #imperative
+            buildsourceword=buildsourceword+makeinflection(term[:-2]+\
+                        vowelharmony+vowelharmony+"р"+vowelharmony+"й")
+
+        
+
+        #complete action
+        #buildsourceword=buildsourceword+makeinflection(term[:-1]+"чих",negativeYN=True)
+
+        #unsure of this
+        buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"ч")
+
+        
+        
+
+        #Let's ___
+        if(isMNVowel(term[-2])):
+            if(term[-2]=="а" or term[-2]=="у" or term[-2]=="я"):
+                buildsourceword=buildsourceword+makeinflection(term[:-2]+"ъя")
+                buildsourceword=buildsourceword+makeinflection(term[:-1]+"ъя")
+            elif(term[-2]=="э" or term[-2]=="и" or term[-2]=="ө" or term[-2]=="ү"):
+                buildsourceword=buildsourceword+makeinflection(term[:-2]+"ье")
+                buildsourceword=buildsourceword+makeinflection(term[:-1]+"ье")
+            else:
+                buildsourceword=buildsourceword+makeinflection(term[:-2]+"ъё")
+                buildsourceword=buildsourceword+makeinflection(term[:-1]+"ъё")
+
+        return buildsourceword
 
 # Write into to the key, definition pairs
 # key -> [[term, defn, key==term]]
 def writekey(to, key, defn):
     terms = iter(sorted(defn, key=keyf))
     for term, g in groupby(terms, key=lambda d: d[0]):
+        mg = MongolianWord(term)
         lastletter=term[-1]
-        buildsourceword="<idx:orth value=\""+key+"\">"
+        mg.chain="<idx:orth value=\""+key+"\">"
         #vowelharmony=""
-        vowelharmony=getvowelharmonyletter(term)
+        #vowelharmony=getvowelharmonyletter(term)
+        vowelharmonyletters=getvowelharmonyletter(term)
+        vowelharmony=vowelharmonyletters[0]
+        PVH=vowelharmonyletters[1] #as in а or э
+        SVH=vowelharmonyletters[2] #as in у or ү
+        #print(vowelharmony+PVH+SVH)
 
         #negation and capitalize
-        buildsourceword=buildsourceword+makeinflection(term,capitalizeYN=True,negativeYN=True)
+        mg.buildIt("",capitalizeYN=True,negativeYN=True)
 
         #if consonant
         if(not isMNVowel(lastletter) and len(term)>1):
-            #check second to last letter
-            #if(isMNVowelHarmonyVowel(term[-2])):
-            #    vowelharmony=term[-2]
 
 			#possibly converb? Causes conflicts, commented out
             #buildsourceword=buildsourceword+makeinflection(term+vowelharmony+"н")
 
             #ablative case (from <term>)
-            buildsourceword=buildsourceword+makeinflection(term+vowelharmony+vowelharmony+"с")
+            mg.buildIt(vowelharmony+vowelharmony+"с")
             if(lastletter=="х"):
-                buildsourceword=buildsourceword+makeinflection(term+"н"+vowelharmony+vowelharmony+"с")
+                mg.buildIt("н"+vowelharmony+vowelharmony+"с")
 
             #instrumental case
-            buildsourceword=buildsourceword+makeinflection(term+vowelharmony+vowelharmony+"р",negativeYN=True)
+            mg.buildIt(vowelharmony+vowelharmony+"р",negativeYN=True)
 
             #genitive case + accusitive case
-            if(lastletter=="ж" or lastletter=="ч" or lastletter=="г" or lastletter=="ш" or lastletter=="ь" or lastletter=="к"):
+            if(lastletter=="ж" or lastletter=="ч" or lastletter=="г" or lastletter=="ш" or lastletter=="ь" or lastletter=="к"):   
+                mg.makeGenAcc()
                 #gen
-                buildsourceword=buildsourceword+makeinflection(term+"ийн",whichIsMarkerYN=True)
                 if(lastletter=="г"):
-                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"гийн",whichIsMarkerYN=True)
-
-                #acc
-                buildsourceword=buildsourceword+makeinflection(term+"ийг")
+                    mg.buildIt("гийн",modifier="Absorbed",whichIsMarkerYN=True)
+                
             elif(lastletter=="н"):
+                mg.makeGenAcc(dropGenEnd=True)
+                mg.makeGenAcc("ы",dropGenEnd=True)
                 #gen
-                buildsourceword=buildsourceword+makeinflection(term+"ий",whichIsMarkerYN=True)
-                buildsourceword=buildsourceword+makeinflection(term+"ы",whichIsMarkerYN=True)
-                buildsourceword=buildsourceword+makeinflection(term+"гийн",whichIsMarkerYN=True)
-                #acc
-                buildsourceword=buildsourceword+makeinflection(term+"ийг")
-                buildsourceword=buildsourceword+makeinflection(term+"ыг")
+                mg.buildIt("гийн",whichIsMarkerYN=True)
+
             else:
+                
                 if(lastletter=="р" and not isMNVowel(term[:-3])):
-                    #gen
-                    buildsourceword=buildsourceword+makeinflection(term[:-2]+lastletter+"ийн",whichIsMarkerYN=True)
-                    buildsourceword=buildsourceword+makeinflection(term[:-2]+lastletter+"ын",whichIsMarkerYN=True)
-                    #acc
-                    buildsourceword=buildsourceword+makeinflection(term[:-2]+lastletter+"ийг")
-                    buildsourceword=buildsourceword+makeinflection(term[:-2]+lastletter+"ыг")
+                    mg.makeGenAcc(modifier="Absorbed")
+                    mg.makeGenAcc("ы",modifier="Absorbed")
                 else:
-                    #gen
-                    buildsourceword=buildsourceword+makeinflection(term+"ийн",whichIsMarkerYN=True)
-                    buildsourceword=buildsourceword+makeinflection(term+"ын",whichIsMarkerYN=True)
-                    #acc
-                    buildsourceword=buildsourceword+makeinflection(term+"ийг")
-                    buildsourceword=buildsourceword+makeinflection(term+"ыг")
+                    mg.makeGenAcc()
+                    mg.makeGenAcc("ы")
+
+            
 
             #dative case
             if(lastletter=="г" or lastletter=="в" or lastletter=="с" or lastletter=="р" or lastletter=="к"):
-                buildsourceword=buildsourceword+makeinflection(term+"т",reflexiveYN=True,instrumentalYN=True)
+                mg.makeDat("т")
             elif(lastletter=="д" or lastletter=="т" or lastletter=="з" or lastletter=="ц"):
-                buildsourceword=buildsourceword+makeinflection(term+vowelharmony+"д",reflexiveYN=True,instrumentalYN=True)
+                mg.makeDat(vowelharmony+"д")
             elif(lastletter=="ж" or lastletter=="ч" or lastletter=="ш"):
-                buildsourceword=buildsourceword+makeinflection(term+"ид",reflexiveYN=True,instrumentalYN=True)
+                mg.makeDat("ид")
             else:
-                buildsourceword=buildsourceword+makeinflection(term+"д",reflexiveYN=True,instrumentalYN=True)
+                mg.makeDat()
 
 			#exceptions for dative case
             if(lastletter=="л" or lastletter=="н"):
-                buildsourceword=buildsourceword+makeinflection(term+"т",reflexiveYN=True,instrumentalYN=True)
+                mg.makeDat("т")
+
 
             #verbs
             if(lastletter=="х"):
-                buildsourceword=buildsourceword+conjugateverb(term,buildsourceword)
-                
+                mg.conjugateIt()
+
                 #complete action
                 if(len(term)>3 and term[-3:]!="чих"):
-                    buildsourceword=buildsourceword+makeinflection(term[:-2]+"чих",negativeYN=True)
+                    mg.buildIt("чих",modifier="Absorbed",negativeYN=True)
                     #buildsourceword=buildsourceword+conjugateverb(term[:-2]+"чих",buildsourceword,completionMod=True)
 
-                #if(term=="зайлах"):
-                    #print(term)
-                    #print(term[:-2]+"уулах")
                 #passive voice
                 if(len(term)>2 and term[-5:]!="уулах" and term[-5:]!="үүлэх"):
-                    if(vowelharmony=='а' or vowelharmony=='у' or vowelharmony=='о'):
-                        buildsourceword=buildsourceword+makeinflection(term[:-2]+"уулах",negativeYN=True)
-                        buildsourceword=buildsourceword+conjugateverb(term[:-2]+"уулах",buildsourceword)
-                    else:
-                        buildsourceword=buildsourceword+makeinflection(term[:-2]+"үүлэх",negativeYN=True)
-                        buildsourceword=buildsourceword+conjugateverb(term[:-2]+"үүлэх",buildsourceword)
+                    #уулах or үүлэх                    
+                    mg.buildIt(SVH+SVH+"л"+PVH+"х",modifier="Absorbed",negativeYN=True)
+                    mg.conjugateIt(SVH+SVH+"л"+PVH+"х",modifier="Absorbed")
+
 
                 #no good description on what this is except that it's inherited from Classical Mongolian
                 if(term[-4:]!="лдах" and term[-4:]!="лдэх"):
-                    if(vowelharmony=='а' or vowelharmony=='у' or vowelharmony=='о'):
-                        buildsourceword=buildsourceword+makeinflection(term[:-1]+"лдах",negativeYN=True)
-                        buildsourceword=buildsourceword+makeinflection(term[:-1]+"лдан")
-                        #buildsourceword=buildsourceword+conjugateverb(term[:-1]+"лдах",buildsourceword)
-                    else:
-                        buildsourceword=buildsourceword+makeinflection(term[:-1]+"лдэх",negativeYN=True)
-                        buildsourceword=buildsourceword+makeinflection(term[:-1]+"лдан")
-                        #buildsourceword=buildsourceword+conjugateverb(term[:-1]+"лдэх",buildsourceword)
+                    #лдах or лдэх
+                    mg.buildIt("лд"+PVH+"х",modifier="RemoveLast",negativeYN=True)
+                    mg.makeVerbSuffixes("лд"+PVH+"х")
+                    #mg.conjugateIt("лд"+PVH+"х",modifier="RemoveLast")
+                    #mg.buildIt("лд"+PVH+"н",modifier="RemoveLast")
+                    #buildsourceword=buildsourceword+conjugateverb(term[:-1]+"лдах",buildsourceword)
             else:
-                #plurals for non verbs
-                if(vowelharmony=='а' or vowelharmony=='у' or vowelharmony=='о'):
-                    if(lastletter=='н'):
-                        buildsourceword=buildsourceword+makeinflection(term[:-1]+"гууд",reflexiveYN=True,instrumentalYN=True)
-                    else:
-                        buildsourceword=buildsourceword+makeinflection(term+"ууд",reflexiveYN=True,instrumentalYN=True)
+                #plurals for non verbs ууд or үүд
+                if(lastletter=='н'):
+                    mg.buildIt("г"+SVH+SVH+"д",modifier="RemoveLast",reflexiveYN=True,instrumentalYN=True)
                 else:
-                    if(lastletter=='н'):
-                        buildsourceword=buildsourceword+makeinflection(term[:-1]+"гүүд",reflexiveYN=True,instrumentalYN=True)
-                    else:
-                        buildsourceword=buildsourceword+makeinflection(term+"үүд",reflexiveYN=True,instrumentalYN=True)
+                    mg.buildIt("г"+SVH+SVH+"д",reflexiveYN=True,instrumentalYN=True)
+               
+
+            
         #ends in vowel
         else:
-            
-			#possibly converb?
-            buildsourceword=buildsourceword+makeinflection(term+"н")
 
-            buildsourceword=buildsourceword+makeinflection(term+"ч")
+			#possibly converb?
+            mg.buildIt("н")
+
+            mg.buildIt("ч")
 
 			#ablative case (from <term>)
-            buildsourceword=buildsourceword+makeinflection(term+"н"+vowelharmony+vowelharmony+"с")
-            buildsourceword=buildsourceword+makeinflection(term+vowelharmony+"с")
+            mg.buildIt("н"+vowelharmony+vowelharmony+"с")
+            mg.buildIt(vowelharmony+"с")
+            
             #instrumental case
-            buildsourceword=buildsourceword+makeinflection(term+"г"+vowelharmony+vowelharmony+"р")
-            buildsourceword=buildsourceword+makeinflection(term+vowelharmony+"р")
+            mg.buildIt("г"+vowelharmony+vowelharmony+"р")
+            mg.buildIt(vowelharmony+"р")
 
             #accusative case
-            buildsourceword=buildsourceword+makeinflection(term+"г")
-            buildsourceword=buildsourceword+makeinflection(term+"г"+vowelharmony+vowelharmony) # with reflexive
-			#dative case
-            buildsourceword=buildsourceword+makeinflection(term+"д",reflexiveYN=True,instrumentalYN=True)
-            buildsourceword=buildsourceword+makeinflection(term+"т",reflexiveYN=True,instrumentalYN=True)
+            mg.buildIt("г")
+            mg.buildIt("г"+vowelharmony+vowelharmony) # with reflexive
+            
+            #dative case
+            mg.makeDat()
+            mg.makeDat("т")
+            
             #figure out what this is later
-            buildsourceword=buildsourceword+makeinflection(term+"д"+vowelharmony+vowelharmony)
+            mg.buildIt("д"+vowelharmony+vowelharmony)
+
             #genitive case
             if(lastletter=="й"):
-                buildsourceword=buildsourceword+makeinflection(term+"н",whichIsMarkerYN=True)
+                mg.buildIt("н",whichIsMarkerYN=True)
             #long vowel
             elif(len(term)>1 and term[-2]==lastletter):            
-                buildsourceword=buildsourceword+makeinflection(term+"ны")
-                buildsourceword=buildsourceword+makeinflection(term+"ний")
-            
+                mg.buildIt("ны")
+                mg.buildIt("ний")
+
             #single vowel at end
             if(len(term)>1 and not isMNVowel(term[-2])):
-                buildsourceword=buildsourceword+makeinflection(term+"ны")
-                buildsourceword=buildsourceword+makeinflection(term+"ын",whichIsMarkerYN=True)
-                buildsourceword=buildsourceword+makeinflection(term+"ийн",whichIsMarkerYN=True)
 
+                mg.buildIt("ны")
+                mg.buildIt("ын",whichIsMarkerYN=True)
+                mg.buildIt("ийн",whichIsMarkerYN=True)
             #plurals
-            if(vowelharmony=='а' or vowelharmony=='у' or vowelharmony=='о'):
-                buildsourceword=buildsourceword+makeinflection(term+"нууд",reflexiveYN=True,instrumentalYN=True)
-            else:
-                buildsourceword=buildsourceword+makeinflection(term+"нүүд",reflexiveYN=True,instrumentalYN=True)
+            mg.buildIt("н"+SVH+SVH+"д",reflexiveYN=True,instrumentalYN=True)
+
         #dimunitives (like shortened names)
-        buildsourceword=buildsourceword+makeinflection(term+"х"+vowelharmony+"н")
+        mg.buildIt("х"+vowelharmony+"н")
         
         #reflexive + other
-        buildsourceword=buildsourceword+makeinflection(term+vowelharmony+vowelharmony)
+        mg.buildIt(vowelharmony+vowelharmony)
 
 		#add suffix -тай
-        buildsourceword=buildsourceword+makeinflection(term+"т"+vowelharmony+"й")
+        if(vowelharmony=="ө"):
+            mg.buildIt("тэй")
+        else:
+            mg.buildIt("т"+vowelharmony+"й")
 
         #unsure what this is (I think it's dative plus reflexive, taken care of above)
         #buildsourceword=buildsourceword+makeinflection(term+"д"+vowelharmony+vowelharmony)
 
         #end        
-        buildsourceword=buildsourceword+"</idx:orth>"
+        mg.chain=mg.chain+"</idx:orth>"
         to.write(
 """
       <idx:entry name="word" scriptable="yes">
         <h2>
 """
-          +buildsourceword+
+          +mg.chain+
           term+"<br/>"+
           #<idx:orth value="{key}">{term}</idx:orth>
 """
