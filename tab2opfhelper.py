@@ -474,7 +474,7 @@ class MongolianWord:
                     #buildsourceword=buildsourceword+makeinflection(term[:-2]+"с"+vowelharmony+vowelharmony+"р",negativeYN=True)
                     self.buildItVerb("с"+vowelharmony+vowelharmony+"р",modifier="Absorbed",negativeYN=True)
 
-                    if(term[-3]=="ш" or term[-3]=="ж" or term[-3]=="н" or term[-3]=="з"):
+                    if(term[-3]=="ш" or term[-3]=="ж" or term[-3]=="н" or term[-3]=="з" or term[-3]=="л"):
                         self.makeVerbSuffixes()
                     elif(len(term)>5 and ( (term[-3]=="л" or term[-3]=="р") and not isMNVowel(term[-4]) ) ):
                         self.makeVerbSuffixes(modifier="Switch")
