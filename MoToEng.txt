@@ -298,7 +298,6 @@
 дээд	top
 бүхэлд	whole
 хаан	king
-гудамж,	street
 инчийн	inch
 үржүүлэх	multiply
 юу ч биш	nothing
@@ -2808,3 +2807,43 @@ cap	month
 хуй	n. eddy, vortex
 дарвуул	n. canvas
 далбаа	n. banner
+найртай	adj. friendly, sociable
+мэдээ	n. information, data
+илтгэх	v. report, profess
+үхлийн	adj. deadly, fatal
+аман	adj. verbal, oral
+зэвсэг	n. instrument, weapon
+тулалдах	v. battle, combat
+жигдрэх	v. to be the same
+нижигнэх	v. boom, bellow
+хороо	n. bureau, commission
+баривчлах	v. arrest, apprehend
+бөмбөгдөх	v. bomb, shell
+цахилах	v. flash, sparkle
+амь	n. life, spirit
+маргах	v. argue, contest
+дэвэх	v. clap, flutter
+өнжих	v. spend the day
+далавчин	n. wing
+таамаглах	v. to assume
+хулгайлах	v. to steal
+тордох	v. take care of
+тоох	v. hold in high esteem
+урсах	v. stream, seep
+сох	n. wholly
+зориглох	v. to have courage
+хаг	n. knarl, scar
+хөвөлзөх	v. move up and down
+норгох	v. to make wet
+сэрвээ	n. fin
+май	n. cloud of smoke
+гулгах	v. sliding
+нугдах	v. to disappear
+жиг	n. something strenge
+далдлах	v. hide
+шунгах	v. dive
+гүр	n. metal stone
+сэр	adj. puffy (like сэр сэр)
+сэвэх	v. wave, fan
+булаах	v. capture, seize
+халхлах	v. shield, cover

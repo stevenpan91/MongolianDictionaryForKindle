@@ -342,9 +342,9 @@ class MongolianWord:
         modifiedTerm=self.getModifiedTerm(modifier)
         self.chain=self.chain+makeinflection(modifiedTerm+combo,capitalizeYN=capitalizeYN, negativeYN=negativeYN,reflexiveYN=reflexiveYN,instrumentalYN=instrumentalYN,whichIsMarkerYN=whichIsMarkerYN)
 
-    def conjugateIt(self,combo="",modifier="None"):
+    def conjugateIt(self,combo="",modifier="None",completionMod=False):
         modifiedTerm=self.getModifiedTerm(modifier)
-        self.chain=self.chain+self.conjugateverb(modifiedTerm+combo)
+        self.chain=self.chain+self.conjugateverb(modifiedTerm+combo,completionMod)
 
     def makeGenAcc(self,combo="ий",modifier="None",dropGenEnd=False): #make genitive accusative
         #modifiedTerm=self.getModifiedTerm(modifier)
@@ -380,7 +380,11 @@ class MongolianWord:
         self.buildItVerb(combo+"д"+self.vowelharmony+"г",modifier,negativeYN=True)
 
         #conditional converb (if __, when __)
-        self.buildItVerb(combo+"в"+self.vowelharmony+"л",modifier)
+        mTermLastLet=self.getModifiedTerm(modifier)[-1]
+        if(mTermLastLet=="л" or mTermLastLet=="в"):
+            self.buildItVerb(combo+"б"+self.vowelharmony+"л",modifier)
+        else:
+            self.buildItVerb(combo+"в"+self.vowelharmony+"л",modifier)
 
         #no idea what this is
         self.buildItVerb(combo+"т"+self.vowelharmony+"л",modifier)
@@ -392,7 +396,10 @@ class MongolianWord:
         self.buildItVerb(combo+"л"+self.vowelharmony+self.vowelharmony,modifier)
 
         #as soon as
-        self.buildItVerb(combo+"м"+self.vowelharmony+"гц",modifier) 
+        self.buildItVerb(combo+"м"+self.vowelharmony+"гц",modifier)
+
+        #action of the main clause has been happening since the action of the sub clause
+        self.buildItVerb(combo+"с"+self.vowelharmony+self.vowelharmony+"р",modifier,negativeYN=True)
 
     def getModifiedTerm(self,modifier="None"):
         modifiedTerm=self.term #default to none
@@ -470,11 +477,9 @@ class MongolianWord:
 
             else:
                 if((isMNVowelHarmonyVowel(term[-2]) and not isMNVowel(term[-3]) and term[-3]!="г")  or term[-3:]=="чих"): #filter out double vowels
-                    #action of the main clause has been happening since the action of the sub clause
-                    #buildsourceword=buildsourceword+makeinflection(term[:-2]+"с"+vowelharmony+vowelharmony+"р",negativeYN=True)
-                    self.buildItVerb("с"+vowelharmony+vowelharmony+"р",modifier="Absorbed",negativeYN=True)
+                    
 
-                    if(term[-3]=="ш" or term[-3]=="ж" or term[-3]=="н" or term[-3]=="з" or term[-3]=="л"):
+                    if(term[-3]=="ш" or term[-3]=="ж" or term[-3]=="н" or term[-3]=="з" or (term[-3]=="л" and term[-2]=="а")):
                         self.makeVerbSuffixes()
                     elif(len(term)>5 and ( (term[-3]=="л" or term[-3]=="р") and not isMNVowel(term[-4]) ) ):
                         self.makeVerbSuffixes(modifier="Switch")
@@ -488,9 +493,6 @@ class MongolianWord:
                         self.buildItVerb(vowelharmony+vowelharmony+"д",modifier="Absorbed")
                 else:
 
-                    #action of the main clause has been happening since the action of the sub clause
-                    #buildsourceword=buildsourceword+makeinflection(term[:-1]+"с"+vowelharmony+vowelharmony+"р",negativeYN=True)
-                    self.buildItVerb("с"+vowelharmony+vowelharmony+"р",negativeYN=True)
                 
                     if(term[-2]=="и"):
 
@@ -574,21 +576,25 @@ def writekey(to, key, defn):
         #print(vowelharmony+PVH+SVH)
 
         #negation and capitalize
-        mg.buildIt("",capitalizeYN=True,negativeYN=True)
+        mg.buildIt("",capitalizeYN=True,negativeYN=True,reflexiveYN=True,instrumentalYN=True)
 
         #if consonant
         if(not isMNVowel(lastletter) and len(term)>1):
 
 			#possibly converb? Causes conflicts, commented out
             #buildsourceword=buildsourceword+makeinflection(term+vowelharmony+"н")
+            if(len(term)>3):
+                mg.buildIt(vowelharmony+"н")
 
             #ablative case (from <term>)
-            mg.buildIt(vowelharmony+vowelharmony+"с")
-            if(lastletter=="х"):
+            
+            if(lastletter=="х" or lastletter=="т" or lastletter=="в" or lastletter=="с"):
                 mg.buildIt("н"+vowelharmony+vowelharmony+"с")
+            else:
+                mg.buildIt(vowelharmony+vowelharmony+"с")
 
             #instrumental case
-            mg.buildIt(vowelharmony+vowelharmony+"р",negativeYN=True)
+            #mg.buildIt(vowelharmony+vowelharmony+"р",negativeYN=True)
 
             #genitive case + accusitive case
             if(lastletter=="ж" or lastletter=="ч" or lastletter=="г" or lastletter=="ш" or lastletter=="ь" or lastletter=="к"):   
@@ -635,7 +641,9 @@ def writekey(to, key, defn):
 
                 #complete action
                 if(len(term)>3 and term[-3:]!="чих"):
-                    mg.buildIt("чих",modifier="Absorbed",negativeYN=True)
+                    mg.buildItVerb("чих",modifier="Absorbed",negativeYN=True)
+                    mg.buildItVerb("чих"+vowelharmony+vowelharmony+"д",modifier="None",negativeYN=True,reflexiveYN=True)
+                    mg.makeVerbSuffixes("чих",modifier="Absorbed")
                     #buildsourceword=buildsourceword+conjugateverb(term[:-2]+"чих",buildsourceword,completionMod=True)
 
                 #passive voice
