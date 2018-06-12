@@ -913,8 +913,7 @@
 хэлшгүй	adj. unspeakable
 үлгэр	n. fable, fairytale
 улам	adj. more
-төрөх	v. to give birth,to be born
-төрөх	v. to generate
+төрөх	v. to give birth,to be born, generate
 цаана	adj. beyond,farther
 хав	n. doggy
 усан	adj. aquatic
@@ -2878,3 +2877,17 @@ cap	month
 гишүү	n. bough (like from a tree)
 буурай	adj. weak
 сагс	n. basket
+бариулах	v. forfeit
+малчин	n. cowboy
+овгор	n. lump
+номин	adj. azure blue
+дэлгэрэх	v. blossom, flourish
+зэгс	n. cane, reed
+бишгүүр	n. trumpet
+зэгсэн	adv. quite,respectably
+хороох	v. to execute, kill, decrease
+ухах	v. dig
+худ	adj. in-law
+хорсгох	v. sting the eyes
+сөгдөх	v. kneel
+цоож	n. lock

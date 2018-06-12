@@ -360,10 +360,14 @@ class MongolianWord:
 
     def makeDat(self,combo="д",modifier="None"):
         self.buildIt(combo,modifier,reflexiveYN=True,instrumentalYN=True)
+        self.buildIt(combo+"л"+self.vowelharmony+self.vowelharmony,modifier)
 
     def makeVerbSuffixes(self,combo="",modifier="RemoveLast"):
         #past
-        self.buildIt(combo+"с"+self.vowelharmony+"н",modifier,negativeYN=True,reflexiveYN=True)
+        if(self.vowelharmony=="ө"):
+            self.buildIt(combo+"сэн",modifier,negativeYN=True,reflexiveYN=True)
+        else: 
+            self.buildIt(combo+"с"+self.vowelharmony+"н",modifier,negativeYN=True,reflexiveYN=True)
 
         #future
         self.buildIt(combo+"н"+self.vowelharmony,modifier)
@@ -524,19 +528,18 @@ class MongolianWord:
                         self.buildItVerb(vowelharmony+"д")
                     
 
-
-        
-        buildsourceword=self.chain
         
         if(len(term)>2):
-            
-
+            if(vowelharmony=="ө"):
+                self.buildItVerb(vowelharmony+vowelharmony+"рэй",modifier="Absorbed")
+            else:
+                self.buildItVerb(vowelharmony+vowelharmony+"р"+vowelharmony+"й",modifier="Absorbed")
             
             #imperative
-            buildsourceword=buildsourceword+makeinflection(term[:-2]+\
-                        vowelharmony+vowelharmony+"р"+vowelharmony+"й")
+            #buildsourceword=buildsourceword+makeinflection(term[:-2]+\
+                        #vowelharmony+vowelharmony+"р"+vowelharmony+"й")
 
-        
+        buildsourceword=self.chain
 
         #complete action
         #buildsourceword=buildsourceword+makeinflection(term[:-1]+"чих",negativeYN=True)
@@ -591,9 +594,9 @@ def writekey(to, key, defn):
             #ablative case (from <term>)
             
             if(lastletter=="х" or lastletter=="т" or lastletter=="в" or lastletter=="с"):
-                mg.buildIt("н"+vowelharmony+vowelharmony+"с")
+                mg.buildIt("н"+vowelharmony+vowelharmony+"с",reflexiveYN=True)
             else:
-                mg.buildIt(vowelharmony+vowelharmony+"с")
+                mg.buildIt(vowelharmony+vowelharmony+"с",reflexiveYN=True)
 
             #instrumental case
             #mg.buildIt(vowelharmony+vowelharmony+"р",negativeYN=True)
@@ -615,7 +618,7 @@ def writekey(to, key, defn):
 
             else:
                 
-                if(lastletter=="р" and not isMNVowel(term[:-3])):
+                if(lastletter=="р" and term[-2]=="а" and not isMNVowel(term[:-3])):
                     mg.makeGenAcc(modifier="RemoveLastVowel")
                     mg.makeGenAcc("ы",modifier="RemoveLastVowel")
                 else:
@@ -683,8 +686,8 @@ def writekey(to, key, defn):
             mg.buildIt("ч")
 
 			#ablative case (from <term>)
-            mg.buildIt("н"+vowelharmony+vowelharmony+"с")
-            mg.buildIt(vowelharmony+"с")
+            mg.buildIt("н"+vowelharmony+vowelharmony+"с",reflexiveYN=True)
+            mg.buildIt(vowelharmony+"с",reflexiveYN=True)
             
             #instrumental case
             mg.buildIt("г"+vowelharmony+vowelharmony+"р")
@@ -722,7 +725,10 @@ def writekey(to, key, defn):
         mg.buildIt("х"+vowelharmony+"н")
         
         #reflexive + other
-        mg.buildIt(vowelharmony+vowelharmony)
+        if(lastletter=="р" and not isMNVowel(term[:-3])):
+            mg.buildIt(vowelharmony+vowelharmony,modifier="RemoveLastVowel")
+        else:
+            mg.buildIt(vowelharmony+vowelharmony)
 
 		#add suffix -тай
         if(vowelharmony=="ө"):
