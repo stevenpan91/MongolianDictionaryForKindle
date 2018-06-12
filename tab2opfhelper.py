@@ -410,6 +410,8 @@ class MongolianWord:
             modifiedTerm=self.term[:-1]
         elif(modifier=="Switch"): #switch
             modifiedTerm=self.term[:-3]+self.term[-2]+self.term[-3]
+        elif(modifier=="RemoveLastVowel"):
+            modifiedTerm=self.term[:-2]+self.term[-1]
 
         return modifiedTerm
 
@@ -481,7 +483,7 @@ class MongolianWord:
 
                     if(term[-3]=="ш" or term[-3]=="ж" or term[-3]=="н" or term[-3]=="з" or (term[-3]=="л" and term[-2]=="а")):
                         self.makeVerbSuffixes()
-                    elif(len(term)>5 and ( (term[-3]=="л" or term[-3]=="р") and not isMNVowel(term[-4]) ) ):
+                    elif(len(term)>=5 and ( (term[-3]=="л" or term[-3]=="р") and not isMNVowel(term[-4]) ) ):
                         self.makeVerbSuffixes(modifier="Switch")
                     else:
                         self.makeVerbSuffixes(modifier="Absorbed")
@@ -598,10 +600,12 @@ def writekey(to, key, defn):
 
             #genitive case + accusitive case
             if(lastletter=="ж" or lastletter=="ч" or lastletter=="г" or lastletter=="ш" or lastletter=="ь" or lastletter=="к"):   
-                mg.makeGenAcc()
+                
                 #gen
                 if(lastletter=="г"):
                     mg.buildIt("гийн",modifier="Absorbed",whichIsMarkerYN=True)
+                else:
+                    mg.makeGenAcc()
                 
             elif(lastletter=="н"):
                 mg.makeGenAcc(dropGenEnd=True)
@@ -612,8 +616,8 @@ def writekey(to, key, defn):
             else:
                 
                 if(lastletter=="р" and not isMNVowel(term[:-3])):
-                    mg.makeGenAcc(modifier="Absorbed")
-                    mg.makeGenAcc("ы",modifier="Absorbed")
+                    mg.makeGenAcc(modifier="RemoveLastVowel")
+                    mg.makeGenAcc("ы",modifier="RemoveLastVowel")
                 else:
                     mg.makeGenAcc()
                     mg.makeGenAcc("ы")
