@@ -2891,3 +2891,13 @@ cap	month
 хорсгох	v. sting the eyes
 сөгдөх	v. kneel
 цоож	n. lock
+шүрших	v. scatter, sprinkle
+жагсах	v. parade, demonstrate
+зэрэгцэх	v. align, sync
+давалгаалах	v. wave, undulate
+долгилох	v. wave
+цэлийх	v. continue, spread out
+дорхноо	adv. immediately
+халцрах	v. shed skin
+ганганах	v. cackle
+хэлтрэх	v. waive

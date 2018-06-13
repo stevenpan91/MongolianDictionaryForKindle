@@ -232,7 +232,7 @@ def isMNVowelHarmonyVowel(letter):
 def isMNVowel(letter):
     ignorelettercase=letter.lower()
     retval=False
-    vowels=['а','е','ё','и','й','о','ө','у','ү','э','я','ё'] #all
+    vowels=['а','е','ё','и','й','о','ө','у','ү','э','я','ё','ы'] #all
     #vowels=['а','о','ө','э'] #just count these
     for c in vowels:
         if(letter==c):
@@ -325,7 +325,8 @@ class MongolianWord:
     vowelharmony=""
     PVH=""
     SVH=""
-    def __init__(self,word):
+    debugOn=False
+    def __init__(self,word,debugOn=False):
         self.term=word
         #chain="<idx:orth value=\""+key+"\">"
         self.chain=""
@@ -333,18 +334,26 @@ class MongolianWord:
         self.vowelharmony=self.vowelharmonies[0]
         self.PVH=self.vowelharmonies[1]
         self.SVH=self.vowelharmonies[2]
+        self.debugOn=debugOn
 
     def buildIt(self,combo,modifier="None",capitalizeYN=True, negativeYN=False,reflexiveYN=False,instrumentalYN=False,whichIsMarkerYN=False): #absorbed as in the vowel before "х" is absorbed
         modifiedTerm=self.getModifiedTerm(modifier)
+        if(self.debugOn):
+            print(modifiedTerm+combo)
         self.chain=self.chain+makeinflection(modifiedTerm+combo,capitalizeYN=capitalizeYN, negativeYN=negativeYN,reflexiveYN=reflexiveYN,instrumentalYN=instrumentalYN,whichIsMarkerYN=whichIsMarkerYN)
 
     def buildItVerb(self,combo,modifier="RemoveLast",capitalizeYN=True, negativeYN=False,reflexiveYN=False,instrumentalYN=False,whichIsMarkerYN=False): #absorbed as in the vowel before "х" is absorbed
         modifiedTerm=self.getModifiedTerm(modifier)
+        if(self.debugOn):
+            print(modifiedTerm+combo)
         self.chain=self.chain+makeinflection(modifiedTerm+combo,capitalizeYN=capitalizeYN, negativeYN=negativeYN,reflexiveYN=reflexiveYN,instrumentalYN=instrumentalYN,whichIsMarkerYN=whichIsMarkerYN)
 
     def conjugateIt(self,combo="",modifier="None",completionMod=False):
         modifiedTerm=self.getModifiedTerm(modifier)
+        tempStoreTerm=self.term
+        self.term=modifiedTerm+combo
         self.chain=self.chain+self.conjugateverb(modifiedTerm+combo,completionMod)
+        self.term=tempStoreTerm
 
     def makeGenAcc(self,combo="ий",modifier="None",dropGenEnd=False): #make genitive accusative
         #modifiedTerm=self.getModifiedTerm(modifier)
@@ -422,6 +431,9 @@ class MongolianWord:
 
     def conjugateverb(self,originalWord=term,completionMod=False):
         term=originalWord
+        tempStoreTerm=self.term
+        self.term=originalWord
+        
         #vowelharmony=getvowelharmonyletter(term)
         vowelharmony=getvowelharmonyletter(term)[0]
 
@@ -562,6 +574,7 @@ class MongolianWord:
                 buildsourceword=buildsourceword+makeinflection(term[:-2]+"ъё")
                 buildsourceword=buildsourceword+makeinflection(term[:-1]+"ъё")
 
+        self.term=tempStoreTerm # to delete later
         return buildsourceword
 
 # Write into to the key, definition pairs
@@ -569,7 +582,11 @@ class MongolianWord:
 def writekey(to, key, defn):
     terms = iter(sorted(defn, key=keyf))
     for term, g in groupby(terms, key=lambda d: d[0]):
-        mg = MongolianWord(term)
+
+        if(term==""):
+            mg=MongolianWord(term,debugOn=True)
+        else:
+            mg = MongolianWord(term)
         lastletter=term[-1]
         mg.chain="<idx:orth value=\""+key+"\">"
         #vowelharmony=""
@@ -679,6 +696,8 @@ def writekey(to, key, defn):
             
         #ends in vowel
         else:
+            #past tense
+            mg.buildIt("с"+vowelharmony+"н")
 
 			#possibly converb?
             mg.buildIt("н")
