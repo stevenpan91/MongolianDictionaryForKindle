@@ -497,7 +497,7 @@ class MongolianWord:
                 if((isMNVowelHarmonyVowel(term[-2]) and not isMNVowel(term[-3]) and term[-3]!="г")  or term[-3:]=="чих"): #filter out double vowels
                     
 
-                    if(term[-3]=="ш" or term[-3]=="ж" or term[-3]=="н" or term[-3]=="з" or (term[-3]=="л" and term[-2]=="а")):
+                    if(term[-3]=="ш" or term[-3]=="ж" or term[-3]=="н" or term[-3]=="з" ):#or (term[-3]=="л" and term[-2]=="а")):
                         self.makeVerbSuffixes()
                     elif(len(term)>=5 and ( (term[-3]=="л" or term[-3]=="р") and not isMNVowel(term[-4]) ) ):
                         self.makeVerbSuffixes(modifier="Switch")

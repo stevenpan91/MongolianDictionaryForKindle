@@ -1621,7 +1621,6 @@ cap	month
 чанах	to brew
 шумбах	to dive
 эвдэх	to break
-хагалах	to break
 эргэх	to turn
 эрэх	to look for
 хайх	to look for
@@ -2901,3 +2900,21 @@ cap	month
 халцрах	v. shed skin
 ганганах	v. cackle
 хэлтрэх	v. waive
+цурхай	n. luce fish
+цалгилах	v. to splat
+хариг	adj. covetous, self-conscious
+тушаал	n. appointment, office
+тосгоны	adj. rural
+инээмсэглэх	v. smile
+бэргэн	n. daughter in law, sister in law
+хүсэл	n. wishes, will
+хангинуур	n. shrill sound
+манаргах	v. stir trouble, stir dust
+тээглэх	v. to halt
+шавдах	v. to urge
+хураах	v. to put away, seize, collect
+уягдах	v. to be bound, tied
+унагах	v. to throw
+ачигдах	v. to load
+өргөх	v. to lift
+шивгэнэх	v. whisper
