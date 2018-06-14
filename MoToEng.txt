@@ -529,7 +529,7 @@
 газрын тос	oil
 цусны	blood
 өссөн	grew,rose
-хувь	cent
+хувь	fraction, percent
 холино	mix
 баг	team
 утас	wire,thread
@@ -2320,7 +2320,7 @@ cap	month
 аашилж	adj. lashing out
 хорих	v. withdraw, suppress
 дайрах	v. abuse, insult
-үйл	n. action
+үйл	n. action, needlework
 лай	n. mud, dirt, trouble
 гэхдээ	conj. however, but
 хийлгэх	v. to force, call on
@@ -2918,3 +2918,47 @@ cap	month
 ачигдах	v. to load
 өргөх	v. to lift
 шивгэнэх	v. whisper
+тэсэх	v. digest, endure, suffer
+явдал	n. action, move
+алгадах	v. smack, swat
+чихэр	n. sugar, sweet
+амлах	v. promise, vow
+бараалхах	v. donate, give, present
+туурга	n. side, wall
+зарга	n. bill, lawsuit
+байрлах	v. inhabit, intervene
+уйлаан	n. cry
+нус	n. drivel
+хамах	v. scrape, sweep
+давирхайдах	v. resin, tar
+давуу	adj. tight, narrow
+улайрах	v. become resolute, blush
+шаргал	adj. yellowy
+бүслүүр	n. hoop, zone
+даруй	adv. immediately
+уучлах	v. absolve, pardon
+гагцхүү	adv. exclusively
+өвгөрөх	v. to age
+хөгшрөх	v. to mold, olden, age
+зулай	n. crown
+адис	n. blessing
+ерөөл	n. blessing, benediction, toast
+нум	n. bow, arc
+сум	n. bullet, arrow
+гарц	n. passage, exit
+ноён	n. sir
+шунгинах	v. whizz
+ганихрах	v. grieve
+бэр	n. sister in law, daughter in law, bride
+цамц	n. shirt
+шалах	v. urge, persuade
+норох	v. get wet
+гудайх	v. slant, tilt
+тэтгэгч	n. supporter
+дэвхрэх	v. skip, hop
+боолт	n. cord,bandage
+алаглах	v. to look colorful
+ёстой	adj. ought, proper, should
+наадам	n. festival,show
+жонхуу	n. adhesive
+хэмхлэх	v. pulverize, smash

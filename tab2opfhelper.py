@@ -497,7 +497,7 @@ class MongolianWord:
                 if((isMNVowelHarmonyVowel(term[-2]) and not isMNVowel(term[-3]) and term[-3]!="г")  or term[-3:]=="чих"): #filter out double vowels
                     
 
-                    if(term[-3]=="ш" or term[-3]=="ж" or term[-3]=="н" or term[-3]=="з" ):#or (term[-3]=="л" and term[-2]=="а")):
+                    if(term[-3]=="ш" or term[-3]=="ж" or term[-3]=="н" or term[-3]=="з" or (len(term)>4 and (not isMNVowel(term[-3]) and not isMNVowel(term[-4]))) ):#or (term[-3]=="л" and term[-2]=="а")):
                         self.makeVerbSuffixes()
                     elif(len(term)>=5 and ( (term[-3]=="л" or term[-3]=="р") and not isMNVowel(term[-4]) ) ):
                         self.makeVerbSuffixes(modifier="Switch")
@@ -515,7 +515,7 @@ class MongolianWord:
                     if(term[-2]=="и"):
 
 
-                        if(term[-3]=="н" or term[-3]=="ш" or term[-3]=="ж"):
+                        if(term[-3]=="н" or term[-3]=="ш" or term[-3]=="ж" or term[-3]=="х"):
                             self.makeVerbSuffixes()
                         else:
                             self.makeVerbSuffixes("ь")
@@ -583,7 +583,7 @@ def writekey(to, key, defn):
     terms = iter(sorted(defn, key=keyf))
     for term, g in groupby(terms, key=lambda d: d[0]):
 
-        if(term==""):
+        if(term=="зохих"):
             mg=MongolianWord(term,debugOn=True)
         else:
             mg = MongolianWord(term)
@@ -607,6 +607,7 @@ def writekey(to, key, defn):
             #buildsourceword=buildsourceword+makeinflection(term+vowelharmony+"н")
             if(len(term)>3):
                 mg.buildIt(vowelharmony+"н")
+                mg.buildIt(vowelharmony+"нд")
 
             #ablative case (from <term>)
             
@@ -635,9 +636,10 @@ def writekey(to, key, defn):
 
             else:
                 
-                if(lastletter=="р" and term[-2]=="а" and not isMNVowel(term[:-3])):
+                if((lastletter=="р" or lastletter=="г") and (term[-2]=="а" or term[-2]=="э") and not isMNVowel(term[:-3])):
                     mg.makeGenAcc(modifier="RemoveLastVowel")
                     mg.makeGenAcc("ы",modifier="RemoveLastVowel")
+                    mg.buildIt(vowelharmony+vowelharmony+"с",modifier="RemoveLastVowel",reflexiveYN=True)
                 else:
                     mg.makeGenAcc()
                     mg.makeGenAcc("ы")
@@ -690,17 +692,20 @@ def writekey(to, key, defn):
                 if(lastletter=='н'):
                     mg.buildIt("г"+SVH+SVH+"д",modifier="RemoveLast",reflexiveYN=True,instrumentalYN=True)
                 else:
-                    mg.buildIt("г"+SVH+SVH+"д",reflexiveYN=True,instrumentalYN=True)
+                    mg.buildIt(SVH+SVH+"д",reflexiveYN=True,instrumentalYN=True)
                
 
             
         #ends in vowel
         else:
+            mg.makeGenAcc("гий")
+
             #past tense
             mg.buildIt("с"+vowelharmony+"н")
 
 			#possibly converb?
             mg.buildIt("н")
+            mg.buildIt("нд")
 
             mg.buildIt("ч")
 
