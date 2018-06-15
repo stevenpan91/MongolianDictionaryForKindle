@@ -414,6 +414,8 @@ class MongolianWord:
         #action of the main clause has been happening since the action of the sub clause
         self.buildItVerb(combo+"с"+self.vowelharmony+self.vowelharmony+"р",modifier,negativeYN=True)
 
+
+
     def getModifiedTerm(self,modifier="None"):
         modifiedTerm=self.term #default to none
         
@@ -551,31 +553,35 @@ class MongolianWord:
             #buildsourceword=buildsourceword+makeinflection(term[:-2]+\
                         #vowelharmony+vowelharmony+"р"+vowelharmony+"й")
 
-        buildsourceword=self.chain
+        
 
         #complete action
         #buildsourceword=buildsourceword+makeinflection(term[:-1]+"чих",negativeYN=True)
 
         #unsure of this
-        buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"ч")
+        #buildsourceword=buildsourceword+makeinflection(term[:-1]+vowelharmony+"ч")
+        self.buildItVerb(vowelharmony+"ч")
 
+                 #Let's ___
         
-        
+        if(self.term[-2]=="а" or self.term[-2]=="у" or self.term[-2]=="я"):
+        #if(self.PVH=="а"):
+            #buildsourceword=buildsourceword+makeinflection(term[:-2]+"ъя")
+            #buildsourceword=buildsourceword+makeinflection(term[:-1]+"ъя")
+            self.buildItVerb("ъя",modifier="Absorbed")
+        elif(self.term[-2]=="э" or self.term[-2]=="и" or self.term[-2]=="ө" or self.term[-2]=="ү"):
 
-        #Let's ___
-        if(isMNVowel(term[-2])):
-            if(term[-2]=="а" or term[-2]=="у" or term[-2]=="я"):
-                buildsourceword=buildsourceword+makeinflection(term[:-2]+"ъя")
-                buildsourceword=buildsourceword+makeinflection(term[:-1]+"ъя")
-            elif(term[-2]=="э" or term[-2]=="и" or term[-2]=="ө" or term[-2]=="ү"):
-                buildsourceword=buildsourceword+makeinflection(term[:-2]+"ье")
-                buildsourceword=buildsourceword+makeinflection(term[:-1]+"ье")
-            else:
-                buildsourceword=buildsourceword+makeinflection(term[:-2]+"ъё")
-                buildsourceword=buildsourceword+makeinflection(term[:-1]+"ъё")
+            #buildsourceword=buildsourceword+makeinflection(term[:-2]+"ье")
+            #buildsourceword=buildsourceword+makeinflection(term[:-1]+"ье")
+            self.buildItVerb("ье",modifier="Absorbed")
+        else:
+            #buildsourceword=buildsourceword+makeinflection(term[:-2]+"ъё")
+            #buildsourceword=buildsourceword+makeinflection(term[:-1]+"ъё")
+
+            self.buildItVerb("ъё",modifier="Absorbed")
 
         self.term=tempStoreTerm # to delete later
-        return buildsourceword
+        return self.chain
 
 # Write into to the key, definition pairs
 # key -> [[term, defn, key==term]]
@@ -602,6 +608,9 @@ def writekey(to, key, defn):
 
         #if consonant
         if(not isMNVowel(lastletter) and len(term)>1):
+
+            #past tense
+            mg.buildIt("с"+vowelharmony+"н")
 
 			#possibly converb? Causes conflicts, commented out
             #buildsourceword=buildsourceword+makeinflection(term+vowelharmony+"н")

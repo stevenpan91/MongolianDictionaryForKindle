@@ -2962,3 +2962,19 @@ cap	month
 наадам	n. festival,show
 жонхуу	n. adhesive
 хэмхлэх	v. pulverize, smash
+нууц	adj. clandestine, classified
+дуурайх	v. imitate, mimic
+барлаг	n. attendant, retainer
+ёслол	n. ceremony, ritual
+гуних	v. sadden, gloom
+дооглох	v. mock, jeer
+нэгжих	v. search, rummage
+хөвгүүд	n. boys
+шилтгээн	n. castle
+сугар	n. venus
+болшгүй	adj. impossible
+гялбалзах	v. twinkle
+тунгалаг	adj. lucent, bright, crystal
+түших	v. recline, depend, link
+үлдсэн	adj. extra, residual
+дун	n. shell, snail
