@@ -294,7 +294,7 @@
 асуудал	problem,matter
 мэдэж байсан	knew
 өнгөрөх	pass
-учир	since
+учир	n. since, reason
 дээд	top
 бүхэлд	whole
 хаан	king
@@ -2978,3 +2978,244 @@ cap	month
 түших	v. recline, depend, link
 үлдсэн	adj. extra, residual
 дун	n. shell, snail
+шагших	v. surprised
+цацагдах	v. sprinkle, spray
+сэм	adv. stealthily
+хэдрэг	n. instrument for hide tanning
+нут	adj. strong, solid
+цох	n. beetle
+ураг	n. relationship
+хэт	adj. exceedingly, over
+байг	n. target
+задрах	v. to eliminate, unwind
+цоорхой	n. gap, opening
+шагайх	v. to aim
+онилох	v. to aim
+магад	adj. certain, definite
+багтрах	v. seizure, thrash
+халгих	v. burp, overflow
+махир	adj. curly, bent
+туйпуу	n. brick
+цайлах	v. to treat to tea
+тэмцэх	v. wrestle, contend
+гэдсэн	adj. stay down (as in гэдсэн дотор)
+авдар	n. suitcase, trunk
+огло	v. break off (like огло үсрэх)
+өн	adj. richness, abundance
+дуслах	v. drip, ooze
+тийчлэх	v. kick
+өргөө	n. residence
+өтөл	adj. old
+язгуур	n. lineage, root
+нутаглах	v. inhabit, live
+хэв	n. shape, mold
+бүлгээ	v. was
+хорь	adj. twenty
+гуа	adj. gorgeous
+түм	n. multitude, ten thousand
+агнах	v. hunt
+хориглох	v. forbid, inhibit
+харилцах	v. communicate, mix
+бурхан	n. deity
+нүүх	v. move, vacate
+сохор	adj. blind, ignorant
+дэрвэх	v. swing, wave
+авга	n. parental relative (like uncle)
+доромжлох	v. insult, outrage
+овог	n. last name
+гунж	n. young animal (like a young cow)
+хавирга	n. flank, side
+цорой	n. cramp
+шорлох	v. to skewer
+уушги	n. lung
+зул	n. light
+буг	n. demon, devil
+дал	n. seventy, shoulder blade
+баглаа	n. cluster, pack
+сэжиглэх	v. mistrust, suspect
+шарвах	v. slide, wag
+адилтгах	v. compare, identify
+эв	n. harmony, dexterity
+нэгтгэх	v. generalize, integrate
+баглах	v. pack, bind
+бэх	n. ink
+хялбар	adj. easy, accessible
+дийлэгдэх	v. lose ground
+мунхаг	adj. dark, dense, stupid
+бядуу	adj. stupid
+тооцох	v. consider, score
+тоологдох	v. enumerate
+атал	adv. yet
+мэрэх	v. knaw
+харцага	n. hawk
+мяраах	v. prowl, glide
+сэг	n. carrion
+мөч	n. limb, space, minute
+олгох	v. allow, grant
+ялзрах	v. corrupt
+эсэг	n. leaven
+салхилах	v. blow, storm
+бутрах	v. crumble
+хүлэх	v. bind
+айсуй	adj. imminent
+хатир	n. trot
+өгүүлрүүн	v. said
+хайхармаагүй	conj. regardless
+өгүүлэх	v. say
+шийр	n. shank
+чацуу	adj. same
+иргэн	n. citizen
+хянагч	n. inspector
+жирэмсэн	adj. big
+харь	adj. strange
+нэрийдэл	n. guise, name
+бодон	n. boar
+баатар	n. hero
+инж	n. dot
+тайлга	n. rite
+татвар	n. tax
+ямагт	adv. always
+авир	n. character, model
+хоч	n. alias
+эрдэм	n. knowledge, learning
+адармаа	n. deception
+татаар	n. Tatar
+баригдах	v. captivity, wallow
+тайж	n. nobleman
+тамтарсан	adj. ramshackle
+барагдах	v. exhaust, dwindle
+өшөө	n. feud, enmity
+хөт	n. guide
+ташуурдах	v. flog, whip
+бэл	adj. downhill
+дутаах	v. flee
+хошуу	v. beak, muzzle, nose
+үлдэх	v. continue
+бэрх	v. difficult, hard
+тутам	adj. each
+амиа	n. sacrifice
+хээр	n. chesnut
+хөдөө	n. countryside
+гэтлэх	v. conquer, negotiate
+давуулах	v. outdo
+ятгах	v. admonish, convict, get, exhort
+жаргал	n. pleasure
+бүжиг	n. dance
+өргөмжлөх	v. exalt, glorify
+сал	n. float, raft
+саглагар	n. rank, exuberant
+олом	n. ford, cinch
+нэвтрэх	v. enter, permeate
+бархирах	v. exclaim, screech
+тэнхрэх	v. recuperate, refresh
+гуужих	v. peel, slough
+шадар	adv. nearby
+зэмлэх	v. blame, accuse
+буруушаах	v. blame, accuse, criticize
+балмад	adj. brute, foolish, rude
+барс	n. ounce
+цөөвөр	adj. lesser
+хэрцгий	adj. barbarous, bitter, cruel
+нүгэл	adj. evil
+гэдрэг	adj. backward, flatways
+нядлах	v. kill, slaughter
+нялх	n. baby
+мангас	n. monster
+залгих	v. devour,gulp
+хэвэл	n. belly
+шарга	adj. orange-brown
+довцог	n. small hill
+ойшоохгүй	adj. insolent
+цайвар	adj. blond, fair
+жараахай	n. minnow
+эрэмдэг	adj. disabled, monstrous
+төгөлдөр	adj. complete, entire
+сайд	n. minister
+засаг	n. government
+хутагт	n. saint, pontiff
+гогод	n. leek
+өсгөх	v. culture, enhance, foster
+дэгээ	n. hanger, holdfast, peg
+гох	v. hook, hitch, click
+малтах	v. dig, mine
+цавчим	n. ascent
+шор	n. skewer, spit
+уруудах	v. dip, slope
+оёдол	n. needlework
+оюун	n. intellect
+тарах	v. disband, permeate, scatter
+жадлах	v. spear, thrust
+зоох	v. plunge, jab
+тохиол	n. accident, episode
+байлдах	v. combat, battle
+байгуулах	v. conclude, create, found
+хайхрах	v. heed
+ширгэх	v. evaporate, shallow, shoal
+хождох	v. lag
+архи	n. alcohol
+хишиг	n. blessing
+ихсэх	v. grow
+хоцрогдол	n. hangover
+уярах	v. melt
+сэргээх	v. animate, enliven
+мөрөөдөх	v. dream, yearn
+хоцорсон	adj. tardy
+дотор	prep. among, inside
+холих	v. blend, combine
+доромжлогдсон	adj. abject
+эрхэмлэгддэг	adj. preferential
+эзэмших	v. engage, manage, occupy
+зэлэгч	n. occupant
+дэвших	v. progress, advance
+хатирах	v. trot
+дохиолох	v. motion
+аймгийн	adj. tribal
+хиа	n. page, aide-de-camp
+гайхал	n. amazement
+зүүд	n. dream
+нагац	n. uncle
+өлгий	n. cradle, diaper
+голомт	n. fireplace
+нөж	n. clot, gout
+сайтар	adv. thoroughly
+тогтмол	adj. constant
+цохио	n. cliff, rock
+сахиул	n. guardian, warden
+дорой	adj. frail, low, poor
+шийтгэх	v. blame, condemn
+саад	n. barrier, delay
+завсар	n. clearance, slit
+баясах	v. enjoy, amuse
+тайлагдах	v. uncoil, unwind
+залуу	n. guy, lad
+тэлээ	n. belt
+мунгинах	v. flounder, linger
+ойртох	v. approach
+хоцрох	v. lag, backwards
+дохих	v. beckon, gesticulate
+уурга	n. lasso
+мөшгөх	v. pursue
+сураглах	v. ask
+гавшгай	n. alert, brisk
+налархай	adj. lithe, supple
+оготор	n. bob, bun, dock
+шингэсэн	adj. saturated
+үдэш	n. evening
+дээрэмдэх	v. holdup, flay, pillage
+дээрэм	n. pillage, piracy
+агт	n. steed
+шивээлэх	v. pale
+хур	n. grouse
+эрмэг	adj. masculine, sterility
+татлах	v. jot
+амсар	n. lip, mouth
+исэр	n. stool
+нэгж	n. unit
+унгас	n. fleece, hair, wool
+баримтлах	v. exercise, observance, upheld
+самар	n. nut
+гинж	n. bond, chain
+аврах	v. redeem
+дөнгө	n. shackles, fetter
+бэдрэх	v. pursue
+саад	n. barrier

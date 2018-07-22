@@ -520,7 +520,7 @@ class MongolianWord:
                         if(term[-3]=="н" or term[-3]=="ш" or term[-3]=="ж" or term[-3]=="х"):
                             self.makeVerbSuffixes()
                         else:
-                            self.makeVerbSuffixes("ь")
+                            self.makeVerbSuffixes("ь",modifier="Absorbed")
 
 
                         #action happens before main action
@@ -589,7 +589,7 @@ def writekey(to, key, defn):
     terms = iter(sorted(defn, key=keyf))
     for term, g in groupby(terms, key=lambda d: d[0]):
 
-        if(term=="зохих"):
+        if(term=="барих"):
             mg=MongolianWord(term,debugOn=True)
         else:
             mg = MongolianWord(term)
@@ -608,68 +608,7 @@ def writekey(to, key, defn):
 
         #if consonant
         if(not isMNVowel(lastletter) and len(term)>1):
-
-            #past tense
-            mg.buildIt("с"+vowelharmony+"н")
-
-			#possibly converb? Causes conflicts, commented out
-            #buildsourceword=buildsourceword+makeinflection(term+vowelharmony+"н")
-            if(len(term)>3):
-                mg.buildIt(vowelharmony+"н")
-                mg.buildIt(vowelharmony+"нд")
-
-            #ablative case (from <term>)
             
-            if(lastletter=="х" or lastletter=="т" or lastletter=="в" or lastletter=="с"):
-                mg.buildIt("н"+vowelharmony+vowelharmony+"с",reflexiveYN=True)
-            else:
-                mg.buildIt(vowelharmony+vowelharmony+"с",reflexiveYN=True)
-
-            #instrumental case
-            #mg.buildIt(vowelharmony+vowelharmony+"р",negativeYN=True)
-
-            #genitive case + accusitive case
-            if(lastletter=="ж" or lastletter=="ч" or lastletter=="г" or lastletter=="ш" or lastletter=="ь" or lastletter=="к"):   
-                
-                #gen
-                if(lastletter=="г"):
-                    mg.buildIt("гийн",modifier="Absorbed",whichIsMarkerYN=True)
-                else:
-                    mg.makeGenAcc()
-                
-            elif(lastletter=="н"):
-                mg.makeGenAcc(dropGenEnd=True)
-                mg.makeGenAcc("ы",dropGenEnd=True)
-                #gen
-                mg.buildIt("гийн",whichIsMarkerYN=True)
-
-            else:
-                
-                if((lastletter=="р" or lastletter=="г") and (term[-2]=="а" or term[-2]=="э") and not isMNVowel(term[:-3])):
-                    mg.makeGenAcc(modifier="RemoveLastVowel")
-                    mg.makeGenAcc("ы",modifier="RemoveLastVowel")
-                    mg.buildIt(vowelharmony+vowelharmony+"с",modifier="RemoveLastVowel",reflexiveYN=True)
-                else:
-                    mg.makeGenAcc()
-                    mg.makeGenAcc("ы")
-
-            
-
-            #dative case
-            if(lastletter=="г" or lastletter=="в" or lastletter=="с" or lastletter=="р" or lastletter=="к"):
-                mg.makeDat("т")
-            elif(lastletter=="д" or lastletter=="т" or lastletter=="з" or lastletter=="ц"):
-                mg.makeDat(vowelharmony+"д")
-            elif(lastletter=="ж" or lastletter=="ч" or lastletter=="ш"):
-                mg.makeDat("ид")
-            else:
-                mg.makeDat()
-
-			#exceptions for dative case
-            if(lastletter=="л" or lastletter=="н"):
-                mg.makeDat("т")
-
-
             #verbs
             if(lastletter=="х"):
                 mg.conjugateIt()
@@ -687,6 +626,12 @@ def writekey(to, key, defn):
                     mg.buildIt(SVH+SVH+"л"+PVH+"х",modifier="Absorbed",negativeYN=True)
                     mg.conjugateIt(SVH+SVH+"л"+PVH+"х",modifier="Absorbed")
 
+                #cooperative voice
+                if(len(term)>2 and term[-4:]!="лцах" and term[-4:]!="лцэх"):
+                     #лцах or лцэх
+                    mg.buildIt("лц"+PVH+"х",modifier="RemoveLast",negativeYN=True)
+                    mg.makeVerbSuffixes("лц"+PVH+"х")
+
 
                 #no good description on what this is except that it's inherited from Classical Mongolian
                 if(term[-4:]!="лдах" and term[-4:]!="лдэх"):
@@ -702,8 +647,69 @@ def writekey(to, key, defn):
                     mg.buildIt("г"+SVH+SVH+"д",modifier="RemoveLast",reflexiveYN=True,instrumentalYN=True)
                 else:
                     mg.buildIt(SVH+SVH+"д",reflexiveYN=True,instrumentalYN=True)
-               
 
+                #past tense
+                mg.buildIt("с"+vowelharmony+"н")
+
+                #possibly converb? Causes conflicts, commented out
+                #buildsourceword=buildsourceword+makeinflection(term+vowelharmony+"н")
+                if(len(term)>3):
+                    mg.buildIt(vowelharmony+"н")
+                    mg.buildIt(vowelharmony+"нд")
+
+                #ablative case (from <term>)
+                
+                if(lastletter=="х" or lastletter=="т" or lastletter=="в" or lastletter=="с"):
+                    mg.buildIt("н"+vowelharmony+vowelharmony+"с",reflexiveYN=True)
+                else:
+                    mg.buildIt(vowelharmony+vowelharmony+"с",reflexiveYN=True)
+
+                #instrumental case
+                #mg.buildIt(vowelharmony+vowelharmony+"р",negativeYN=True)
+
+                #genitive case + accusitive case
+                if(lastletter=="ж" or lastletter=="ч" or lastletter=="г" or lastletter=="ш" or lastletter=="ь" or lastletter=="к"):   
+                    
+                    #gen
+                    if(lastletter=="г"):
+                        mg.buildIt("гийн",modifier="Absorbed",whichIsMarkerYN=True)
+                    else:
+                        mg.makeGenAcc()
+                    
+                elif(lastletter=="н"):
+                    mg.makeGenAcc(dropGenEnd=True)
+                    mg.makeGenAcc("ы",dropGenEnd=True)
+                    #gen
+                    mg.buildIt("гийн",whichIsMarkerYN=True)
+
+                else:
+                    
+                    if((lastletter=="р" or lastletter=="г" or lastletter=="с" or lastletter=="л") and isMNVowelHarmonyVowel(term[-2]) and not isMNVowel(term[:-3])):
+                        mg.makeGenAcc(modifier="RemoveLastVowel")
+                        mg.makeGenAcc("ы",modifier="RemoveLastVowel")
+                        mg.buildIt(vowelharmony+vowelharmony+"с",modifier="RemoveLastVowel",reflexiveYN=True)
+                    else:
+                        mg.makeGenAcc()
+                        mg.makeGenAcc("ы")
+
+                
+
+                #dative case
+                if(lastletter=="г" or lastletter=="в" or lastletter=="с" or lastletter=="р" or lastletter=="к"):
+                    mg.makeDat("т")
+                elif(lastletter=="д" or lastletter=="т" or lastletter=="з" or lastletter=="ц"):
+                    mg.makeDat(vowelharmony+"д")
+                elif(lastletter=="ж" or lastletter=="ч" or lastletter=="ш"):
+                    mg.makeDat("ид")
+                else:
+                    mg.makeDat()
+
+                #exceptions for dative case
+                if(lastletter=="л" or lastletter=="н"):
+                    mg.makeDat("т")
+
+
+        
             
         #ends in vowel
         else:
@@ -758,7 +764,7 @@ def writekey(to, key, defn):
         mg.buildIt("х"+vowelharmony+"н")
         
         #reflexive + other
-        if(lastletter=="р" and not isMNVowel(term[:-3])):
+        if(len(term)>3 and lastletter=="р" and not isMNVowel(term[-3])):
             mg.buildIt(vowelharmony+vowelharmony,modifier="RemoveLastVowel")
         else:
             mg.buildIt(vowelharmony+vowelharmony)
